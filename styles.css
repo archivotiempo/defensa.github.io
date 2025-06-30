@@ -906,14 +906,25 @@ body::before {
     align-items: start;
     position: relative;
     z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: visible;
 }
 
-.chart-section, .metrics-section {
-    background: rgba(15, 15, 35, 0.6);
-    border-radius: 20px;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.chart-section {
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    overflow: visible;
+}
+
+#steamChart, #steamChart2 {
+    width: 100% !important;
+    max-width: 400px;
+    height: 280px !important;
+    max-height: 320px;
+    margin: 0 auto;
+    display: block;
 }
 
 .metrics-section {
@@ -967,12 +978,6 @@ body::before {
     color: #f0f0ff;
     margin: 0;
     font-weight: 500;
-}
-
-#steamChart {
-    width: 100% !important;
-    height: 300px !important;
-    margin: 0 auto;
 }
 
 .significance {
@@ -2033,7 +2038,7 @@ body::before {
     right: 100%;
     top: 50%;
     transform: translateY(-50%) translateX(-2px);
-    border-width: 0.7rem 0 0.7rem 0.7rem;
+    border-width: 0.7rem 0.7rem 0.7rem 0;
     border-style: solid;
     border-color: transparent transparent transparent #b7aaff;
     z-index: 1003;
@@ -2156,6 +2161,21 @@ body::before {
 
 /* Ajuste específico para slide 8 (metodología) */
 .slide-content[aria-label*="Metodología"] {
-    width: 90%;
-    max-width: 1200px;
+    max-width: 900px !important;
+    width: 90% !important;
+}
+
+/* Fuerza los tooltips de metodología a salir por la derecha */
+.slide-content[aria-label*="Metodología"] .method-card[data-tooltip]:hover::after {
+    left: 100%;
+    right: auto;
+    transform: translateY(-50%) translateX(16px);
+}
+.slide-content[aria-label*="Metodología"] .method-card[data-tooltip]:hover::before {
+    left: 100%;
+    right: auto;
+    transform: translateY(-50%) translateX(2px);
+    border-width: 0.7rem 0.7rem 0.7rem 0;
+    border-style: solid;
+    border-color: transparent #b7aaff transparent transparent;
 }
