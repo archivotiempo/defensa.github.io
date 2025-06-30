@@ -2263,65 +2263,43 @@ body::before {
 
 /* ---- NUEVAS SLIDES ---- */
 
-/* Competencias LOMLOE y STEAM */
+/* Competencias LOMLOE y STEAM mejorada */
 .competencias-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.2rem;
     margin: 2.5rem 0 1.5rem 0;
     justify-items: center;
 }
 .competencia-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     background: rgba(120,119,198,0.13);
-    border: 1.5px solid #7877c6;
     border-radius: 18px;
-    padding: 2rem 1.5rem;
-    font-size: 1.25rem;
+    padding: 2rem 2.2rem;
+    font-size: 1.18rem;
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
     box-shadow: 0 2px 12px rgba(120,119,198,0.08);
-    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2.5px solid #7877c6;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    min-width: 340px;
+    max-width: 420px;
+    width: 100%;
+    min-height: 120px;
+    max-height: 120px;
+    height: 120px;
+    justify-content: flex-start;
+    box-sizing: border-box;
 }
-.competencia-item:hover {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(120,119,198,0.18);
-}
-
-/* Styled list para evaluación, transferibilidad y referencias */
-.styled-list {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 0 0;
+.competencia-item > div {
     display: flex;
     flex-direction: column;
-    gap: 1.1rem;
+    justify-content: center;
 }
-.styled-list li {
-    background: rgba(40,30,60,0.7);
-    border-left: 4px solid #ff77c6;
-    border-radius: 10px;
-    padding: 1rem 1.5rem;
-    color: #e0e0ff;
-    font-size: 1.08rem;
-    box-shadow: 0 1px 8px rgba(120,119,198,0.07);
-    transition: background 0.2s;
-}
-.styled-list li:hover {
-    background: rgba(120,119,198,0.18);
-}
-
-/* Transferibilidad y referencias */
-#slide-transferibilidad .slide-content,
-#slide-referencias .slide-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-#slide-referencias .styled-list li {
-    border-left: 4px solid #7877c6;
-    background: rgba(120,119,198,0.10);
-    color: #fff;
-}
-#slide-referencias .slide-title {
-    margin-bottom: 1.5rem;
-}
+.competencia-item.cmct { border-color: #ff77c6 !important; box-shadow: 0 0 0 2px #ff77c633, 0 2px 12px rgba(120,119,198,0.08); }
+.competencia-item.cd { border-color: #78dbff !important; box-shadow: 0 0 0 2px #78dbff33, 0 2px 12px rgba(120,119,198,0.08); }
+.competencia-item.cpsaa { border-color: #b7aaff !important; box-shadow: 0 0 0 2px #b7aaff33, 0 2px 12px rgba(120,119,198,0.08); }
+.competencia-item.ccec { border-color: #ffe27a !important; box-shadow: 0 0 0 2px #ffe27a33, 0 2px 12px rgba(120,119,198,0.08); }
