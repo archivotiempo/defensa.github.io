@@ -2179,3 +2179,84 @@ body::before {
     border-style: solid;
     border-color: transparent #b7aaff transparent transparent;
 }
+
+.slide-content.questions[aria-label*="Preguntas"] {
+    max-width: 1200px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    box-shadow: 0 8px 32px 0 rgba(120,119,198,0.18), 0 1.5px 0 rgba(255,255,255,0.10) inset;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(120,119,198,0.18) 0%, rgba(40,30,60,0.92) 100%);
+    padding: 3.5rem 3rem 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(120,119,198,0.18);
+}
+
+.slide-content.questions[aria-label*="Preguntas"] .slide-title {
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 8px rgba(40,30,60,0.18);
+}
+
+.slide-content.questions[aria-label*="Preguntas"] .question-icon {
+    background: #b7aaff;
+    color: #2d2d4d;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 24px rgba(120,119,198,0.13);
+}
+
+.slide-content.questions[aria-label*="Preguntas"] p {
+    font-size: 1.35rem;
+    color: #e0e0ff;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.slide-content.questions[aria-label*="Preguntas"] .tribunal-row {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.slide-content.questions[aria-label*="Preguntas"] .tribunal-card {
+    background: #18182c;
+    border-radius: 16px;
+    padding: 1.1rem 1.7rem;
+    color: #fff;
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(120,119,198,0.10);
+    font-size: 1.05rem;
+    font-weight: 500;
+    border: 1.5px solid rgba(120,119,198,0.10);
+}
+
+.slide-content.questions[aria-label*="Preguntas"] .tribunal-card i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #b7aaff;
+}
+
+.slide-content.questions[aria-label*="Preguntas"] .urjc-logo {
+    margin-top: 1.5rem;
+    height: 40px;
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+}
