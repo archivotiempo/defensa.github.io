@@ -1,9 +1,13 @@
 // Variables globales
-let currentSlide = 1;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+let currentSlide = 0;
+let slides = [];
+let totalSlides = 0;
 let timerInterval;
 let presentationMode = false;
+
+// Variables globales para los gráficos de Chart.js
+let accessChartInstance = null;
+let steamChartInstance = null;
 
 // Elementos del DOM
 const prevBtn = document.getElementById('prevBtn');
@@ -17,11 +21,14 @@ const navTitle = document.getElementById('navTitle');
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
-    initializePresentation();
-    initializeCharts();
+    slides = document.querySelectorAll('.slide');
+    totalSlides = slides.length;
+    updateSlideCounter();
+    showSlide(0);
     setupEventListeners();
     setupKeyboardShortcuts();
     setupTouchGestures();
+    initializeCharts();
 });
 
 // Funciones de inicialización
@@ -60,41 +67,41 @@ function setupEventListeners() {
     }
 }
 
-// Navegación de diapositivas
-function nextSlide() {
-    if (currentSlide < totalSlides) {
-        goToSlide(currentSlide + 1);
+function showSlide(n) {
+    if (slides[currentSlide]) {
+        slides[currentSlide].classList.remove('active');
     }
+    currentSlide = (n + totalSlides) % totalSlides;
+    if (slides[currentSlide]) {
+        slides[currentSlide].classList.add('active');
+        slides[currentSlide].scrollTop = 0;
+    }
+    updateSlideCounter();
+    updateNavigationButtons();
+    applySlideEffects(currentSlide + 1);
+    localStorage.setItem('tfm-current-slide', currentSlide + 1);
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
 }
 
 function previousSlide() {
-    if (currentSlide > 1) {
-        goToSlide(currentSlide - 1);
-    }
+    showSlide(currentSlide - 1);
 }
 
 function goToSlide(slideNumber) {
     if (slideNumber < 1 || slideNumber > totalSlides) return;
-    // Ocultar diapositiva actual
-    slides[currentSlide - 1].classList.remove('active');
-    // Actualizar diapositiva
-    currentSlide = slideNumber;
-    // Mostrar nueva diapositiva
-    slides[currentSlide - 1].classList.add('active');
-    // Actualizar UI
-    updateSlideCounter();
-    updateNavigationButtons();
-    applySlideEffects(currentSlide);
-    localStorage.setItem('tfm-current-slide', currentSlide);
+    showSlide(slideNumber - 1);
 }
 
 function updateSlideCounter() {
-    slideCounter.textContent = `${currentSlide} / ${totalSlides}`;
+    slideCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
 }
 
 function updateNavigationButtons() {
-    prevBtn.disabled = currentSlide === 1;
-    nextBtn.disabled = currentSlide === totalSlides;
+    prevBtn.disabled = currentSlide === 0;
+    nextBtn.disabled = currentSlide === totalSlides - 1;
 }
 
 // Manejo de teclado
@@ -337,8 +344,10 @@ function initializeCharts() {
 function updateAccessChart() {
     const ctx = document.getElementById('accessChart');
     if (!ctx) return;
-    
-    new Chart(ctx, {
+    if (accessChartInstance) {
+        accessChartInstance.destroy();
+    }
+    accessChartInstance = new Chart(ctx, {
         type: 'doughnut',
         data: {
             labels: ['Con acceso STEAM', 'Sin acceso STEAM'],
@@ -351,6 +360,12 @@ function updateAccessChart() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            animation: {
+                animateRotate: true,
+                animateScale: true,
+                duration: 1500,
+                easing: 'easeOutBounce'
+            },
             plugins: {
                 legend: {
                     position: 'bottom',
@@ -376,8 +391,10 @@ function updateAccessChart() {
 function updateSteamChart() {
     const ctx = document.getElementById('steamChart');
     if (!ctx) return;
-    
-    new Chart(ctx, {
+    if (steamChartInstance) {
+        steamChartInstance.destroy();
+    }
+    steamChartInstance = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Científicas', 'Tecnológicas', 'Matemáticas', 'Artísticas'],
@@ -396,6 +413,10 @@ function updateSteamChart() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            animation: {
+                duration: 1500,
+                easing: 'easeOutBounce'
+            },
             scales: {
                 y: {
                     beginAtZero: true,

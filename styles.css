@@ -10,8 +10,8 @@ body {
     background: #0a0a13;
     background-image: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
     color: #e0e0e0;
-    overflow: hidden;
-    height: 100vh;
+    overflow-y: auto;
+    height: auto;
     position: relative;
 }
 
@@ -140,36 +140,30 @@ body::before {
 
 /* Contenedor de diapositivas */
 .slides-container {
-    height: 100vh;
     position: relative;
-    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 60px;
 }
 
 /* Transición fade para las diapositivas */
 .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    padding: 80px 2rem 2rem;
-    display: flex;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: flex-start;
     justify-content: center;
+    position: relative;
+    color: #e0e0e0;
+    background: #0a0a13;
+    overflow-y: auto;
+    padding: 80px 2rem 2rem;
 }
 
 .slide.active {
-    opacity: 1;
+    display: flex;
 }
 
 .slide-content {
-    max-height: calc(100vh - 140px);
-    overflow-y: auto !important;
-    overflow-x: hidden;
     padding: 3rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -179,9 +173,10 @@ body::before {
     background: rgba(20, 20, 40, 0.85);
     backdrop-filter: blur(20px);
     border-radius: 25px;
-    box-shadow: 0 25px 60px 0 rgba(0,0,0,0.7), 0 1.5px 0 rgba(255,255,255,0.08) inset;
+    box-shadow: 0 8px 32px 0 rgba(120,119,198,0.15), 0 1.5px 0 rgba(255,255,255,0.08) inset;
     border: 1.5px solid rgba(120, 119, 198, 0.18);
     position: relative;
+    margin-bottom: 2rem;
 }
 
 /* Scrollbar personalizada para slide-content */
@@ -260,9 +255,9 @@ body::before {
 
 /* Portada específica */
 .slide-content.portada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    justify-content: flex-start;
+    flex-direction: initial;
 }
 
 .logos-header {
@@ -1371,9 +1366,9 @@ body::before {
 
 /* Diapositiva 14: Reflexión */
 .slide-content.reflection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    justify-content: flex-start;
+    flex-direction: initial;
 }
 
 .reflection-content {
@@ -1428,9 +1423,9 @@ body::before {
 
 /* Diapositiva 15: Agradecimientos */
 .slide-content.thanks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    justify-content: flex-start;
+    flex-direction: initial;
 }
 
 .thanks-list {
@@ -1495,9 +1490,9 @@ body::before {
 
 /* Diapositiva 16: Preguntas */
 .slide-content.questions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    justify-content: flex-start;
+    flex-direction: initial;
 }
 
 .questions-content {
@@ -1605,8 +1600,7 @@ body::before {
 /* Responsive */
 @media (max-width: 768px) {
     .slide-content {
-        padding: 1rem;
-        max-height: calc(100vh - 100px);
+        padding: 1.5rem 0.5rem;
     }
     
     .slide-title {
@@ -1762,7 +1756,7 @@ body::before {
 
 /* Estilo para el índice visual tipo grid */
 .index-grid {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
@@ -1870,4 +1864,9 @@ body::before {
     .method-card {
         padding: 1rem 0.5rem;
     }
+}
+
+.slide-content[aria-label*="Índice"] {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
 }

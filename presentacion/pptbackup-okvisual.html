@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE ROOMS EDUCATIVOS - Taller Completo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2D7FF9;
+            --secondary-color: #5096FF;
+            --accent-color: #FF5757;
+            --background-color: #111827;
+            --surface-color: #1F2937;
+            --card-bg: #1F2937;
+            --text-color: #F9FAFB;
+            --text-color-light: #D1D5DB;
+            --text-muted: #9CA3AF;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --success-color: #10B981;
+            --error-color: #EF4444;
+            --warning-color: #F59E0B;
+            --hover-color: rgba(45, 127, 249, 0.15);
+            --primary-color-rgb: 45, 127, 249;
+            --secondary-color-rgb: 80, 150, 255;
+            --input-bg: #374151;
+            --tag-bg: #374151;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-weight: 400;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+            color: var(--text-color);
+            background: var(--background-color);
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+        .slide.active { display: flex; }
+        .slide-content {
+            max-width: 1100px;
+            width: 90%;
+            text-align: center;
+            padding: 40px;
+            margin: auto;
+        }
+        .slide h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .slide h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: var(--text-color);
+        }
+        .slide h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+        .subtitle {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        .presenter-info {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+        /* Logo estilo Escapify exacto */
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: -0.025em;
+            transition: color 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+        .logo i {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            transition: transform 0.3s, color 0.3s;
+        }
+        .logo:hover {
+            color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+        .logo:hover i {
+            transform: rotate(10deg);
+            color: var(--secondary-color);
+        }
+        /* Botones estilo Escapify */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            background-color: var(--primary-color);
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            box-shadow: 0 2px 6px rgba(var(--primary-color-rgb), 0.2);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(var(--primary-color-rgb), 0.3);
+            background-color: var(--secondary-color);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px var(--shadow-color);
+        }
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            background-color: var(--hover-color);
+        }
+        /* Tarjetas estilo Escapify */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+        /* Navegación de slides */
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+        .nav-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            box-shadow: 0 2px 6px rgba(var(--primary-color-rgb), 0.2);
+        }
+        .nav-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(var(--primary-color-rgb), 0.3);
+        }
+        /* Slide counter */
+        .slide-counter {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: var(--surface-color);
+            color: var(--text-color);
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            z-index: 1000;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .slide-content { padding: 20px; }
+            .slide h1 { font-size: 2.2rem; }
+            .slide h2 { font-size: 1.5rem; }
+            .slide h3 { font-size: 1.1rem; }
+        }
+        @media (max-width: 600px) {
+            .slide-content { padding: 10px; }
+            .logo { top: 10px; left: 10px; font-size: 1.1rem; }
+            .logo i { font-size: 1.2rem; }
+            .slide-counter { top: 10px; right: 10px; font-size: 0.9rem; }
+        }
+        /* Grids y layouts */
+        .agenda-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .mechanics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .ciphers-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        /* Elementos específicos */
+        .agenda-item, .objective-item, .comparison-item, .pillar, .example-card, .mechanic-card, .cipher-card, .subject-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 16px;
+            color: var(--text-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+        
+        .agenda-item:hover, .objective-item:hover, .comparison-item:hover, .pillar:hover, .example-card:hover, .mechanic-card:hover, .cipher-card:hover, .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+        
+        .agenda-icon, .pillar-icon, .mechanic-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            transition: transform 0.3s, color 0.3s;
+        }
+        
+        .agenda-item:hover .agenda-icon, .pillar:hover .pillar-icon, .mechanic-card:hover .mechanic-icon {
+            transform: scale(1.2);
+            color: var(--secondary-color);
+        }
+        
+        .objective-item {
+            border-left: 5px solid var(--primary-color);
+            text-align: left;
+        }
+        
+        .check-icon {
+            color: var(--success-color);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .student-emoji {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .narrative-flow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .narrative-step {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .narrative-step:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(var(--primary-color-rgb), 0.4);
+        }
+        
+        .arrow {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .difficulty-pyramid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .pyramid-level {
+            padding: 20px 40px;
+            border-radius: 16px;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .pyramid-level:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        .level-1 { background: var(--success-color); width: 80%; }
+        .level-2 { background: var(--secondary-color); width: 70%; }
+        .level-3 { background: var(--warning-color); width: 60%; }
+        .level-4 { background: var(--error-color); width: 50%; }
+        
+        .cipher-card {
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .cipher-card:hover {
+            border-top-color: var(--secondary-color);
+        }
+        
+        .checklist {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .checklist-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px var(--shadow-color);
+        }
+        
+        .subject-card {
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .math-card { background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); }
+        .history-card { background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color) 100%); }
+        .science-card { background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-color) 100%); }
+        .language-card { background: linear-gradient(135deg, var(--success-color) 0%, var(--success-color) 100%); }
+        
+        .quote {
+            font-size: 2rem;
+            font-style: italic;
+            color: var(--primary-color);
+            margin: 40px 0;
+            position: relative;
+        }
+        
+        .quote::before,
+        .quote::after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--secondary-color);
+            position: absolute;
+        }
+        
+        .quote::before {
+            left: -40px;
+            top: -10px;
+        }
+        
+        .quote::after {
+            right: -40px;
+            bottom: -30px;
+        }
+        
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            box-shadow: 0 4px 12px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .qr-code:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px var(--shadow-color);
+        }
+        
+        .contact-info {
+            margin-top: 40px;
+            font-size: 1.3rem;
+        }
+        
+        .hashtags {
+            margin-top: 30px;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slide h1 { 
+                font-size: 2.5rem; 
+                line-height: 1.2;
+            }
+            .slide h2 { 
+                font-size: 2rem; 
+                line-height: 1.3;
+            }
+            .slide h3 { 
+                font-size: 1.5rem; 
+                line-height: 1.4;
+            }
+            .subtitle {
+                font-size: 1.4rem;
+                line-height: 1.4;
+            }
+            .slide-content { 
+                padding: 20px; 
+                width: 95%;
+            }
+            .agenda-grid,
+            .objectives-grid,
+            .pillars-grid,
+            .examples-grid,
+            .mechanics-grid,
+            .subjects-grid,
+            .ciphers-grid { 
+                grid-template-columns: 1fr; 
+                gap: 20px;
+            }
+            .comparison { 
+                grid-template-columns: 1fr; 
+                gap: 20px;
+            }
+            .narrative-flow { 
+                flex-direction: column; 
+                gap: 15px;
+            }
+            .narrative-step {
+                padding: 15px 20px;
+                font-size: 0.9rem;
+            }
+            .arrow {
+                transform: rotate(90deg);
+            }
+            .navigation { 
+                bottom: 20px; 
+                gap: 10px;
+            }
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            .slide-counter { 
+                top: 20px; 
+                right: 20px; 
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            .logo {
+                top: 20px;
+                left: 20px;
+                font-size: 1.2rem;
+            }
+            .logo i {
+                font-size: 1.4rem;
+            }
+            .presenter-info {
+                bottom: 20px;
+                right: 20px;
+                font-size: 0.9rem;
+            }
+            .agenda-item,
+            .objective-item,
+            .comparison-item,
+            .pillar,
+            .example-card,
+            .mechanic-card,
+            .cipher-card,
+            .subject-card {
+                padding: 20px;
+            }
+            .pyramid-level {
+                padding: 15px 25px;
+                font-size: 0.9rem;
+            }
+            .quote {
+                font-size: 1.5rem;
+                margin: 30px 0;
+            }
+            .quote::before,
+            .quote::after {
+                font-size: 2rem;
+            }
+            .quote::before {
+                left: -30px;
+                top: -5px;
+            }
+            .quote::after {
+                right: -30px;
+                bottom: -25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide h1 { 
+                font-size: 2rem; 
+            }
+            .slide h2 { 
+                font-size: 1.6rem; 
+            }
+            .slide h3 { 
+                font-size: 1.3rem; 
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .slide-content { 
+                padding: 15px; 
+                width: 98%;
+            }
+            .agenda-grid,
+            .objectives-grid,
+            .pillars-grid,
+            .examples-grid,
+            .mechanics-grid,
+            .subjects-grid,
+            .ciphers-grid { 
+                gap: 15px;
+            }
+            .agenda-item,
+            .objective-item,
+            .comparison-item,
+            .pillar,
+            .example-card,
+            .mechanic-card,
+            .cipher-card,
+            .subject-card {
+                padding: 15px;
+            }
+            .narrative-step {
+                padding: 12px 15px;
+                font-size: 0.8rem;
+            }
+            .navigation { 
+                bottom: 15px; 
+                gap: 8px;
+            }
+            .nav-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            .slide-counter { 
+                top: 15px; 
+                right: 15px; 
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            .logo {
+                top: 15px;
+                left: 15px;
+                font-size: 1rem;
+            }
+            .presenter-info {
+                bottom: 15px;
+                right: 15px;
+                font-size: 0.8rem;
+            }
+            .pyramid-level {
+                padding: 12px 20px;
+                font-size: 0.8rem;
+            }
+            .quote {
+                font-size: 1.3rem;
+            }
+            .qr-code {
+                width: 150px;
+                height: 150px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <a href="index.html" class="logo" aria-label="Inicio - Escapify">
+        <i class="fas fa-lock" aria-hidden="true"></i>
+        Escapify
+    </a>
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">4</span>
+    </div>
+    <!-- Slide 1: Portada -->
+    <div class="slide slide-1 active">
+        <div class="slide-content">
+            <h1>Escape Rooms Educativos</h1>
+            <div class="subtitle">Aprende a gamificar el aula con retos y narrativa</div>
+            <div class="card" style="margin: 40px auto; max-width: 500px;">
+                <h3><i class="fas fa-user-graduate"></i> Taller completo</h3>
+                <p>Descubre cómo diseñar, planificar y dinamizar Escape Rooms para el aprendizaje.</p>
+            </div>
+            <div class="presenter-info">Raquel Cuesta Barberá | CSMLB</div>
+        </div>
+    </div>
+    <!-- Slide 2: Agenda -->
+    <div class="slide slide-2">
+        <div class="slide-content">
+            <h2><i class="fas fa-calendar-alt"></i> Agenda</h2>
+            <div class="agenda-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px;">
+                <div class="agenda-item card">
+                    <div class="agenda-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>¿Qué es un Escape Room?</h3>
+                    <p>Breve introducción y ejemplos reales.</p>
+                </div>
+                <div class="agenda-item card">
+                    <div class="agenda-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Diseño de retos</h3>
+                    <p>Cómo crear pruebas y acertijos motivadores.</p>
+                </div>
+                <div class="agenda-item card">
+                    <div class="agenda-icon"><i class="fas fa-feather-alt"></i></div>
+                    <h3>Narrativa y ambientación</h3>
+                    <p>El poder de la historia y la inmersión.</p>
+                </div>
+                <div class="agenda-item card">
+                    <div class="agenda-icon"><i class="fas fa-users"></i></div>
+                    <h3>Dinámica y roles</h3>
+                    <p>Cómo guiar y motivar a los equipos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 3: Objetivos -->
+    <div class="slide slide-3">
+        <div class="slide-content">
+            <h2><i class="fas fa-bullseye"></i> Objetivos del taller</h2>
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <ul style="text-align: left; font-size: 1.2rem;">
+                    <li>Comprender el potencial didáctico de los Escape Rooms.</li>
+                    <li>Aprender a diseñar retos y pruebas adaptadas a tu materia.</li>
+                    <li>Conocer herramientas y recursos para gamificar el aula.</li>
+                    <li>Vivir la experiencia desde el rol de jugador y de game master.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 4: ¡Gracias! -->
+    <div class="slide slide-4">
+        <div class="slide-content">
+            <h1>¡Gracias por participar!</h1>
+            <div class="subtitle">¿Listo para gamificar tu próxima clase?</div>
+            <a href="index.html" class="btn"><i class="fas fa-home"></i> Volver a la web</a>
+        </div>
+    </div>
+    
+    <!-- INICIO SLIDES NUEVAS -->
+    <!-- Slide 5: ¿Qué es un escape room educativo? -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>¿Qué es un Escape Room Educativo?</h2>
+            <div class="comparison">
+                <div class="comparison-item boring-class">
+                    <div class="student-emoji">😴😑😤</div>
+                    <h3>Clase Tradicional</h3>
+                    <ul style="text-align: left;">
+                        <li>Estudiantes pasivos</li>
+                        <li>Aprendizaje individual</li>
+                        <li>Motivación externa</li>
+                        <li>Contenido descontextualizado</li>
+                    </ul>
+                </div>
+                <div class="comparison-item fun-class">
+                    <div class="student-emoji">🤩🔥💪</div>
+                    <h3>Con Escape Room</h3>
+                    <ul style="text-align: left;">
+                        <li>Estudiantes protagonistas</li>
+                        <li>Colaboración obligatoria</li>
+                        <li>Motivación intrínseca</li>
+                        <li>Aprendizaje contextualizado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quote">
+                No es magia, es pedagogía gamificada
+            </div>
+        </div>
+    </div>
+    <!-- Slide 6: Mini-escape introductorio -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🔐 Mini-Escape de Bienvenida</h2>
+            <div style="font-size: 4rem; margin: 40px 0;">📦🗝️</div>
+            <div style="background: var(--hover-color); padding: 40px; border-radius: 15px; margin: 40px 0;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">El Aula del Profesor Sabiondo</h3>
+                <p style="font-size: 1.3rem; line-height: 1.6;">
+                    <em>"Sois un equipo de profesores investigadores que habéis descubierto un aula abandonada del siglo pasado. 
+                    Según las leyendas, el último profesor que dio clase aquí escondió el secreto de la enseñanza perfecta 
+                    antes de jubilarse. Tenéis 20 minutos para encontrarlo antes de que llegue la limpieza."</em>
+                </p>
+            </div>
+            <div style="font-size: 1.5rem; color: var(--primary-color); font-weight: 600;">
+                ¿Estáis listos para vuestra primera misión?
+            </div>
+        </div>
+    </div>
+    <!-- Slide 7: Elementos pedagógicos clave -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🧠 Los 4 Pilares Pedagógicos</h2>
+            <div class="pillars-grid">
+                <div class="pillar">
+                    <div class="pillar-icon">🤝</div>
+                    <h3>COLABORACIÓN</h3>
+                    <p>Interdependencia positiva real. Todos deben participar porque la información está distribuida.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🎯</div>
+                    <h3>MOTIVACIÓN</h3>
+                    <p>Motivación intrínseca. El juego genera engagement natural sin necesidad de notas.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🌍</div>
+                    <h3>CONTEXTO</h3>
+                    <p>Aprendizaje contextualizado. Los contenidos están integrados en situaciones reales.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🧠</div>
+                    <h3>COMPETENCIAS</h3>
+                    <p>Desarrollo integral. Comunicación, creatividad, pensamiento crítico simultáneamente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 8: Estructura narrativa eficaz -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>📖 Estructura Narrativa Eficaz</h2>
+            <div class="narrative-flow">
+                <div class="narrative-step">CONTEXTO<br><small>¿Qué ha ocurrido?</small></div>
+                <div class="arrow">→</div>
+                <div class="narrative-step">MISIÓN<br><small>¿Qué deben conseguir?</small></div>
+                <div class="arrow">→</div>
+                <div class="narrative-step">PERSONAJES<br><small>¿Quiénes son?</small></div>
+                <div class="arrow">→</div>
+                <div class="narrative-step">AMBIENTACIÓN<br><small>¿Dónde y cuándo?</small></div>
+            </div>
+            <div style="background: var(--card-bg); padding: 40px; border-radius: 16px; margin: 40px 0; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-bullseye"></i> Regla de Oro</h3>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: var(--text-color);">
+                    En los primeros <strong>30 segundos</strong>, tus estudiantes deciden si se involucran o desconectan. 
+                    <em>Necesitas un gancho emocional irresistible.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 9: Ejemplos de narrativas -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🎭 Ejemplos de Narrativas</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🔬</div>
+                    <h3>Científico Loco</h3>
+                    <p><em>"El Dr. X ha desaparecido dejando sus experimentos a punto de explotar. Tenéis 45 minutos para encontrar la fórmula antídoto."</em></p>
+                    <div style="margin-top: 15px; font-weight: 600; color: var(--primary-color);">
+                        📐 Matemáticas | 🔬 Ciencias
+                    </div>
+                </div>
+                <div class="example-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">⚔️</div>
+                    <h3>Viaje en el Tiempo</h3>
+                    <p><em>"La máquina del tiempo se ha averiado. Para regresar al presente, debéis resolver los misterios de esta época."</em></p>
+                    <div style="margin-top: 15px; font-weight: 600; color: var(--primary-color);">
+                        📜 Historia | ✍️ Literatura
+                    </div>
+                </div>
+                <div class="example-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🕵️</div>
+                    <h3>Misterio Detectivesco</h3>
+                    <p><em>"Un valioso objeto ha desaparecido. Como detectives, debéis seguir las pistas y resolver el caso."</em></p>
+                    <div style="margin-top: 15px; font-weight: 600; color: var(--primary-color);">
+                        ✍️ Lengua | 📜 Historia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 10: Taller de narrativa -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>✍️ Taller de Narrativa</h2>
+            <div style="font-size: 4rem; margin: 30px 0;">👥📝</div>
+            <div style="background: var(--card-bg); padding: 40px; border-radius: 16px; margin: 40px 0; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-graduation-cap"></i> Tu Turno: Crea una Narrativa</h3>
+                <div style="border: 2px dashed var(--primary-color); padding: 30px; border-radius: 16px; background: var(--background-color);">
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color);"><strong>Título de tu narrativa:</strong></p>
+                    <div style="border-bottom: 1px solid var(--border-color); margin-bottom: 20px; height: 40px;"></div>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color);"><strong>Contexto inicial (30 palabras):</strong></p>
+                    <div style="border-bottom: 1px solid var(--border-color); margin-bottom: 20px; height: 60px;"></div>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color);"><strong>Misión clara:</strong></p>
+                    <div style="border-bottom: 1px solid var(--border-color); height: 40px;"></div>
+                </div>
+            </div>
+            <div style="font-size: 1.3rem; color: var(--primary-color); font-weight: 600;">
+                <i class="fas fa-clock"></i> Tiempo: 35 minutos | <i class="fas fa-users"></i> En equipos por asignatura
+            </div>
+        </div>
+    </div>
+    <!-- Slide 11: Tipos de mecánicas educativas -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>⚙️ Mecánicas Educativas Efectivas</h2>
+            <div class="mechanics-grid">
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🔍</div>
+                    <h4>OBSERVACIÓN</h4>
+                    <p>Encontrar pistas ocultas, detalles importantes</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🧮</div>
+                    <h4>RESOLUCIÓN</h4>
+                    <p>Aplicar conocimientos específicos de la materia</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🤝</div>
+                    <h4>COOPERACIÓN</h4>
+                    <p>Información distribuida, trabajo obligatorio</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🎨</div>
+                    <h4>CREATIVIDAD</h4>
+                    <p>Interpretación, creación, pensamiento lateral</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🧩</div>
+                    <h4>MANIPULACIÓN</h4>
+                    <p>Tangrams, puzzles, construcción física</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">💻</div>
+                    <h4>TECNOLOGÍA</h4>
+                    <p>QR codes, calculadoras, apps educativas</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🎲</div>
+                    <h4>LÓGICA</h4>
+                    <p>Silogismos, razonamiento deductivo</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🔗</div>
+                    <h4>CONEXIONES</h4>
+                    <p>Relacionar conceptos diversos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 12: Diseño de desafíos -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🏗️ Diseño de Desafíos</h2>
+            <div style="background: var(--card-bg); padding: 40px; border-radius: 16px; margin: 40px 0; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div style="background: var(--primary-color); color: white; padding: 25px; border-radius: 16px; text-align: center;">
+                        <h4>CONTENIDO</h4>
+                        <p>¿Qué aprenderán?</p>
+                        <div style="margin-top: 15px;">📚</div>
+                    </div>
+                    <div style="background: var(--secondary-color); color: white; padding: 25px; border-radius: 16px; text-align: center;">
+                        <h4>CIFRADO</h4>
+                        <p>¿Cómo lo ocultarás?</p>
+                        <div style="margin-top: 15px;">🔐</div>
+                    </div>
+                    <div style="background: var(--accent-color); color: white; padding: 25px; border-radius: 16px; text-align: center;">
+                        <h4>SOLUCIÓN</h4>
+                        <p>¿Cuál es la respuesta?</p>
+                        <div style="margin-top: 15px;">💡</div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: var(--card-bg); border: 2px solid var(--primary-color); border-radius: 16px; padding: 30px; box-shadow: 0 4px 12px var(--shadow-color);">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-bullseye"></i> Plantilla de Desafío</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 1.1rem;">
+                    <div><strong>Mecánica elegida:</strong> _______________</div>
+                    <div><strong>Tiempo estimado:</strong> _______________</div>
+                    <div><strong>Contenido curricular:</strong> _______________</div>
+                    <div><strong>Materiales:</strong> _______________</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 13: Cifrados por niveles -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🔐 Cifrados por Niveles de Dificultad</h2>
+            <div class="difficulty-pyramid">
+                <div class="pyramid-level level-4">
+                    <strong>NIVEL 4 - EXPERTO (17+ años)</strong><br>
+                    Cifrados anidados, referencias complejas, algoritmos
+                </div>
+                <div class="pyramid-level level-3">
+                    <strong>NIVEL 3 - AVANZADO (14-16 años)</strong><br>
+                    Pigpen, cifrados temáticos, combinaciones múltiples
+                </div>
+                <div class="pyramid-level level-2">
+                    <strong>NIVEL 2 - INTERMEDIO (10-13 años)</strong><br>
+                    César, coordenadas simples, Morse básico
+                </div>
+                <div class="pyramid-level level-1">
+                    <strong>NIVEL 1 - BÁSICO (6-9 años)</strong><br>
+                    Espejo simple, números básicos, formas y colores
+                </div>
+            </div>
+            <div style="margin-top: 40px; background: var(--card-bg); padding: 25px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                <h3 style="color: var(--primary-color);"><i class="fas fa-chart-line"></i> Principio de Progresión Gradual</h3>
+                <p style="font-size: 1.2rem; color: var(--text-color);">Empezar siempre fácil para generar confianza, luego aumentar complejidad gradualmente</p>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 14: Colección de cifrados -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>📚 Colección de Cifrados</h2>
+            <div class="ciphers-grid">
+                <div class="cipher-card">
+                    <h4>CÉSAR</h4>
+                    <p>A→D, B→E, C→F</p>
+                    <small>Desplazamiento +3</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>ESPEJO</h4>
+                    <p>HOLA → ALOH</p>
+                    <small>Escritura inversa</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>NUMÉRICO</h4>
+                    <p>A=1, B=2, C=3</p>
+                    <small>Posición alfabética</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>MORSE</h4>
+                    <p>SOS: ··· ─── ···</p>
+                    <small>Puntos y rayas</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>PIGPEN</h4>
+                    <p>┌─ ┼ ╱</p>
+                    <small>Símbolos geométricos</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>COORDENADAS</h4>
+                    <p>(A2)(B3)(C1)</p>
+                    <small>Cuadrícula de letras</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>COLORES</h4>
+                    <p>🔴=A, 🔵=E, 🟡=I</p>
+                    <small>Código cromático</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>FORMAS</h4>
+                    <p>●=A, ■=B, ▲=C</p>
+                    <small>Símbolos visuales</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>BACON</h4>
+                    <p>A=AAAAA</p>
+                    <small>Binario A/B</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>BOOK</h4>
+                    <p>15-3-7</p>
+                    <small>Página-línea-palabra</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>MUSICAL</h4>
+                    <p>A=Do, B=Re, C=Mi</p>
+                    <small>Notas musicales</small>
+                </div>
+                <div class="cipher-card">
+                    <h4>MATEMÁTICO</h4>
+                    <p>A=1², B=1+1</p>
+                    <small>Operaciones</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 15: Actividades por cifrado -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🎯 Ejemplos de Aplicación</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px;">
+                <div style="background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-calculator"></i> Matemáticas</h3>
+                    <div style="background: var(--background-color); padding: 20px; border-radius: 16px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                        <strong>César +4:</strong> "HQQGWZPXQ IP GQIZEMPQ"<br>
+                        <small style="color: var(--text-muted);">Solución: "ENCUENTRA LA SOLUCIÓN"</small>
+                    </div>
+                    <div style="background: var(--background-color); padding: 20px; border-radius: 16px; border: 1px solid var(--border-color);">
+                        <strong>Coordenadas:</strong> (A2)(D3)(E5)<br>
+                        <small style="color: var(--text-muted);">En cuadrícula matemática = +÷√</small>
+                    </div>
+                </div>
+                <div style="background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                    <h3 style="color: var(--accent-color); margin-bottom: 20px;"><i class="fas fa-landmark"></i> Historia</h3>
+                    <div style="background: var(--background-color); padding: 20px; border-radius: 16px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                        <strong>Espejo:</strong> "DADIRUTNIGA AL NE"<br>
+                        <small style="color: var(--text-muted);">Solución: "EN LA ANTIGÜEDAD"</small>
+                    </div>
+                    <div style="background: var(--background-color); padding: 20px; border-radius: 16px; border: 1px solid var(--border-color);">
+                        <strong>Pigpen:</strong> [símbolos] → "IMPERIO"<br>
+                        <small style="color: var(--text-muted);">Usando alfabeto romano</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 16: Tarjetas de cifrado -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🃏 Tarjetas de Referencia</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px;">
+                <div style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white; padding: 30px; border-radius: 15px;">
+                    <h3>CIFRADO | APLICACIÓN</h3>
+                    <hr style="margin: 20px 0; border: 1px solid rgba(255,255,255,0.3);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.95rem;">
+                        <div><strong>César</strong></div><div>Mensajes históricos</div>
+                        <div><strong>Morse</strong></div><div>Comunicaciones</div>
+                        <div><strong>Numérico</strong></div><div>Operaciones mates</div>
+                        <div><strong>Coordenadas</strong></div><div>Geografía/planos</div>
+                        <div><strong>Colores</strong></div><div>Arte/ciencias</div>
+                        <div><strong>Musical</strong></div><div>Educación musical</div>
+                    </div>
+                </div>
+                <div style="background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color) 100%); color: white; padding: 30px; border-radius: 15px;">
+                    <h3>NIVEL | RECOMENDACIÓN</h3>
+                    <hr style="margin: 20px 0; border: 1px solid rgba(255,255,255,0.3);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.95rem;">
+                        <div><strong>6-9 años</strong></div><div>Espejo, colores</div>
+                        <div><strong>10-13 años</strong></div><div>César, coordenadas</div>
+                        <div><strong>14-16 años</strong></div><div>Pigpen, temáticos</div>
+                        <div><strong>17+ años</strong></div><div>Combinaciones</div>
+                        <div><strong>Adultos</strong></div><div>Sin limitaciones</div>
+                        <div><strong>NEE</strong></div><div>Adaptación visual</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 17: Construcción del escape completo -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🏗️ Construcción del Escape Completo</h2>
+            <div style="background: var(--hover-color); padding: 40px; border-radius: 15px; margin: 40px 0;">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                    <div style="background: var(--primary-color); color: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📖</div>
+                        <h4>NARRATIVA</h4>
+                        <p>Historia que engancha</p>
+                    </div>
+                    <div style="background: var(--secondary-color); color: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🎯</div>
+                        <h4>DESAFÍOS</h4>
+                        <p>4-6 retos diferentes</p>
+                    </div>
+                    <div style="background: var(--accent-color); color: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🔐</div>
+                        <h4>CIFRADOS</h4>
+                        <p>Códigos y misterios</p>
+                    </div>
+                    <div style="background: var(--success-color); color: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📊</div>
+                        <h4>EVALUACIÓN</h4>
+                        <p>Reflexión y aprendizaje</p>
+                    </div>
+                </div>
+            </div>
+            <div style="font-size: 4rem; margin: 30px 0;">📦</div>
+            <div style="font-size: 1.5rem; color: var(--primary-color); font-weight: 600;">
+                ⏰ Tiempo total: 75 minutos para crear un escape room completo
+            </div>
+        </div>
+    </div>
+    <!-- Slide 18: Checklist final -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>✅ Checklist Final</h2>
+            <div class="checklist">
+                <h3 style="color: var(--primary-color); margin-bottom: 25px;">🔧 Aspectos Técnicos</h3>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿Todos los candados tienen el código correcto?
+                </div>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿Las pistas están numeradas y organizadas?
+                </div>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿Las instrucciones iniciales son claras?
+                </div>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿Habéis probado la secuencia completa?
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 30px 0 25px 0;">🎓 Aspectos Pedagógicos</h3>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿Los objetivos curriculares están claros?
+                </div>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿El nivel es apropiado para la edad?
+                </div>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿Tenéis pistas de ayuda preparadas?
+                </div>
+                <div class="checklist-item">
+                    <span style="margin-right: 15px; font-size: 1.2rem;">☐</span>
+                    ¿La evaluación está planificada?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 19: Casos de éxito -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🏆 Casos de Éxito</h2>
+            <div class="success-cases">
+                <div class="success-case">
+                    <div class="case-header">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">📚</div>
+                        <h3>IES La Senda (Valencia)</h3>
+                        <div style="color: var(--primary-color); font-weight: 600;">Matemáticas 2º ESO</div>
+                    </div>
+                    <div class="case-content">
+                        <p><strong>Escape:</strong> "El Laboratorio del Dr. Matemático"</p>
+                        <p><strong>Resultado:</strong> 95% de participación activa, mejora del 40% en resolución de ecuaciones</p>
+                        <p><strong>Feedback:</strong> "Los estudiantes pidieron repetir la actividad"</p>
+                    </div>
+                </div>
+                <div class="success-case">
+                    <div class="case-header">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🌍</div>
+                        <h3>Colegio San José (Madrid)</h3>
+                        <div style="color: var(--accent-color); font-weight: 600;">Historia 4º Primaria</div>
+                    </div>
+                    <div class="case-content">
+                        <p><strong>Escape:</strong> "El Tesoro de los Romanos"</p>
+                        <p><strong>Resultado:</strong> 100% de retención de conceptos históricos</p>
+                        <p><strong>Feedback:</strong> "Los niños no querían que terminara la clase"</p>
+                    </div>
+                </div>
+                <div class="success-case">
+                    <div class="case-header">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🔬</div>
+                        <h3>IES Miguel Hernández (Alicante)</h3>
+                        <div style="color: var(--secondary-color); font-weight: 600;">Ciencias 1º Bachillerato</div>
+                    </div>
+                    <div class="case-content">
+                        <p><strong>Escape:</strong> "La Mutación del Virus"</p>
+                        <p><strong>Resultado:</strong> Incremento del 60% en interés por la investigación científica</p>
+                        <p><strong>Feedback:</strong> "Mejor comprensión de conceptos complejos"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 20: Herramientas digitales -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>💻 Herramientas Digitales</h2>
+            <div class="digital-tools">
+                <div class="tool-category">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-mobile-alt"></i> Apps Móviles</h3>
+                    <div class="tool-grid">
+                        <div class="tool-item">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">📱</div>
+                            <h4>QR Code Reader</h4>
+                            <p>Escaneo de códigos QR</p>
+                        </div>
+                        <div class="tool-item">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🎵</div>
+                            <h4>Shazam</h4>
+                            <p>Identificación musical</p>
+                        </div>
+                        <div class="tool-item">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🧭</div>
+                            <h4>Brujula</h4>
+                            <p>Orientación y geolocalización</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-category">
+                    <h3 style="color: var(--accent-color); margin-bottom: 20px;"><i class="fas fa-laptop"></i> Software</h3>
+                    <div class="tool-grid">
+                        <div class="tool-item">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🎨</div>
+                            <h4>Canva</h4>
+                            <p>Diseño de materiales</p>
+                        </div>
+                        <div class="tool-item">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🔐</div>
+                            <h4>QR Code Generator</h4>
+                            <p>Creación de códigos QR</p>
+                        </div>
+                        <div class="tool-item">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">📊</div>
+                            <h4>Google Forms</h4>
+                            <p>Evaluación y feedback</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 21: Adaptación para NEE -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>♿ Adaptación para Necesidades Especiales</h2>
+            <div class="nee-adaptations">
+                <div class="adaptation-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">👁️</div>
+                    <h3>Discapacidad Visual</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Pistas táctiles y sonoras</li>
+                        <li>Textos en braille</li>
+                        <li>Descripciones verbales detalladas</li>
+                        <li>Contraste alto en materiales</li>
+                    </ul>
+                </div>
+                <div class="adaptation-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">👂</div>
+                    <h3>Discapacidad Auditiva</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Pistas visuales predominantes</li>
+                        <li>Subtítulos en videos</li>
+                        <li>Comunicación escrita clara</li>
+                        <li>Intérprete de lengua de signos</li>
+                    </ul>
+                </div>
+                <div class="adaptation-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🧠</div>
+                    <h3>Dificultades Cognitivas</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Instrucciones simplificadas</li>
+                        <li>Pistas visuales claras</li>
+                        <li>Tiempo extra para resolución</li>
+                        <li>Apoyo individualizado</li>
+                    </ul>
+                </div>
+                <div class="adaptation-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🦽</div>
+                    <h3>Discapacidad Motora</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Materiales adaptados</li>
+                        <li>Espacios accesibles</li>
+                        <li>Pistas digitales</li>
+                        <li>Asistencia física cuando sea necesario</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 22: Evaluación y seguimiento -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>📊 Evaluación y Seguimiento</h2>
+            <div class="evaluation-methods">
+                <div class="evaluation-card">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-chart-line"></i> Evaluación Cuantitativa</h3>
+                    <div class="metric-grid">
+                        <div class="metric">
+                            <div style="font-size: 2.5rem; color: var(--primary-color);">⏱️</div>
+                            <h4>Tiempo de Resolución</h4>
+                            <p>Eficiencia en la resolución de retos</p>
+                        </div>
+                        <div class="metric">
+                            <div style="font-size: 2.5rem; color: var(--accent-color);">🎯</div>
+                            <h4>Precisión</h4>
+                            <p>Porcentaje de respuestas correctas</p>
+                        </div>
+                        <div class="metric">
+                            <div style="font-size: 2.5rem; color: var(--secondary-color);">🤝</div>
+                            <h4>Colaboración</h4>
+                            <p>Participación activa en equipo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluation-card">
+                    <h3 style="color: var(--accent-color); margin-bottom: 20px;"><i class="fas fa-comments"></i> Evaluación Cualitativa</h3>
+                    <div class="feedback-grid">
+                        <div class="feedback-item">
+                            <h4>Reflexión Individual</h4>
+                            <p>Diario de aprendizaje personal</p>
+                        </div>
+                        <div class="feedback-item">
+                            <h4>Debate Grupal</h4>
+                            <p>Discusión sobre estrategias utilizadas</p>
+                        </div>
+                        <div class="feedback-item">
+                            <h4>Portfolio</h4>
+                            <p>Recopilación de evidencias de aprendizaje</p>
+                        </div>
+                        <div class="feedback-item">
+                            <h4>Autoevaluación</h4>
+                            <p>Rúbricas de autoevaluación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 23: Recursos adicionales -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>📚 Recursos Adicionales</h2>
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-book"></i> Bibliografía</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>"Escape Rooms in Education" - Nicholson</li>
+                        <li>"Gamificación en el Aula" - Marczewski</li>
+                        <li>"Aprendizaje Basado en Juegos" - Kapp</li>
+                        <li>"Neuroeducación" - Mora</li>
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3 style="color: var(--accent-color); margin-bottom: 20px;"><i class="fas fa-globe"></i> Webs de Referencia</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>escapify.com - Plataforma principal</li>
+                        <li>breakoutedu.com - Recursos educativos</li>
+                        <li>genial.ly - Herramientas interactivas</li>
+                        <li>kahoot.com - Evaluación gamificada</li>
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 20px;"><i class="fas fa-users"></i> Comunidades</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Facebook: "Escape Rooms Educativos"</li>
+                        <li>Twitter: #EscapeRoomEdu</li>
+                        <li>LinkedIn: "Gamificación Educativa"</li>
+                        <li>Telegram: "EduEscape"</li>
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3 style="color: var(--success-color); margin-bottom: 20px;"><i class="fas fa-tools"></i> Herramientas</h3>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Canva - Diseño gráfico</li>
+                        <li>Genially - Interactividad</li>
+                        <li>Mentimeter - Encuestas en vivo</li>
+                        <li>Padlet - Colaboración digital</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 24: Preguntas frecuentes -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>❓ Preguntas Frecuentes</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">¿Cuánto tiempo se tarda en crear un escape room?</h3>
+                    <p>Para un escape room básico: 2-3 horas de diseño + 1 hora de preparación de materiales. Para uno avanzado: 4-6 horas totales.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--accent-color); margin-bottom: 15px;">¿Qué materiales necesito?</h3>
+                    <p>Mínimo: candados, cajas, papelería, impresora. Recomendado: candados de combinación, cajas con cerraduras, materiales temáticos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 15px;">¿Cómo adapto el nivel de dificultad?</h3>
+                    <p>Usa la pirámide de dificultad: empieza con cifrados simples y aumenta gradualmente. Considera la edad y conocimientos previos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--success-color); margin-bottom: 15px;">¿Qué hago si los estudiantes se bloquean?</h3>
+                    <p>Ten pistas de ayuda preparadas (3 niveles: pista sutil, pista clara, solución directa). Observa y ofrece ayuda cuando sea necesario.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--warning-color); margin-bottom: 15px;">¿Cómo evalúo el aprendizaje?</h3>
+                    <p>Combina evaluación cuantitativa (tiempo, precisión) con cualitativa (reflexión, colaboración, portfolio de evidencias).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 25: Próximos pasos -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>🚀 Próximos Pasos</h2>
+            <div class="next-steps">
+                <div class="step-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">📝</div>
+                    <h3>Paso 1: Diseña tu Primer Escape</h3>
+                    <p>Usa las plantillas y herramientas que hemos visto. Empieza con algo simple y ve aumentando la complejidad.</p>
+                </div>
+                <div class="step-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🧪</div>
+                    <h3>Paso 2: Prueba y Refina</h3>
+                    <p>Testea con un grupo pequeño primero. Ajusta dificultad, tiempo y pistas según los resultados.</p>
+                </div>
+                <div class="step-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">📚</div>
+                    <h3>Paso 3: Documenta y Comparte</h3>
+                    <p>Crea un portfolio de tus escapes. Comparte con otros docentes y aprende de sus experiencias.</p>
+                </div>
+                <div class="step-card">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🌟</div>
+                    <h3>Paso 4: Evoluciona</h3>
+                    <p>Experimenta con nuevas mecánicas, tecnologías y narrativas. Mantente actualizado con las tendencias educativas.</p>
+                </div>
+            </div>
+            <div style="margin-top: 40px; background: var(--card-bg); padding: 30px; border-radius: 16px; border: 2px solid var(--primary-color); box-shadow: 0 4px 12px var(--shadow-color);">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 20px;"><i class="fas fa-rocket"></i> ¡Tu Aventura Comienza Ahora!</h3>
+                <p style="text-align: center; font-size: 1.2rem; color: var(--text-color);">Tienes todas las herramientas necesarias para transformar tu aula en un espacio de aprendizaje mágico y memorable.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 26: Contacto y redes -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>📞 Contacto y Redes Sociales</h2>
+            <div class="contact-info">
+                <div style="background: var(--card-bg); padding: 40px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px var(--shadow-color); margin-bottom: 30px;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 25px; text-align: center;"><i class="fas fa-user"></i> Raquel Cuesta Barberá</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; text-align: center;">
+                        <div>
+                            <div style="font-size: 2rem; margin-bottom: 10px;">📧</div>
+                            <h4>Email</h4>
+                            <p>raquel@escapify.com</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; margin-bottom: 10px;">📱</div>
+                            <h4>WhatsApp</h4>
+                            <p>+34 600 000 000</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <div style="background: var(--primary-color); color: white; padding: 25px; border-radius: 16px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📘</div>
+                        <h4>Facebook</h4>
+                        <p>@EscapifyEdu</p>
+                    </div>
+                    <div style="background: var(--accent-color); color: white; padding: 25px; border-radius: 16px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🐦</div>
+                        <h4>Twitter</h4>
+                        <p>@EscapifyEdu</p>
+                    </div>
+                    <div style="background: var(--secondary-color); color: white; padding: 25px; border-radius: 16px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📷</div>
+                        <h4>Instagram</h4>
+                        <p>@EscapifyEdu</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 40px; text-align: center;">
+                <div style="font-size: 4rem; margin-bottom: 20px;">🎉</div>
+                <h3 style="color: var(--primary-color);">¡Gracias por ser parte de esta revolución educativa!</h3>
+                <p style="font-size: 1.2rem; color: var(--text-color); margin-top: 15px;">Juntos haremos que el aprendizaje sea una aventura inolvidable.</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SLIDES NUEVAS -->
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+        <button class="nav-btn" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        document.getElementById('total-slides').textContent = totalSlides;
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+        function nextSlide() { showSlide(currentSlide + 1); }
+        function previousSlide() { showSlide(currentSlide - 1); }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') previousSlide();
+        });
+    </script>
+</body>
+</html> 

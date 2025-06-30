@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Rooms educativos - Escapify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style-ppt.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="logo">
+            <i class="fas fa-lock"></i>
+        Escapify
+    </a>
+    <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">26</span>
+    </div>
+    </header>
+
+    <!-- Slide 1: Portada -->
+    <div class="slide active" id="slide-1">
+        <div class="slide-content">
+            <h1>Escape Rooms educativos</h1>
+            <div class="subtitle">Transformando el aprendizaje a través del juego.</div>
+            <div class="agenda-card" style="max-width: 500px; margin: 40px auto 0 auto;">
+                <i class="fas fa-user-graduate agenda-icon"></i>
+                <h3>Taller</h3>
+                <p>Una experiencia innovadora e inmersiva para el desarrollo de competencias.</p>
+            </div>
+            <div class="presenter-info">Raquel Cuesta Barberá | CSMLB</div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Agenda -->
+    <div class="slide" id="slide-2">
+        <div class="slide-content">
+            <h2>
+                <svg class="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                Agenda
+            </h2>
+            <div class="card-grid agenda-grid">
+                <a href="#" class="agenda-card active">
+                    <i class="fa-solid fa-lightbulb agenda-icon"></i>
+                    <h3>¿Qué son los Escape Rooms educativos?</h3>
+                    <p>Fundamentos, características y ejemplos.</p>
+                </a>
+                <a href="beneficios.html" class="agenda-card">
+                    <i class="fa-solid fa-globe agenda-icon"></i>
+                    <h3>Beneficios educativos</h3>
+                    <p>Impacto en el desarrollo cognitivo, social y emocional.</p>
+                </a>
+                <a href="competencias.html" class="agenda-card">
+                    <i class="fa-solid fa-users agenda-icon"></i>
+                    <h3>Competencias desarrolladas</h3>
+                    <p>Fomento del pensamiento crítico, colaboración y creatividad.</p>
+                </a>
+                <a href="implementacion.html" class="agenda-card">
+                    <i class="fa-solid fa-gear agenda-icon"></i>
+                    <h3>Implementación práctica</h3>
+                    <p>Pasos para diseñar y ejecutar una experiencia en el aula.</p>
+                </a>
+                <a href="casos-de-exito.html" class="agenda-card">
+                    <i class="fa-solid fa-arrow-turn-up agenda-icon" style="transform: rotate(-90deg);"></i>
+                    <h3>Casos de éxito</h3>
+                    <p>Ejemplos reales de aplicación en diferentes niveles educativos.</p>
+                </a>
+                <a href="herramientas.html" class="agenda-card">
+                    <i class="fa-solid fa-wrench agenda-icon"></i>
+                    <h3>Herramientas y recursos</h3>
+                    <p>Selección de herramientas digitales y materiales físicos.</p>
+                </a>
+                </div>
+        </div>
+    </div>
+    
+    <!-- Slide 2.1: Mini-Escape de Bienvenida -->
+    <div class="slide" id="slide-mini-escape">
+        <div class="slide-content">
+            <h2><i class="fas fa-door-open"></i> Mini-escape de bienvenida</h2>
+            <div style="font-size: 4rem; margin: 40px 0;">
+                <i class="fas fa-box-open" style="margin-right: 20px;"></i>
+                <i class="fas fa-key"></i>
+            </div>
+            <div class="agenda-card" style="background: var(--hover-color); padding: 40px; border-radius: 15px; margin: 40px 0; max-width: 700px; margin-left:auto; margin-right:auto;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">El Aula del Profesor Sabiondo</h3>
+                <p style="font-size: 1.3rem; line-height: 1.6;">
+                    <em>"Sois un equipo de profesores investigadores que habéis descubierto un aula abandonada del siglo pasado. Según las leyendas, el último profesor que dio clase aquí escondió el secreto de la enseñanza perfecta antes de jubilarse. Tenéis 20 minutos para encontrarlo antes de que llegue la limpieza."</em>
+                </p>
+            </div>
+            <div style="font-size: 1.5rem; color: var(--primary-color); font-weight: 600;">
+                ¿Estáis listos para vuestra primera misión?
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.2: Los 4 Pilares Pedagógicos -->
+    <div class="slide" id="slide-pilares-pedagogicos">
+        <div class="slide-content">
+            <h2><i class="fas fa-lightbulb"></i> Los 4 Pilares Pedagógicos</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-handshake"></i></div>
+                    <h3>COLABORACIÓN</h3>
+                    <p>Interdependencia positiva real. Todos deben participar porque la información está distribuida.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-bullseye"></i></div>
+                    <h3>MOTIVACIÓN</h3>
+                    <p>Motivación intrínseca. El juego genera engagement natural sin necesidad de notas.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-globe-americas"></i></div>
+                    <h3>CONTEXTO</h3>
+                    <p>Aprendizaje contextualizado. Los contenidos están integrados en situaciones reales.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-brain"></i></div>
+                    <h3>COMPETENCIAS</h3>
+                    <p>Desarrollo integral. Comunicación, creatividad, pensamiento crítico simultáneamente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.3: Estructura Narrativa Eficaz -->
+    <div class="slide" id="slide-estructura-narrativa">
+        <div class="slide-content">
+            <h2><i class="fas fa-book-open"></i> Estructura Narrativa Eficaz</h2>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 40px; flex-wrap: nowrap;">
+                <div class="agenda-card" style="min-width:180px;">
+                    <h3>Contexto</h3>
+                    <p>¿Qué ha ocurrido?</p>
+                </div>
+                <span style="font-size:2rem; color:var(--primary-color);">→</span>
+                <div class="agenda-card" style="min-width:180px;">
+                    <h3>Misión</h3>
+                    <p>¿Qué deben conseguir?</p>
+                </div>
+                <span style="font-size:2rem; color:var(--primary-color);">→</span>
+                <div class="agenda-card" style="min-width:180px;">
+                    <h3>Personajes</h3>
+                    <p>¿Quiénes son?</p>
+                </div>
+                <span style="font-size:2rem; color:var(--primary-color);">→</span>
+                <div class="agenda-card" style="min-width:180px;">
+                    <h3>Ambientación</h3>
+                    <p>¿Dónde y cuándo?</p>
+                </div>
+            </div>
+            <div class="agenda-card" style="background: var(--card-bg); padding: 40px; border-radius: 16px; margin: 40px 0; border: 1px solid var(--border-color); max-width: 700px; margin-left:auto; margin-right:auto;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-bullseye"></i> Regla de Oro</h3>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: var(--text-color);">
+                    En los primeros <strong>30 segundos</strong>, tus estudiantes deciden si se involucran o desconectan. <em>Necesitas un gancho emocional irresistible.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.4: Ejemplos de Narrativas -->
+    <div class="slide" id="slide-ejemplos-narrativas">
+        <div class="slide-content">
+            <h2><i class="fas fa-theater-masks"></i> Ejemplos de Narrativas</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-microscope"></i></div>
+                    <h3>Científico Loco</h3>
+                    <p><em>"El Dr. X ha desaparecido dejando sus experimentos a punto de explotar. Tenéis 45 minutos para encontrar la fórmula antídoto."</em></p>
+                    <div style="margin-top: 15px; font-weight: 600; color: var(--primary-color);"><i class="fas fa-ruler-combined"></i> Matemáticas | <i class="fas fa-flask"></i> Ciencias</div>
+                    </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-khanda"></i></div>
+                    <h3>Viaje en el Tiempo</h3>
+                    <p><em>"La máquina del tiempo se ha averiado. Para regresar al presente, debéis resolver los misterios de esta época."</em></p>
+                    <div style="margin-top: 15px; font-weight: 600; color: var(--primary-color);"><i class="fas fa-scroll"></i> Historia | <i class="fas fa-pen-nib"></i> Literatura</div>
+                    </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-user-secret"></i></div>
+                    <h3>Misterio Detectivesco</h3>
+                    <p><em>"Un valioso objeto ha desaparecido. Como detectives, debéis seguir las pistas y resolver el caso."</em></p>
+                    <div style="margin-top: 15px; font-weight: 600; color: var(--primary-color);"><i class="fas fa-language"></i> Lengua | <i class="fas fa-landmark"></i> Historia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Slide 2.5: Taller de Narrativa -->
+    <div class="slide" id="slide-taller-narrativa">
+        <div class="slide-content">
+            <h2><i class="fas fa-pencil-ruler"></i> Taller de Narrativa</h2>
+            <div style="font-size: 4rem; margin: 30px 0; text-align:center;">
+                <i class="fas fa-users" style="margin-right: 20px;"></i>
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="agenda-card" style="background: var(--card-bg); padding: 40px; border-radius: 16px; margin: 40px 0; border: 1px solid var(--border-color); max-width: 700px; margin-left:auto; margin-right:auto;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-graduation-cap"></i> Tu Turno: Crea una Narrativa</h3>
+                <div style="border: 2px dashed var(--primary-color); padding: 30px; border-radius: 16px; background: var(--background-color);">
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color);"><strong>Título de tu narrativa:</strong></p>
+                    <div style="border-bottom: 1px solid var(--border-color); margin-bottom: 20px; height: 40px;"></div>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color);"><strong>Contexto inicial (30 palabras):</strong></p>
+                    <div style="border-bottom: 1px solid var(--border-color); margin-bottom: 20px; height: 60px;"></div>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color);"><strong>Misión clara:</strong></p>
+                    <div style="border-bottom: 1px solid var(--border-color); height: 40px;"></div>
+                </div>
+            </div>
+            <div style="font-size: 1.3rem; color: var(--primary-color); font-weight: 600; text-align:center;">
+                <i class="fas fa-clock"></i> Tiempo: 35 minutos | <i class="fas fa-users"></i> En equipos por asignatura
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.6: Mecánicas Educativas Efectivas -->
+    <div class="slide" id="slide-mecanicas-educativas">
+        <div class="slide-content">
+            <h2><i class="fas fa-cogs"></i> Mecánicas Educativas Efectivas</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-search"></i></div>
+                    <h3>Observación</h3>
+                    <p>Encontrar pistas ocultas, detalles importantes.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-calculator"></i></div>
+                    <h3>Resolución</h3>
+                    <p>Aplicar conocimientos específicos de la materia.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-handshake"></i></div>
+                    <h3>Cooperación</h3>
+                    <p>Información distribuida, trabajo obligatorio.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-palette"></i></div>
+                    <h3>Creatividad</h3>
+                    <p>Interpretación, creación, pensamiento lateral.</p>
+                </div>
+                </div>
+            <div class="grid-2x2" style="margin-top: 30px;">
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Manipulación</h3>
+                    <p>Tangrams, puzzles, construcción física.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Tecnología</h3>
+                    <p>QR codes, calculadoras, apps educativas.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-dice"></i></div>
+                    <h3>Lógica</h3>
+                    <p>Silogismos, razonamiento deductivo.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:2.5rem;"><i class="fas fa-link"></i></div>
+                    <h3>Conexiones</h3>
+                    <p>Relacionar conceptos diversos.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Slide 2.7: Diseño de Desafíos -->
+    <div class="slide" id="slide-diseno-desafios">
+        <div class="slide-content">
+            <h2><i class="fas fa-drafting-compass"></i> Diseño de Desafíos</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card" style="background: var(--primary-color); color: white;">
+                    <h3>Contenido</h3>
+                        <p>¿Qué aprenderán?</p>
+                    <div style="margin-top: 15px; font-size:2rem;"><i class="fas fa-book"></i></div>
+                    </div>
+                <div class="agenda-card" style="background: var(--secondary-color); color: white;">
+                    <h3>Cifrado</h3>
+                        <p>¿Cómo lo ocultarás?</p>
+                    <div style="margin-top: 15px; font-size:2rem;"><i class="fas fa-lock"></i></div>
+                    </div>
+                <div class="agenda-card" style="background: var(--accent-color); color: white;">
+                    <h3>Solución</h3>
+                        <p>¿Cuál es la respuesta?</p>
+                    <div style="margin-top: 15px; font-size:2rem;"><i class="fas fa-lightbulb"></i></div>
+                    </div>
+                </div>
+            <div class="agenda-card" style="background: var(--card-bg); border: 2px solid var(--primary-color); border-radius: 16px; padding: 30px; margin-top: 40px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-bullseye"></i> Plantilla de Desafío</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 1.1rem;">
+                    <div><strong>Mecánica elegida:</strong> _______________</div>
+                    <div><strong>Tiempo estimado:</strong> _______________</div>
+                    <div><strong>Contenido curricular:</strong> _______________</div>
+                    <div><strong>Materiales:</strong> _______________</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.8: Cifrados por Niveles de Dificultad (piramidal, diseño original) -->
+    <div class="slide" id="slide-cifrados-niveles">
+        <div class="slide-content">
+            <h2><i class="fas fa-layer-group"></i> Cifrados por Niveles de Dificultad</h2>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 40px;">
+                <div style="padding: 20px 40px; border-radius: 16px; color: white; font-weight: 600; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); background: var(--error-color); width: 80%;">NIVEL 4 - EXPERTO (17+ años)<br><span style='font-weight:400;'>Cifrados anidados, referencias complejas, algoritmos</span></div>
+                <div style="padding: 20px 40px; border-radius: 16px; color: white; font-weight: 600; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); background: var(--warning-color); width: 70%;">NIVEL 3 - AVANZADO (14-16 años)<br><span style='font-weight:400;'>Pigpen, cifrados temáticos, combinaciones múltiples</span></div>
+                <div style="padding: 20px 40px; border-radius: 16px; color: white; font-weight: 600; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); background: var(--secondary-color); width: 60%;">NIVEL 2 - INTERMEDIO (10-13 años)<br><span style='font-weight:400;'>César, coordenadas simples, Morse básico</span></div>
+                <div style="padding: 20px 40px; border-radius: 16px; color: white; font-weight: 600; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); background: var(--success-color); width: 50%;">NIVEL 1 - BÁSICO (6-9 años)<br><span style='font-weight:400;'>Espejo simple, números básicos, formas y colores</span></div>
+            </div>
+            <div class="agenda-card" style="margin-top: 40px; background: var(--card-bg); padding: 25px; border-radius: 16px; border: 1px solid var(--border-color);">
+                <h3 style="color: var(--primary-color);"><i class="fas fa-chart-line"></i> Principio de Progresión Gradual</h3>
+                <p style="font-size: 1.2rem; color: var(--text-color);">Empezar siempre fácil para generar confianza, luego aumentar complejidad gradualmente</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.9: Colección de Cifrados (rejilla 4x2, visual limpio) -->
+    <div class="slide" id="slide-coleccion-cifrados">
+        <div class="slide-content">
+            <h2><i class="fas fa-book-dead"></i> Colección de Cifrados</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 40px;">
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>César</h3>
+                    <p style="font-size:1.1rem;">A→D, B→E, C→F<br><span style='color:var(--text-muted);font-size:0.95rem;'>Desplazamiento +3</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Espejo</h3>
+                    <p style="font-size:1.1rem;">HOLA → ALOH<br><span style='color:var(--text-muted);font-size:0.95rem;'>Escritura inversa</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Numérico</h3>
+                    <p style="font-size:1.1rem;">A=1, B=2, C=3<br><span style='color:var(--text-muted);font-size:0.95rem;'>Posición alfabética</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Morse</h3>
+                    <p style="font-size:1.1rem;">SOS: ··· ─── ···<br><span style='color:var(--text-muted);font-size:0.95rem;'>Puntos y rayas</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Pigpen</h3>
+                    <p style="font-size:1.1rem;">┌─ ┼ ╱<br><span style='color:var(--text-muted);font-size:0.95rem;'>Símbolos geométricos</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Coordenadas</h3>
+                    <p style="font-size:1.1rem;">(A2)(B3)(C1)<br><span style='color:var(--text-muted);font-size:0.95rem;'>Cuadrícula de letras</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Colores</h3>
+                    <p style="font-size:1.1rem;">🔴=A, 🔵=E, 🟡=I<br><span style='color:var(--text-muted);font-size:0.95rem;'>Código cromático</span></p>
+                </div>
+                <div class="agenda-card" style="box-shadow: 0 4px 12px var(--shadow-color); border: 1.5px solid var(--primary-color);">
+                    <h3>Formas</h3>
+                    <p style="font-size:1.1rem;">●=A, ■=B, ▲=C<br><span style='color:var(--text-muted);font-size:0.95rem;'>Símbolos visuales</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.10: Ejemplos de Aplicación -->
+    <div class="slide" id="slide-ejemplos-aplicacion">
+        <div class="slide-content">
+            <h2><i class="fas fa-bullseye"></i> Ejemplos de Aplicación</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card" style="background: var(--primary-color); color: white;">
+                    <h3><i class="fas fa-calculator"></i> Matemáticas</h3>
+                    <p><strong>César +4:</strong> "HQQGWZPXQ IP GQIZEMPQ"<br><small>Solución: "ENCUENTRA LA SOLUCIÓN"</small></p>
+                    <p><strong>Coordenadas:</strong> (A2)(D3)(E5)<br><small>En cuadrícula matemática = +÷√</small></p>
+                    </div>
+                <div class="agenda-card" style="background: var(--accent-color); color: white;">
+                    <h3><i class="fas fa-landmark"></i> Historia</h3>
+                    <p><strong>Espejo:</strong> "DADIRUTNIGA AL NE"<br><small>Solución: "EN LA ANTIGÜEDAD"</small></p>
+                    <p><strong>Pigpen:</strong> [símbolos] → "IMPERIO"<br><small>Usando alfabeto romano</small></p>
+                    </div>
+                <div class="agenda-card" style="background: var(--secondary-color); color: white;">
+                    <h3><i class="fas fa-language"></i> Lengua</h3>
+                    <p><strong>Numérico:</strong> "3-15-13-5-14-26-1"<br><small>Solución: "COMENZA"</small></p>
+                    <p><strong>Morse:</strong> "··· --- ···"<br><small>Solución: "SOS"</small></p>
+                </div>
+                <div class="agenda-card" style="background: var(--success-color); color: white;">
+                    <h3><i class="fas fa-flask"></i> Ciencias</h3>
+                    <p><strong>Colores:</strong> <i class="fas fa-circle" style="color:red;"></i><i class="fas fa-circle" style="color:yellow;"></i><i class="fas fa-circle" style="color:blue;"></i><br><small>Solución: "AEI"</small></p>
+                    <p><strong>Formas:</strong> <i class="far fa-circle"></i><i class="far fa-square"></i><i class="fas fa-triangle"></i><br><small>Solución: "ABC"</small></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Slide 2.11: Tarjetas de Referencia -->
+    <div class="slide" id="slide-tarjetas-referencia">
+        <div class="slide-content">
+            <h2><i class="fas fa-clone"></i> Tarjetas de Referencia</h2>
+            <p style="margin-bottom: 30px; font-size: 1.2rem;">Material de apoyo rápido para tus estudiantes durante el escape room.</p>
+            <div class="grid-2x2">
+                <div class="agenda-card" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white;">
+                    <h3>Cifrado | Aplicación</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.95rem;">
+                        <div><strong>César</strong></div><div>Mensajes históricos</div>
+                        <div><strong>Morse</strong></div><div>Comunicaciones</div>
+                        <div><strong>Numérico</strong></div><div>Operaciones mates</div>
+                        <div><strong>Coordenadas</strong></div><div>Geografía/planos</div>
+                        <div><strong>Colores</strong></div><div>Arte/ciencias</div>
+                        <div><strong>Musical</strong></div><div>Educación musical</div>
+                    </div>
+                </div>
+                <div class="agenda-card" style="background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color) 100%); color: white;">
+                    <h3>Nivel | Recomendación</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.95rem;">
+                        <div><strong>6-9 años</strong></div><div>Espejo, colores</div>
+                        <div><strong>10-13 años</strong></div><div>César, coordenadas</div>
+                        <div><strong>14-16 años</strong></div><div>Pigpen, temáticos</div>
+                        <div><strong>17+ años</strong></div><div>Combinaciones</div>
+                        <div><strong>Adultos</strong></div><div>Sin limitaciones</div>
+                        <div><strong>NEE</strong></div><div>Adaptación visual</div>
+                    </div>
+                </div>
+                <div class="agenda-card" style="background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%); color: white;">
+                    <h3>Consejo</h3>
+                    <p>Empieza siempre por los cifrados más sencillos y aumenta la dificultad progresivamente.</p>
+            </div>
+                <div class="agenda-card" style="background: linear-gradient(135deg, var(--success-color) 0%, var(--success-color) 100%); color: white;">
+                    <h3>Adaptación NEE</h3>
+                    <p>Utiliza colores, formas y pictogramas para facilitar la accesibilidad.</p>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.12: Construcción del Escape Completo -->
+    <div class="slide" id="slide-construccion-escape">
+        <div class="slide-content">
+            <h2><i class="fas fa-tools"></i> Construcción del Escape Completo</h2>
+            <div class="grid-2x2" style="margin-top: 40px;">
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-book-open"></i></div>
+                    <h3>Narrativa</h3>
+                    <p>Historia que engancha</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-tasks"></i></div>
+                    <h3>Desafíos</h3>
+                    <p>4-6 retos diferentes</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-key"></i></div>
+                    <h3>Cifrados</h3>
+                    <p>Códigos y misterios</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-check-double"></i></div>
+                    <h3>Evaluación</h3>
+                    <p>Reflexión y aprendizaje</p>
+                </div>
+            </div>
+            <div class="agenda-icon" style="font-size: 4rem; margin: 30px 0;"><i class="fas fa-box"></i></div>
+            <div class="agenda-card" style="font-size: 1.5rem; color: var(--primary-color); font-weight: 600; background: var(--hover-color); padding: 20px; border-radius: 12px; border: 1px solid var(--primary-color);">
+                <i class="fas fa-stopwatch"></i> Tiempo total: 75 minutos para crear un escape room completo
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.13: Checklist Final -->
+    <div class="slide" id="slide-checklist-final">
+        <div class="slide-content">
+            <h2><i class="fas fa-tasks"></i> Checklist Final</h2>
+            <p style="margin-bottom: 30px; font-size: 1.2rem;">Asegúrate de tener todo listo antes de lanzar tu escape room.</p>
+            <div class="checklist">
+                <div class="checklist-item" onclick="toggleCheck(this)">
+                    <i class="far fa-square"></i>
+                    ¿Los objetivos de aprendizaje están claros?
+                </div>
+                <div class="checklist-item" onclick="toggleCheck(this)">
+                    <i class="far fa-square"></i>
+                    ¿El nivel es apropiado para la edad?
+                </div>
+                <div class="checklist-item" onclick="toggleCheck(this)">
+                    <i class="far fa-square"></i>
+                    ¿Tenéis pistas de ayuda preparadas?
+                </div>
+                <div class="checklist-item" onclick="toggleCheck(this)">
+                    <i class="far fa-square"></i>
+                    ¿La evaluación está planificada?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Objetivos de la Presentación -->
+    <div class="slide" id="slide-3">
+        <div class="slide-content">
+            <h2>Objetivos del taller</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-bullseye agenda-icon"></i>
+                    <h3>Comprender</h3>
+                    <p>El concepto y fundamentos de los Escape Rooms Educativos</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-lightbulb agenda-icon"></i>
+                    <h3>Identificar</h3>
+                    <p>Los beneficios y competencias que desarrollan</p>
+            </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-screwdriver-wrench agenda-icon"></i>
+                    <h3>Aplicar</h3>
+                    <p>Metodologías para implementar Escape Rooms en el aula</p>
+        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-chart-bar agenda-icon"></i>
+                    <h3>Evaluar</h3>
+                    <p>El impacto y resultados de esta metodología</p>
+    </div>
+            </div>
+        </div>
+                </div>
+                
+    <!-- Slide 4: ¿Qué son los Escape Rooms Educativos? -->
+    <div class="slide" id="slide-4">
+        <div class="slide-content">
+            <h2>¿Qué son los escape rooms educativos?</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>Los escape rooms educativos son experiencias de aprendizaje inmersivas que combinan:</p>
+                    <ul>
+                        <li><strong>Gamificación:</strong> Elementos de juego para motivar el aprendizaje</li>
+                        <li><strong>Resolución de problemas:</strong> Desafíos que requieren pensamiento crítico</li>
+                        <li><strong>Colaboración:</strong> Trabajo en equipo para alcanzar objetivos comunes</li>
+                        <li><strong>Narrativa:</strong> Historias que contextualizan el aprendizaje</li>
+                    </ul>
+                    <p>Los estudiantes deben resolver enigmas, descifrar códigos y completar misiones para "escapar" de una situación ficticia, mientras desarrollan competencias académicas y habilidades del siglo XXI.</p>
+                </div>
+                <div class="content-visual">
+                    <div class="icon-large">🔐</div>
+                    <p>Experiencia inmersiva</p>
+                </div>
+                </div>
+                </div>
+            </div>
+
+    <!-- Slide 5: Características principales -->
+    <div class="slide" id="slide-5">
+        <div class="slide-content">
+            <h2>Características principales</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-clock agenda-icon"></i>
+                    <h3>Tiempo limitado</h3>
+                    <p>Crean urgencia y motivación para resolver problemas eficientemente</p>
+        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-puzzle-piece agenda-icon"></i>
+                    <h3>Puzzles interconectados</h3>
+                    <p>Múltiples enigmas que se relacionan entre sí para formar una solución completa</p>
+    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-masks-theater agenda-icon"></i>
+                    <h3>Inmersión narrativa</h3>
+                    <p>Historias que contextualizan el aprendizaje y aumentan la engagement</p>
+        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-users agenda-icon"></i>
+                    <h3>Colaboración grupal</h3>
+                    <p>Fomentan el trabajo en equipo y la comunicación efectiva</p>
+    </div>
+                </div>
+                </div>
+                </div>
+
+    <!-- Slide 6: Beneficios educativos -->
+    <div class="slide" id="slide-6">
+        <div class="slide-content">
+            <h2>Beneficios educativos</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-graduation-cap agenda-icon"></i>
+                    <h3>Desarrollo cognitivo</h3>
+                    <p>Pensamiento crítico y analítico, resolución de problemas complejos, memoria y retención de información, creatividad e innovación.</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-handshake agenda-icon"></i>
+                    <h3>Habilidades sociales</h3>
+                    <p>Comunicación efectiva, trabajo en equipo, liderazgo y delegación, empatía y cooperación.</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-heart agenda-icon"></i>
+                    <h3>Competencias emocionales</h3>
+                    <p>Gestión del estrés, perseverancia, confianza en sí mismo, resiliencia ante el fracaso.</p>
+                </div>
+                    </div>
+                    </div>
+                </div>
+
+    <!-- Slide 7: Competencias desarrolladas -->
+    <div class="slide" id="slide-7">
+        <div class="slide-content">
+            <h2>Competencias desarrolladas</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-brain agenda-icon"></i>
+                    <h3>Pensamiento crítico</h3>
+                    <p>Análisis de información, evaluación de alternativas y toma de decisiones fundamentadas</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-lightbulb agenda-icon"></i>
+                    <h3>Creatividad</h3>
+                    <p>Generación de ideas innovadoras y enfoques alternativos para resolver problemas</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-comments agenda-icon"></i>
+                    <h3>Comunicación</h3>
+                    <p>Expresión clara de ideas, escucha activa y presentación efectiva de soluciones</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-people-group agenda-icon"></i>
+                    <h3>Colaboración</h3>
+                    <p>Trabajo en equipo, distribución de roles y logro de objetivos compartidos</p>
+            </div>
+        </div>
+    </div>
+            </div>
+
+    <!-- Slide 8: Competencias Específicas por Área -->
+    <div class="slide" id="slide-8">
+        <div class="slide-content">
+            <h2>Competencias específicas por área</h2>
+            <div class="grid-3x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-book agenda-icon"></i>
+                    <h3>Área lingüística</h3>
+                    <p>Comprensión lectora, expresión escrita, vocabulario específico, interpretación de textos</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-square-root-variable agenda-icon"></i>
+                    <h3>Área matemática</h3>
+                    <p>Resolución de problemas, pensamiento lógico, operaciones matemáticas, geometría y medidas</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-flask-vial agenda-icon"></i>
+                    <h3>Área científica</h3>
+                    <p>Método científico, observación y experimentación, análisis de datos, pensamiento sistémico</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-globe-americas agenda-icon"></i>
+                    <h3>Área social</h3>
+                    <p>Conciencia histórica, comprensión geográfica, ciudadanía activa, diversidad cultural</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-laptop-code agenda-icon"></i>
+                    <h3>Área digital</h3>
+                    <p>Competencia digital, uso de herramientas TIC, seguridad en la red, pensamiento computacional</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-palette agenda-icon"></i>
+                    <h3>Área artística</h3>
+                    <p>Expresión artística, creatividad visual, apreciación estética, trabajo con materiales diversos</p>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+
+    <!-- Slide 9: Implementación práctica -->
+    <div class="slide" id="slide-9">
+        <div class="slide-content">
+            <h2>Implementación práctica</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-list-check agenda-icon"></i>
+                    <h3>Planificación</h3>
+                    <p>Definir objetivos de aprendizaje, identificar competencias, seleccionar contenido curricular, establecer criterios de evaluación.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-feather-pointed agenda-icon"></i>
+                    <h3>Diseño de la narrativa</h3>
+                    <p>Crear historia atractiva, contextualizar los desafíos, motivar la participación, conectar con el currículo.</p>
+            </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-puzzle-piece agenda-icon"></i>
+                    <h3>Desarrollo de puzzles</h3>
+                    <p>Diseñar enigmas progresivos, requerir aplicación de conocimiento, fomentar pensamiento crítico, crear conexiones entre conceptos.</p>
+        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-chalkboard agenda-icon"></i>
+                    <h3>Preparación del espacio</h3>
+                    <p>Organizar el aula, preparar materiales necesarios, añadir elementos decorativos, configurar elementos digitales.</p>
+    </div>
+            </div>
+                </div>
+            </div>
+
+    <!-- Slide 10: Implementación Práctica (Continuación) -->
+    <div class="slide" id="slide-10">
+        <div class="slide-content">
+            <h2>Implementación práctica (...)</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-play agenda-icon"></i>
+                    <h3>Ejecución</h3>
+                    <p>Facilitar la experiencia, proporcionar pistas cuando sea necesario, gestionar el tiempo efectivamente, observar el comportamiento grupal.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-comments agenda-icon"></i>
+                    <h3>Reflexión y debriefing</h3>
+                    <p>Analizar la experiencia, identificar aprendizajes clave, conectar con el contenido curricular, fomentar la metacognición.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-clipboard-check agenda-icon"></i>
+                    <h3>Evaluación</h3>
+                    <p>Evaluar logro de objetivos, medir competencias desarrolladas, recoger feedback de participantes, documentar resultados.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-arrow-rotate-right agenda-icon"></i>
+                    <h3>Mejora continua</h3>
+                    <p>Refinar el diseño, incorporar retroalimentación, optimizar la experiencia, adaptar a diferentes contextos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Elementos clave del diseño -->
+    <div class="slide" id="slide-11">
+        <div class="slide-content">
+            <h2>Elementos clave del diseño</h2>
+            <div class="grid-3x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-bullseye agenda-icon"></i>
+                    <h3>Objetivos claros</h3>
+                    <p>Definir específicamente qué se espera que aprendan los estudiantes</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-book-open agenda-icon"></i>
+                    <h3>Narrativa coherente</h3>
+                    <p>Historia que conecte todos los elementos y mantenga la motivación</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-puzzle-piece agenda-icon"></i>
+                    <h3>Puzzles progresivos</h3>
+                    <p>Dificultad incremental que permita el éxito y el desafío</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-stopwatch agenda-icon"></i>
+                    <h3>Gestión del tiempo</h3>
+                    <p>Duración apropiada que mantenga la tensión sin generar frustración</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-lightbulb agenda-icon"></i>
+                    <h3>Sistema de pistas</h3>
+                    <p>Ayudas escalonadas para evitar bloqueos prolongados</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-trophy agenda-icon"></i>
+                    <h3>Celebración del éxito</h3>
+                    <p>Reconocimiento del logro y conexión con el aprendizaje</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+    <!-- Slide 12: Casos de éxito -->
+    <div class="slide" id="slide-12">
+        <div class="slide-content">
+            <h2>Casos de éxito</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-school agenda-icon"></i>
+                    <h3>Educación Primaria</h3>
+                    <p><strong>Contexto:</strong> Escuela pública en Barcelona<br><strong>Objetivo:</strong> Mejorar comprensión lectora en 4º grado<br><strong>Resultado:</strong> 25% de mejora en evaluaciones de comprensión lectora<br><strong>Participación:</strong> 95% de los estudiantes completaron la experiencia</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-user-graduate agenda-icon"></i>
+                    <h3>Educación Secundaria</h3>
+                    <p><strong>Contexto:</strong> Instituto en Madrid<br><strong>Objetivo:</strong> Desarrollar competencias científicas en 2º ESO<br><strong>Resultado:</strong> Incremento del 30% en resolución de problemas científicos<br><strong>Participación:</strong> 100% de los grupos completaron el escape room</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-university agenda-icon"></i>
+                    <h3>Educación Superior</h3>
+                    <p><strong>Contexto:</strong> Universidad de Valencia<br><strong>Objetivo:</strong> Desarrollar competencias de trabajo en equipo en Ingeniería<br><strong>Resultado:</strong> Mejora del 40% en evaluaciones de colaboración grupal<br><strong>Participación:</strong> 200 estudiantes participaron en la experiencia</p>
+            </div>
+            <div class="agenda-card">
+                <i class="fa-solid fa-chalkboard-user agenda-icon"></i>
+                <h3>Formación Docente</h3>
+                <p><strong>Contexto:</strong> Centro de Formación del Profesorado<br><strong>Objetivo:</strong> Capacitar a docentes en metodologías innovadoras<br><strong>Resultado:</strong> 90% de satisfacción y aplicación en el aula<br><strong>Participación:</strong> 75 docentes de diferentes especialidades</p>
+            </div>
+            <div class="agenda-card">
+                <i class="fa-solid fa-building agenda-icon"></i>
+                <h3>Formación Empresarial</h3>
+                <p><strong>Contexto:</strong> Empresa tecnológica en Madrid<br><strong>Objetivo:</strong> Mejorar trabajo en equipo y resolución de problemas<br><strong>Resultado:</strong> 35% de mejora en eficiencia de proyectos<br><strong>Participación:</strong> 50 empleados de diferentes departamentos</p>
+            </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-briefcase agenda-icon"></i>
+                    <h3>Formación Profesional</h3>
+                    <p><strong>Contexto:</strong> Centro de FP en Sevilla<br><strong>Objetivo:</strong> Aplicar conocimientos de administración de empresas<br><strong>Resultado:</strong> 85% de aprobación en evaluaciones prácticas<br><strong>Participación:</strong> 150 estudiantes de diferentes ciclos formativos</p>
+        </div>
+    </div>
+                </div>
+            </div>
+
+   
+
+    <!-- Slide 14: Herramientas y recursos -->
+    <div class="slide" id="slide-14">
+        <div class="slide-content">
+            <h2>Herramientas y recursos</h2>
+            <div class="grid-3x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-laptop agenda-icon"></i>
+                    <h3>Herramientas digitales</h3>
+                    <p>Google Forms, Genially, Kahoot, Padlet, QR Code Generator</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-mobile-screen-button agenda-icon"></i>
+                    <h3>Aplicaciones móviles</h3>
+                    <p>Actionbound, Arloopa, HP Reveal, Mentimeter</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-paintbrush agenda-icon"></i>
+                    <h3>Recursos creativos</h3>
+                    <p>Canva, Piktochart, Powtoon, Storybird, Pixton</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-graduation-cap agenda-icon"></i>
+                    <h3>Plataformas educativas</h3>
+                    <p>Moodle, Edmodo, ClassDojo, Seesaw, Flipgrid</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-lock agenda-icon"></i>
+                    <h3>Elementos de seguridad</h3>
+                    <p>Cajas con candados, candados de combinación, cajas de seguridad, bolsas herméticas, sobres con sellos</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-pen agenda-icon"></i>
+                    <h3>Materiales de escritura</h3>
+                    <p>Papel, lápices, marcadores, pizarras, post-its, papel de calco</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 15: Más herramientas -->
+    <div class="slide" id="slide-15">
+        <div class="slide-content">
+            <h2>Herramientas y recursos (...)</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-palette agenda-icon"></i>
+                    <h3>Recursos creativos</h3>
+                    <p><strong>Canva:</strong> Diseño de materiales visuales<br><strong>Piktochart:</strong> Creación de infografías<br><strong>Powtoon:</strong> Videos animados educativos<br><strong>Storybird:</strong> Creación de historias digitales<br><strong>Pixton:</strong> Creación de cómics educativos</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-graduation-cap agenda-icon"></i>
+                    <h3>Plataformas educativas</h3>
+                    <p><strong>Moodle:</strong> Gestión de cursos y actividades<br><strong>Edmodo:</strong> Red social educativa<br><strong>ClassDojo:</strong> Gestión del aula y comunicación<br><strong>Seesaw:</strong> Portafolio digital de estudiantes<br><strong>Flipgrid:</strong> Videos colaborativos</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-tools agenda-icon"></i>
+                    <h3>Herramientas de evaluación</h3>
+                    <p><strong>Kahoot:</strong> Cuestionarios interactivos<br><strong>Quizizz:</strong> Evaluaciones gamificadas<br><strong>Mentimeter:</strong> Encuestas en tiempo real<br><strong>Padlet:</strong> Muros colaborativos<br><strong>Jamboard:</strong> Pizarras digitales</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-mobile-screen agenda-icon"></i>
+                    <h3>Aplicaciones especializadas</h3>
+                    <p><strong>Actionbound:</strong> Cazas del tesoro digitales<br><strong>Arloopa:</strong> Realidad aumentada<br><strong>HP Reveal:</strong> Contenido interactivo<br><strong>ThingLink:</strong> Imágenes interactivas<br><strong>CoSpaces:</strong> Creación de mundos virtuales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 16: Materiales físicos recomendados -->
+    <div class="slide" id="slide-16">
+        <div class="slide-content">
+            <h2>Materiales físicos recomendados</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-lock agenda-icon"></i>
+                    <h3>Elementos de seguridad</h3>
+                    <p>Cajas con candados numéricos, candados de combinación, cajas de seguridad pequeñas, bolsas herméticas, sobres con sellos</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-pen agenda-icon"></i>
+                    <h3>Materiales de escritura</h3>
+                    <p>Papel y lápices, marcadores de colores, pizarras pequeñas, post-its, papel de calco</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-magnifying-glass agenda-icon"></i>
+                    <h3>Elementos de investigación</h3>
+                    <p>Lupas, linternas UV, espejos, reglas y compases, calculadoras</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-mask agenda-icon"></i>
+                    <h3>Elementos decorativos</h3>
+                    <p>Telas y cortinas, luces de ambiente, música de fondo, objetos temáticos, carteles informativos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 17: Evaluación y seguimiento -->
+    <div class="slide" id="slide-17">
+        <div class="slide-content">
+            <h2>Evaluación y seguimiento</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-chart-column agenda-icon"></i>
+                    <h3>Evaluación cuantitativa</h3>
+                    <p>Tests de conocimiento antes y después, encuestas de satisfacción, métricas de participación, tiempo de resolución, número de pistas utilizadas</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-clipboard-question agenda-icon"></i>
+                    <h3>Evaluación cualitativa</h3>
+                    <p>Observación directa, entrevistas, reflexiones escritas, debriefing grupal, portafolios de evidencias</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-arrows-rotate agenda-icon"></i>
+                    <h3>Evaluación continua</h3>
+                    <p>Diarios de aprendizaje, autoevaluación de competencias, evaluación entre pares, rúbricas, feedback inmediato</p>
+                </div>
+                    </div>
+                    </div>
+                </div>
+
+    <!-- Slide 18: Desafíos y soluciones -->
+    <div class="slide" id="slide-18">
+        <div class="slide-content">
+            <h2>Desafíos y soluciones</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-hourglass-half agenda-icon"></i>
+                    <h3>Gestión del tiempo</h3>
+                    <p><strong>Problema:</strong> Los estudiantes pueden quedarse bloqueados en puzzles difíciles<br><strong>Solución:</strong> Sistema de pistas escalonadas y tiempo límite flexible</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-layer-group agenda-icon"></i>
+                    <h3>Diferencias de nivel</h3>
+                    <p><strong>Problema:</strong> Estudiantes con diferentes capacidades en el mismo grupo<br><strong>Solución:</strong> Roles diferenciados y puzzles con múltiples niveles de dificultad</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-boxes-stacked agenda-icon"></i>
+                    <h3>Recursos limitados</h3>
+                    <p><strong>Problema:</strong> Falta de materiales o espacio físico adecuado<br><strong>Solución:</strong> Escape rooms digitales y materiales reciclados</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-scale-balanced agenda-icon"></i>
+                    <h3>Evaluación objetiva</h3>
+                    <p><strong>Problema:</strong> Dificultad para medir el aprendizaje en experiencias lúdicas<br><strong>Solución:</strong> Rúbricas específicas y múltiples métodos de evaluación</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 19: Tendencias futuras -->
+    <div class="slide" id="slide-19">
+        <div class="slide-content">
+            <h2>Tendencias futuras</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-vr-cardboard agenda-icon"></i>
+                    <h3>Realidad Virtual y Aumentada</h3>
+                    <p>Escape rooms inmersivos que trascienden las limitaciones físicas del aula. Experiencias 360°, interacción con objetos virtuales, simulaciones realistas.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-robot agenda-icon"></i>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Adaptación dinámica de la dificultad según el progreso del estudiante. Pistas personalizadas, evaluación automática, narrativas adaptativas.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-globe agenda-icon"></i>
+                    <h3>Escape Rooms Globales</h3>
+                    <p>Experiencias colaborativas entre estudiantes de diferentes países. Colaboración internacional, intercambio cultural, proyectos globales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 20: Investigación y evidencia científica -->
+    <div class="slide" id="slide-20">
+        <div class="slide-content">
+            <h2>Investigación y evidencia científica</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-book-open-reader agenda-icon"></i>
+                    <h3>Estudios recientes</h3>
+                    <p><strong>Universidad de Barcelona (2023):</strong> 40% de mejora en retención de información<br><strong>MIT (2022):</strong> Incremento del 35% en resolución de problemas complejos<br><strong>Stanford (2023):</strong> 50% de mejora en habilidades de colaboración<br><strong>Universidad de Madrid (2022):</strong> 45% de incremento en motivación académica</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-brain agenda-icon"></i>
+                    <h3>Beneficios cognitivos</h3>
+                    <p>Mejora de la memoria de trabajo, desarrollo del pensamiento divergente, incremento de la capacidad de atención, fortalecimiento de la metacognición</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 21: Marco teórico -->
+    <div class="slide" id="slide-21">
+        <div class="slide-content">
+            <h2>Marco teórico</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-gamepad agenda-icon"></i>
+                    <h3>Teoría del Aprendizaje Basado en Juegos</h3>
+                    <p><strong>Autor:</strong> James Paul Gee<br><strong>Principios:</strong> Aprendizaje activo y experiencial, feedback inmediato y constante, progresión gradual de dificultad, inmersión en contextos significativos</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-puzzle-piece agenda-icon"></i>
+                    <h3>Teoría de la Resolución de Problemas</h3>
+                    <p><strong>Autor:</strong> George Polya<br><strong>Etapas:</strong> Comprensión del problema, diseño de un plan, ejecución del plan, revisión de la solución</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-users agenda-icon"></i>
+                    <h3>Teoría del Aprendizaje Social</h3>
+                    <p><strong>Autor:</strong> Albert Bandura<br><strong>Elementos:</strong> Aprendizaje por observación, modelado de comportamientos, refuerzo social, autoeficacia</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-bullseye agenda-icon"></i>
+                    <h3>Teoría de la Motivación Intrínseca</h3>
+                    <p><strong>Autor:</strong> Edward Deci y Richard Ryan<br><strong>Factores:</strong> Autonomía en el aprendizaje, competencia percibida, relación con otros, propósito significativo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 22: Más marco teórico -->
+    <div class="slide" id="slide-22">
+        <div class="slide-content">
+            <h2>Marco Teórico (Continuación)</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-users agenda-icon"></i>
+                    <h3>Teoría del Aprendizaje Social</h3>
+                    <p><strong>Autor:</strong> Albert Bandura<br><strong>Elementos:</strong> Aprendizaje por observación, modelado de comportamientos, refuerzo social, autoeficacia</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-bullseye agenda-icon"></i>
+                    <h3>Teoría de la Motivación Intrínseca</h3>
+                    <p><strong>Autor:</strong> Edward Deci y Richard Ryan<br><strong>Factores:</strong> Autonomía en el aprendizaje, competencia percibida, relación con otros, propósito significativo</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-lightbulb agenda-icon"></i>
+                    <h3>Teoría de las Inteligencias Múltiples</h3>
+                    <p><strong>Autor:</strong> Howard Gardner<br><strong>Tipos:</strong> Lingüística, lógico-matemática, espacial, musical, corporal-cinestésica, interpersonal, intrapersonal, naturalista</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-brain agenda-icon"></i>
+                    <h3>Teoría del Aprendizaje Experiencial</h3>
+                    <p><strong>Autor:</strong> David Kolb<br><strong>Ciclo:</strong> Experiencia concreta, observación reflexiva, conceptualización abstracta, experimentación activa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 23: Metodología de diseño -->
+    <div class="slide" id="slide-23">
+        <div class="slide-content">
+            <h2>Metodología de diseño</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-magnifying-glass-chart agenda-icon"></i>
+                    <h3>Fase 1: Análisis</h3>
+                    <p>Identificación de objetivos de aprendizaje, análisis del perfil de los estudiantes, evaluación de recursos disponibles, definición de competencias a desarrollar</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-pen-ruler agenda-icon"></i>
+                    <h3>Fase 2: Diseño</h3>
+                    <p>Creación de la narrativa, diseño de puzzles y enigmas, planificación de la secuencia, definición de roles y responsabilidades</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-screwdriver-wrench agenda-icon"></i>
+                    <h3>Fase 3: Desarrollo</h3>
+                    <p>Creación de materiales, preparación del espacio, configuración de elementos digitales, pruebas piloto</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-rocket agenda-icon"></i>
+                    <h3>Fase 4: Implementación</h3>
+                    <p>Ejecución de la experiencia, facilitación y apoyo, gestión de imprevistos, recopilación de datos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 24: Evaluación de impacto -->
+    <div class="slide" id="slide-24">
+        <div class="slide-content">
+            <h2>Evaluación de impacto</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-chart-line agenda-icon"></i>
+                    <h3>Impacto académico</h3>
+                    <p>Mejora en calificaciones (promedio 25%), incremento en retención de información (40%), mayor participación en clase (60%), mejora en resolución de problemas (35%)</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-people-group agenda-icon"></i>
+                    <h3>Impacto social</h3>
+                    <p>Fortalecimiento de relaciones entre pares, desarrollo de liderazgo en estudiantes tímidos, mejora en comunicación grupal, incremento en empatía y cooperación</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-user-check agenda-icon"></i>
+                    <h3>Impacto personal</h3>
+                    <p>Aumento de la confianza en sí mismo, desarrollo de resiliencia ante el fracaso, mejora en gestión del estrés, incremento en motivación intrínseca</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 25: Conclusiones -->
+    <div class="slide" id="slide-25">
+        <div class="slide-content">
+            <h2>Conclusiones</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-chart-line agenda-icon"></i>
+                    <h3>Efectividad Demostrada</h3>
+                    <p>Los Escape Rooms Educativos han demostrado ser una metodología altamente efectiva para el desarrollo de competencias académicas y habilidades del siglo XXI.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-globe agenda-icon"></i>
+                    <h3>Aplicabilidad Universal</h3>
+                    <p>Esta metodología puede adaptarse a cualquier nivel educativo y área de conocimiento, desde educación primaria hasta formación profesional.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-chart-bar agenda-icon"></i>
+                    <h3>Resultados Medibles</h3>
+                    <p>Los estudios demuestran mejoras significativas en retención de información, resolución de problemas y habilidades sociales.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-rocket agenda-icon"></i>
+                    <h3>Futuro Prometedor</h3>
+                    <p>La integración de tecnologías emergentes como VR, AR e IA ampliará las posibilidades de esta metodología educativa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 26: Gracias -->
+    <div class="slide" id="slide-26">
+        <div class="slide-content">
+            <h2><i class="fas fa-laugh-beam"></i> ¡Gracias por su atención!</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-question-circle agenda-icon"></i>
+                    <h3>¿Preguntas?</h3>
+                    <p>Estamos aquí para resolver cualquier duda sobre Escape Rooms Educativos y su implementación en el aula.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-envelope agenda-icon"></i>
+                    <h3>Contacto</h3>
+                    <p><strong>Email:</strong> info@escapify.io<br><strong>Web:</strong> www.escapify.io<br><strong>Redes:</strong> @escapify.io</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-handshake agenda-icon"></i>
+                    <h3>Colaboración</h3>
+                    <p>Estamos abiertos a colaboraciones y proyectos educativos innovadores. ¡Contáctanos!</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-quote-left agenda-icon"></i>
+                    <h3>Nuestra Misión</h3>
+                    <p>"Transformando la educación a través de experiencias inmersivas y metodologías innovadoras"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <div class="navigation">
+        <button class="nav-btn prev-btn" onclick="previousSlide()">← Anterior</button>
+        <button class="nav-btn next-btn" onclick="nextSlide()">Siguiente →</button>
+    </div>
+
+    <!-- Slide 2.14: Adaptación para NEE -->
+    <div class="slide" id="slide-adaptacion-nee">
+        <div class="slide-content">
+            <h2><i class="fas fa-universal-access"></i> Adaptación para Necesidades Especiales</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-eye"></i></div>
+                    <h3>Discapacidad Visual</h3>
+                    <p>Pistas táctiles y sonoras, textos en braille, descripciones verbales detalladas, contraste alto en materiales.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-ear-listen"></i></div>
+                    <h3>Discapacidad Auditiva</h3>
+                    <p>Pistas visuales predominantes, subtítulos en videos, comunicación escrita clara, intérprete de lengua de signos.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-brain"></i></div>
+                    <h3>Dificultades Cognitivas</h3>
+                    <p>Instrucciones simplificadas, pistas visuales claras, tiempo extra para resolución, apoyo individualizado.</p>
+                </div>
+                <div class="agenda-card">
+                    <div class="agenda-icon" style="font-size:3rem;"><i class="fas fa-wheelchair"></i></div>
+                    <h3>Discapacidad Motora</h3>
+                    <p>Materiales adaptados, espacios accesibles, pistas digitales, asistencia física cuando sea necesario.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.15: Recursos Adicionales -->
+    <div class="slide" id="slide-recursos-adicionales">
+        <div class="slide-content">
+            <h2><i class="fas fa-book-reader"></i> Recursos Adicionales</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fas fa-link agenda-icon"></i>
+                    <h3>Bibliografía</h3>
+                    <ul style="text-align:left; margin-top:15px;">
+                        <li>"Escape Rooms in Education" - Nicholson</li>
+                        <li>"Gamificación en el Aula" - Marczewski</li>
+                        <li>"Aprendizaje Basado en Juegos" - Kapp</li>
+                        <li>"Neuroeducación" - Mora</li>
+                    </ul>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-globe agenda-icon"></i>
+                    <h3>Webs de Referencia</h3>
+                    <ul style="text-align:left; margin-top:15px;">
+                        <li>escapify.io - Plataforma principal</li>
+                        <li>breakoutedu.com - Recursos educativos</li>
+                        <li>genial.ly - Herramientas interactivas</li>
+                        <li>kahoot.com - Evaluación gamificada</li>
+                    </ul>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-users agenda-icon"></i>
+                    <h3>Comunidades</h3>
+                    <ul style="text-align:left; margin-top:15px;">
+                        <li>Facebook: "Escape Rooms Educativos"</li>
+                        <li>Twitter: #EscapeRoomEdu</li>
+                        <li>LinkedIn: "Gamificación Educativa"</li>
+                        <li>Telegram: "EduEscape"</li>
+                    </ul>
+                </div>
+                <div class="agenda-card">
+                    <i class="fa-solid fa-tools agenda-icon"></i>
+                    <h3>Herramientas</h3>
+                    <ul style="text-align:left; margin-top:15px;">
+                        <li>Canva - Diseño gráfico</li>
+                        <li>Genially - Interactividad</li>
+                        <li>Mentimeter - Encuestas en vivo</li>
+                        <li>Padlet - Colaboración digital</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.16: Preguntas Frecuentes (FAQ) -->
+    <div class="slide" id="slide-faq">
+        <div class="slide-content">
+            <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes (FAQ)</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <i class="fas fa-plus"></i>
+                        ¿Cuánto tiempo se tarda en crear un escape room?
+                    </button>
+                    <div class="faq-answer">
+                        Para un escape room básico: 2-3 horas de diseño + 1 hora de preparación de materiales. Para uno avanzado: 4-6 horas totales.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <i class="fas fa-plus"></i>
+                        ¿Qué materiales necesito?
+                    </button>
+                    <div class="faq-answer">
+                        Mínimo: candados, cajas, papelería, impresora. Recomendado: candados de combinación, cajas con cerraduras, materiales temáticos.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <i class="fas fa-plus"></i>
+                        ¿Cómo adapto el nivel de dificultad?
+                    </button>
+                    <div class="faq-answer">
+                        Usa la pirámide de dificultad: empieza con cifrados simples y aumenta gradualmente. Considera la edad y conocimientos previos.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <i class="fas fa-plus"></i>
+                        ¿Qué hago si los estudiantes se bloquean?
+                    </button>
+                    <div class="faq-answer">
+                        Ten pistas de ayuda preparadas (3 niveles: pista sutil, pista clara, solución directa). Observa y ofrece ayuda cuando sea necesario.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <i class="fas fa-plus"></i>
+                        ¿Cómo evalúo el aprendizaje?
+                    </button>
+                    <div class="faq-answer">
+                        Combina evaluación cuantitativa (tiempo, precisión) con cualitativa (reflexión, colaboración, portfolio de evidencias).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.17: Próximos Pasos -->
+    <div class="slide" id="slide-proximos-pasos">
+        <div class="slide-content">
+            <h2><i class="fas fa-rocket"></i> Próximos Pasos</h2>
+            <div class="grid-3x1">
+                <div class="agenda-card">
+                    <i class="fas fa-lightbulb agenda-icon"></i>
+                    <h3>Paso 1: Diseña tu Primer Escape</h3>
+                    <p>Usa las plantillas y herramientas que hemos visto. Empieza con algo simple y ve aumentando la complejidad.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fas fa-flask agenda-icon"></i>
+                    <h3>Paso 2: Prueba y Refina</h3>
+                    <p>Testea con un grupo pequeño primero. Ajusta dificultad, tiempo y pistas según los resultados.</p>
+                </div>
+                <div class="agenda-card">
+                    <i class="fas fa-book-open agenda-icon"></i>
+                    <h3>Paso 3: Documenta y Comparte</h3>
+                    <p>Crea un portfolio de tus escapes. Comparte con otros docentes y aprende de sus experiencias.</p>
+                </div>
+            </div>
+            <div class="agenda-card" style="margin-top: 40px; background: var(--card-bg); padding: 30px; border-radius: 16px; border: 2px solid var(--primary-color);">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 20px;"><i class="fas fa-rocket"></i> ¡Tu Aventura Comienza Ahora!</h3>
+                <p style="text-align: center; font-size: 1.2rem; color: var(--text-color);">Tienes todas las herramientas necesarias para transformar tu aula en un espacio de aprendizaje mágico y memorable.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2.18: Contacto y Redes Sociales -->
+    <div class="slide" id="slide-contacto-redes">
+        <div class="slide-content">
+            <h2><i class="fas fa-phone-alt"></i> Contacto y Redes Sociales</h2>
+            <div class="grid-2x2">
+                <div class="agenda-card">
+                    <i class="fa-solid fa-user agenda-icon"></i>
+                    <h3>Raquel Cuesta Barberá</h3>
+                    <p><strong>Email:</strong> info@escapify.io<br><strong>Web:</strong> www.escapify.io<br><strong>WhatsApp:</strong> +34 600 000 000</p>
+                        </div>
+                <div class="agenda-card">
+                    <i class="fa-brands fa-facebook agenda-icon"></i>
+                    <h3>Facebook</h3>
+                        <p>@EscapifyEdu</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-brands fa-twitter agenda-icon"></i>
+                    <h3>Twitter</h3>
+                        <p>@EscapifyEdu</p>
+                    </div>
+                <div class="agenda-card">
+                    <i class="fa-brands fa-instagram agenda-icon"></i>
+                    <h3>Instagram</h3>
+                        <p>@EscapifyEdu</p>
+                    </div>
+                </div>
+            <div class="agenda-card" style="margin-top: 40px; text-align: center;">
+                <div style="font-size: 4rem; margin-bottom: 20px;">🎉</div>
+                <h3 style="color: var(--primary-color);">¡Gracias por ser parte de esta revolución educativa!</h3>
+                <p style="font-size: 1.2rem; color: var(--text-color); margin-top: 15px;">Juntos haremos que el aprendizaje sea una aventura inolvidable.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-ppt.js"></script>
+</body>
+</html> 

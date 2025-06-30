@@ -1,0 +1,598 @@
+/* Estilos base de la presentación Escapify */
+:root {
+    --primary-color: #2D7FF9;
+    --secondary-color: #5096FF;
+    --accent-color: #FF5757;
+    --background-color: #111827;
+    --surface-color: #1F2937;
+    --card-bg: #1F2937;
+    --text-color: #F9FAFB;
+    --text-color-light: #D1D5DB;
+    --text-muted: #9CA3AF;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --success-color: #10B981;
+    --error-color: #EF4444;
+    --warning-color: #F59E0B;
+    --hover-color: rgba(45, 127, 249, 0.15);
+    --primary-color-rgb: 45, 127, 249;
+    --secondary-color-rgb: 80, 150, 255;
+}
+
+:root[data-theme="light"] {
+    --primary-color: #0252CD;
+    --secondary-color: #2D7FF9;
+    --accent-color: #FF5757;
+    --background-color: #ffffff;
+    --surface-color: #ffffff;
+    --card-bg: #ffffff;
+    --text-color: #111827;
+    --text-color-light: #4b5563;
+    --text-muted: #6b7280;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.06);
+    --success-color: #10B981;
+    --error-color: #EF4444;
+    --warning-color: #F59E0B;
+    --hover-color: rgba(45, 127, 249, 0.08);
+    --primary-color-rgb: 2, 82, 205;
+    --secondary-color-rgb: 45, 127, 249;
+    --input-bg: #ffffff;
+    --tag-bg: #f3f4f6;
+}
+
+:root[data-theme="dark"] {
+    --primary-color: #2D7FF9;
+    --secondary-color: #5096FF;
+    --accent-color: #FF5757;
+    --background-color: #111827;
+    --surface-color: #1F2937;
+    --card-bg: #1F2937;
+    --text-color: #F9FAFB;
+    --text-color-light: #D1D5DB;
+    --text-muted: #9CA3AF;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --success-color: #10B981;
+    --error-color: #EF4444;
+    --warning-color: #F59E0B;
+    --hover-color: rgba(45, 127, 249, 0.15);
+    --primary-color-rgb: 45, 127, 249;
+    --secondary-color-rgb: 80, 150, 255;
+    --input-bg: #374151;
+    --tag-bg: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background: var(--background-color);
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.slide.active { 
+    display: flex; 
+}
+
+.slide-content {
+    max-width: 1100px;
+    width: 90%;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+}
+
+.slide h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.slide h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.presenter-info {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem; /* Ajustado para ppt */
+    z-index: 1001;
+    background-color: transparent; /* Hereda del body */
+}
+
+.main-header .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-header .logo:hover {
+    color: var(--secondary-color);
+    transform: scale(1.05); /* Escala el logo completo */
+}
+
+.main-header .logo i {
+    color: var(--primary-color);
+    font-size: 1.3rem; /* Tamaño ajustado */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-header .logo:hover i {
+    color: var(--secondary-color);
+    transform: rotate(10deg); /* Giro en la dirección correcta */
+}
+
+.slide-counter {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.slide h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--text-color);
+}
+
+/* Estilos específicos para contenido */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.agenda-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.agenda-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--surface-color);
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+    padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+    transition: border-color 0.2s, color 0.2s, transform 0.18s cubic-bezier(.4,1.3,.6,1), box-shadow 0.18s cubic-bezier(.4,1.3,.6,1);
+    min-height: 200px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.agenda-card .agenda-icon {
+    font-size: 2.5rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: block;
+    transition: color 0.2s;
+}
+
+.agenda-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    transition: color 0.2s;
+}
+
+.agenda-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.agenda-card.active {
+    border-color: var(--primary-color);
+}
+
+.agenda-card.active .agenda-icon {
+    color: var(--primary-color);
+}
+
+.agenda-card.active h3 {
+    color: var(--primary-color);
+}
+
+.agenda-card:not(.active):hover,
+.agenda-card:not(.active):focus {
+    border-color: var(--primary-color);
+    transform: scale(1.03);
+    box-shadow: 0 6px 24px 0 rgba(0,0,0,0.10);
+    z-index: 2;
+}
+
+.agenda-card:not(.active):hover .agenda-icon,
+.agenda-card:not(.active):focus .agenda-icon {
+    color: var(--primary-color);
+}
+
+.agenda-card:not(.active):hover h3,
+.agenda-card:not(.active):focus h3 {
+    color: var(--primary-color);
+}
+
+.agenda-list {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.agenda-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.agenda-number {
+    background: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.agenda-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.objectives-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.objective-item {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.objective-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.objective-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.content-text {
+    text-align: left;
+}
+
+.content-text ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.content-text li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.content-visual {
+    text-align: center;
+}
+
+.icon-large {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-section {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.benefit-section h3 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.benefit-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.benefit-section li:last-child {
+    border-bottom: none;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.competency-item {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.competency-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.competency-icon {
+    font-size: 2rem;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contact-info {
+    margin: 40px 0;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.final-message {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-style: italic;
+    margin-top: 40px;
+}
+
+/* Grid para 2 columnas */
+.grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--surface-color);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.grid-3x1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.grid-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.grid-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .slide h1 { font-size: 2.5rem; }
+    .slide h2 { font-size: 2rem; }
+    .slide h3 { font-size: 1.5rem; }
+    .subtitle { font-size: 1.4rem; }
+    .slide-content { padding: 20px; }
+    .content-grid { grid-template-columns: 1fr; }
+    .navigation { bottom: 20px; }
+    .nav-btn { padding: 10px 15px; font-size: 0.9rem; }
+    .main-header { padding: 1rem 1.5rem; }
+    .main-header .logo { font-size: 1.2rem; }
+    .slide-counter { font-size: 0.9rem; padding: 6px 12px;}
+    .card-grid { grid-template-columns: 1fr; }
+    .title-icon { width: 30px; height: 30px; }
+    .grid-2-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .agenda-grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-3x1, .grid-3x2, .grid-3x3 {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .agenda-grid {
+        grid-template-columns: 1fr;
+    }
+} 
