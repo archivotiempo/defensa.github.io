@@ -15,7 +15,7 @@
             <div id="navTitle" class="nav-title" style="cursor:pointer;">TFM - Escape Room STEAM Inclusivo</div>
             <div class="nav-controls">
                 <button id="prevBtn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
-                <span id="slideCounter" class="slide-counter">1 / 16</span>
+                <span id="slideCounter" class="slide-counter">1 / 21</span>
                 <button id="nextBtn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
                 <button id="fullscreenBtn" class="nav-btn"><i class="fas fa-expand"></i></button>
             </div>
@@ -70,9 +70,12 @@
                     <div class="index-card"><i class="fas fa-project-diagram"></i> Sostenibilidad pedagógica y escalabilidad</div>
                     <div class="index-card"><i class="fas fa-balance-scale"></i> Honestidad académica y proyección</div>
                     <div class="index-card"><i class="fas fa-graduation-cap"></i> Transformando la educación inclusiva</div>
+                    <div class="index-card"><i class="fas fa-chart-line"></i> Evaluación y seguimiento</div>
+                    <div class="index-card"><i class="fas fa-exclamation-triangle"></i> Desafíos y soluciones</div>
+                    <div class="index-card"><i class="fas fa-check-square"></i> Checklist final</div>
                     <div class="index-card"><i class="fas fa-gamepad"></i> El poder transformador del juego inclusivo</div>
-                    <div class="index-card"><i class="fas fa-hands-helping"></i> Agradecimientos</div>
                     <div class="index-card"><i class="fas fa-question"></i> Gracias y ronda de preguntas</div>
+                    <div class="index-card"><i class="fas fa-hands-helping"></i> Agradecimientos</div>
                 </div>
             </div>
         </div>
@@ -599,9 +602,128 @@
             </div>
         </div>
 
-        <!-- Diapositiva 15: Reflexión Final -->
+        <!-- Diapositiva 15: Evaluación y Seguimiento -->
         <div class="slide" id="slide-15">
-            <div class="slide-content reflection" aria-label="Diapositiva 15: Reflexión Final" role="region">
+            <div class="slide-content" aria-label="Diapositiva 15: Evaluación y Seguimiento" role="region">
+                <h2 class="slide-title">Evaluación y seguimiento</h2>
+                <div class="evaluation-methods">
+                    <div class="evaluation-method">
+                        <h3><i class="fas fa-chart-column"></i> Evaluación Cuantitativa</h3>
+                        <ul>
+                            <li>Tests de conocimiento antes y después</li>
+                            <li>Encuestas de satisfacción</li>
+                            <li>Métricas de participación</li>
+                            <li>Tiempo de resolución</li>
+                            <li>Número de pistas utilizadas</li>
+                        </ul>
+                    </div>
+                    <div class="evaluation-method">
+                        <h3><i class="fas fa-clipboard-question"></i> Evaluación Cualitativa</h3>
+                        <ul>
+                            <li>Observación directa del comportamiento</li>
+                            <li>Entrevistas con participantes</li>
+                            <li>Reflexiones escritas</li>
+                            <li>Debriefing grupal</li>
+                            <li>Portafolios de evidencias</li>
+                        </ul>
+                    </div>
+                    <div class="evaluation-method">
+                        <h3><i class="fas fa-arrows-rotate"></i> Evaluación Continua</h3>
+                        <ul>
+                            <li>Diarios de aprendizaje</li>
+                            <li>Autoevaluación de competencias</li>
+                            <li>Evaluación entre pares</li>
+                            <li>Rúbricas de evaluación</li>
+                            <li>Feedback inmediato</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 16: Desafíos y Soluciones -->
+        <div class="slide" id="slide-16">
+            <div class="slide-content" aria-label="Diapositiva 16: Desafíos y Soluciones" role="region">
+                <h2 class="slide-title">Desafíos y soluciones</h2>
+                <div class="challenges-solutions">
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-clock"></i> Gestión del Tiempo</h3>
+                        <p><strong>Problema:</strong> Los estudiantes pueden quedarse bloqueados en puzzles difíciles</p>
+                        <p><strong>Solución:</strong> Sistema de pistas escalonadas y tiempo límite flexible</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-users"></i> Diferencias de Nivel</h3>
+                        <p><strong>Problema:</strong> Estudiantes con diferentes capacidades en el mismo grupo</p>
+                        <p><strong>Solución:</strong> Roles diferenciados y puzzles con múltiples niveles de dificultad</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-tools"></i> Recursos Limitados</h3>
+                        <p><strong>Problema:</strong> Falta de materiales o espacio físico adecuado</p>
+                        <p><strong>Solución:</strong> Escape rooms digitales y materiales reciclados</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-clipboard-check"></i> Evaluación Objetiva</h3>
+                        <p><strong>Problema:</strong> Dificultad para medir el aprendizaje en experiencias lúdicas</p>
+                        <p><strong>Solución:</strong> Rúbricas específicas y múltiples métodos de evaluación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 17: Checklist Final -->
+        <div class="slide" id="slide-17">
+            <div class="slide-content" aria-label="Diapositiva 17: Checklist Final" role="region">
+                <h2 class="slide-title">Checklist final</h2>
+                <div class="checklist-container">
+                    <div class="checklist-section">
+                        <h3><i class="fas fa-wrench"></i> Aspectos Técnicos</h3>
+                        <div class="checklist-items">
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿Todos los candados tienen el código correcto?</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿Las pistas están numeradas y organizadas?</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿Las instrucciones iniciales son claras?</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿Habéis probado la secuencia completa?</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checklist-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Aspectos Pedagógicos</h3>
+                        <div class="checklist-items">
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿Los objetivos curriculares están claros?</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿El nivel es apropiado para la edad?</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿La evaluación está planificada?</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>¿El debriefing está estructurado?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 18: Reflexión Final -->
+        <div class="slide" id="slide-18">
+            <div class="slide-content reflection" aria-label="Diapositiva 18: Reflexión Final" role="region">
                 <h2 class="slide-title">El poder transformador del juego inclusivo</h2>
                 <div class="reflection-content">
                     <div class="main-message">
@@ -618,9 +740,9 @@
             </div>
         </div>
 
-        <!-- Diapositiva 16: Preguntas -->
-        <div class="slide" id="slide-16">
-            <div class="slide-content questions" aria-label="Diapositiva 16: Preguntas" role="region">
+        <!-- Diapositiva 19: Preguntas -->
+        <div class="slide" id="slide-19">
+            <div class="slide-content questions" aria-label="Diapositiva 19: Preguntas" role="region">
                 <h2 class="slide-title">Gracias y ronda de preguntas</h2>
                 <div class="questions-content">
                     <div class="question-icon">
@@ -631,9 +753,9 @@
             </div>
         </div>
 
-        <!-- Diapositiva 17: Agradecimientos -->
-        <div class="slide" id="slide-17">
-            <div class="slide-content thanks" aria-label="Diapositiva 17: Agradecimientos" role="region">
+        <!-- Diapositiva 20: Agradecimientos -->
+        <div class="slide" id="slide-20">
+            <div class="slide-content thanks" aria-label="Diapositiva 20: Agradecimientos" role="region">
                 <h2 class="slide-title">Agradecimientos</h2>
                 <div class="thanks-list">
                     <div class="thanks-item">

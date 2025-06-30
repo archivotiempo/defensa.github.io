@@ -649,3 +649,17 @@ window.presentationControls = {
     toggleTimer,
     togglePresentationMode
 };
+
+// Función para el checklist interactivo
+function toggleCheck(element) {
+    const icon = element.querySelector('i');
+    const span = element.querySelector('span');
+    
+    if (element.classList.contains('checked')) {
+        element.classList.remove('checked');
+        icon.className = 'far fa-square';
+    } else {
+        element.classList.add('checked');
+        icon.className = 'fas fa-check-square';
+    }
+}

@@ -164,7 +164,7 @@ body::before {
 }
 
 .slide-content {
-    padding: 3rem;
+    padding: 2.5rem;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
@@ -177,6 +177,8 @@ body::before {
     border: 1.5px solid rgba(120, 119, 198, 0.18);
     position: relative;
     margin-bottom: 2rem;
+    width: 95%;
+    max-width: 1400px;
 }
 
 .slide-content > *, .content-grid > * {
@@ -898,98 +900,102 @@ body::before {
 
 /* Diapositiva 8: Resultados */
 .results-layout {
-    background: linear-gradient(135deg, rgba(120,119,198,0.18) 0%, rgba(255,119,198,0.10) 100%);
-    border-radius: 32px;
-    border: 2.5px solid rgba(120,119,198,0.18);
-    box-shadow: 0 12px 40px 0 rgba(120,119,198,0.22), 0 1.5px 0 rgba(255,255,255,0.10) inset;
-    padding: 3rem 2.5rem;
-    margin-bottom: 2rem;
-    animation: fadeIn 0.7s cubic-bezier(0.4,0,0.2,1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    position: relative;
+    z-index: 1;
 }
+
 .chart-section, .metrics-section {
-    background: rgba(20, 20, 40, 0.92);
-    border-radius: 22px;
-    border: 1.5px solid rgba(120,119,198,0.15);
-    box-shadow: 0 4px 24px rgba(120,119,198,0.13);
-    padding: 2rem 1.5rem;
+    background: rgba(15, 15, 35, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .metrics-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    padding: 0;
+    align-content: start;
 }
+
 .metric-card {
-    background: linear-gradient(135deg, rgba(120,119,198,0.22), rgba(255,119,198,0.13));
-    border-radius: 18px;
-    border: 1.5px solid rgba(120,119,198,0.18);
-    box-shadow: 0 6px 24px rgba(120,119,198,0.13);
-    padding: 1.7rem 1rem 1.2rem 1rem;
+    background: rgba(120, 119, 198, 0.15);
+    border-radius: 15px;
+    padding: 1.5rem;
     text-align: center;
+    border: 1px solid rgba(183,170,255,0.3);
+    transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
-    transition: box-shadow 0.3s, transform 0.3s;
 }
+
 .metric-card:hover {
-    box-shadow: 0 12px 32px rgba(255,119,198,0.18);
-    transform: translateY(-4px) scale(1.03);
-    border-color: #ff77c6;
+    background: rgba(120, 119, 198, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(120, 119, 198, 0.3);
 }
+
 .metric-card i {
-    position: absolute;
-    bottom: 12px;
-    right: 14px;
-    font-size: 2.2rem;
-    color: rgba(255, 255, 255, 0.13);
+    font-size: 2rem;
+    color: #b7aaff;
+    margin-bottom: 0.5rem;
 }
+
 .highlight-result {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, rgba(255, 119, 198, 0.28), rgba(120, 119, 198, 0.18));
-    border-radius: 28px;
-    border-left: 6px solid #ff77c6;
-    box-shadow: 0 6px 28px rgba(255,119,198,0.13);
-    padding: 2.2rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #fff;
-    margin-top: 2rem;
+    background: linear-gradient(135deg, rgba(120, 119, 198, 0.2), rgba(255, 119, 198, 0.2));
+    border-radius: 20px;
+    padding: 2rem;
     text-align: center;
+    border: 1px solid rgba(183,170,255,0.4);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
 }
+
 .highlight-result i {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: #ff77c6;
+    margin-bottom: 1rem;
+}
+
+.highlight-result p {
+    font-size: 1.3rem;
+    color: #f0f0ff;
+    margin: 0;
+    font-weight: 500;
 }
 
 #steamChart {
-    max-height: 300px;
+    width: 100% !important;
+    height: 300px !important;
+    margin: 0 auto;
 }
 
 .significance {
-    text-align: center;
-    color: #b7aaff;
-    font-size: 0.9rem;
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
     margin-top: 1rem;
-    font-style: italic;
+    text-align: center;
 }
 
 .metric-value {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #fff;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    color: #b7aaff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(183,170,255,0.3);
 }
 
 .metric-label {
+    font-size: 1rem;
     color: #f0f0ff;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+    font-weight: 500;
 }
 
 /* Diapositiva 9: Hallazgos */
@@ -1507,76 +1513,177 @@ body::before {
     color: #b7aaff;
 }
 
-/* Diapositiva 16: Preguntas */
-.slide-content.questions {
-    display: block;
-    justify-content: flex-start;
-    flex-direction: initial;
-}
-
-.questions-content {
-    text-align: center;
+/* Diapositiva 16: Evaluación y seguimiento */
+.evaluation-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     position: relative;
     z-index: 1;
 }
 
-.question-icon {
-    margin-bottom: 2rem;
-}
-
-.question-icon i {
-    font-size: 5rem;
-    color: #b7aaff;
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-}
-
-.questions-content p {
-    font-size: 1.5rem;
-    color: #f0f0ff;
-    margin-bottom: 3rem;
-}
-
-.tribunal-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-
-.member {
-    background: rgba(15, 15, 35, 0.7);
-    border-radius: 15px;
-    padding: 1.5rem;
+.evaluation-method {
+    background: rgba(15, 15, 35, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.evaluation-method:hover {
+    background: rgba(15, 15, 35, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(120, 119, 198, 0.2);
+}
+
+.evaluation-method h3 {
+    color: #b7aaff;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
-.member i {
-    font-size: 1.5rem;
-    color: #b7aaff;
-}
-
-.member p {
-    font-size: 1rem;
-    color: #e0e0ff;
+.evaluation-method ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-.footer-logos {
-    text-align: center;
+.evaluation-method li {
+    color: #f0f0ff;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
 }
 
-.logo-footer {
-    height: 50px;
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
+.evaluation-method li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Diapositiva 17: Desafíos y soluciones */
+.challenges-solutions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.challenge-item {
+    background: rgba(15, 15, 35, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.challenge-item:hover {
+    background: rgba(15, 15, 35, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 119, 198, 0.2);
+}
+
+.challenge-item h3 {
+    color: #ff77c6;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.challenge-item p {
+    color: #f0f0ff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.challenge-item strong {
+    color: #b7aaff;
+}
+
+/* Diapositiva 18: Checklist final */
+.checklist-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.checklist-section {
+    background: rgba(15, 15, 35, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.checklist-section h3 {
+    color: #b7aaff;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checklist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(120, 119, 198, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(183,170,255,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.checklist-item:hover {
+    background: rgba(120, 119, 198, 0.2);
+    transform: translateX(5px);
+}
+
+.checklist-item i {
+    font-size: 1.2rem;
+    color: #b7aaff;
+    min-width: 20px;
+}
+
+.checklist-item span {
+    color: #f0f0ff;
+    font-size: 1rem;
+}
+
+.checklist-item.checked {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.4);
+}
+
+.checklist-item.checked i {
+    color: #10b981;
+}
+
+.checklist-item.checked span {
+    text-decoration: line-through;
+    opacity: 0.7;
 }
 
 /* Indicadores de diapositiva */
@@ -1911,17 +2018,27 @@ body::before {
     text-align: left;
     line-height: 1.5;
 }
+
+/* Si el tooltip se sale por la derecha, mostrarlo por la izquierda */
+.method-card[data-tooltip]:hover::after {
+    left: auto;
+    right: 100%;
+    transform: translateY(-50%) translateX(-16px);
+}
+
 .method-card[data-tooltip]:hover::before {
     content: '';
     position: absolute;
-    left: 100%;
+    left: auto;
+    right: 100%;
     top: 50%;
-    transform: translateY(-50%) translateX(2px);
-    border-width: 0.7rem 0.7rem 0.7rem 0;
+    transform: translateY(-50%) translateX(-2px);
+    border-width: 0.7rem 0 0.7rem 0.7rem;
     border-style: solid;
-    border-color: transparent #b7aaff transparent transparent;
+    border-color: transparent transparent transparent #b7aaff;
     z-index: 1003;
 }
+
 @media (max-width: 900px) {
     .method-card[data-tooltip]:hover::after {
         font-size: 0.95rem;
@@ -1929,4 +2046,116 @@ body::before {
         max-width: 90vw;
         padding: 0.7rem 0.8rem;
     }
+}
+
+/* Diapositiva 19: Preguntas */
+.slide-content.questions {
+    display: block;
+    justify-content: flex-start;
+    flex-direction: initial;
+}
+
+.questions-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.question-icon {
+    margin-bottom: 2rem;
+}
+
+.question-icon i {
+    font-size: 5rem;
+    color: #b7aaff;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.questions-content p {
+    font-size: 1.5rem;
+    color: #f0f0ff;
+    margin-bottom: 3rem;
+}
+
+/* Diapositiva 20: Agradecimientos */
+.slide-content.thanks {
+    display: block;
+    justify-content: flex-start;
+    flex-direction: initial;
+}
+
+.thanks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.thanks-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(120, 119, 198, 0.15);
+    border-radius: 20px;
+    border: 1px solid rgba(183,170,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.thanks-item:hover {
+    background: rgba(120, 119, 198, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(120, 119, 198, 0.3);
+}
+
+.thanks-item i {
+    font-size: 2.5rem;
+    color: #b7aaff;
+}
+
+.thanks-item h4 {
+    color: #f0f0ff;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.thanks-item p {
+    color: #e0e0ff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.final-thanks {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 119, 198, 0.2), rgba(120, 119, 198, 0.2));
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 119, 198, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.final-thanks p {
+    font-size: 1.4rem;
+    color: #f0f0ff;
+    margin: 0;
+    font-weight: 500;
+}
+
+.final-thanks i {
+    font-size: 2.5rem;
+    color: #ff77c6;
+    margin-bottom: 1rem;
+}
+
+/* Ajuste específico para slide 8 (metodología) */
+.slide-content[aria-label*="Metodología"] {
+    width: 90%;
+    max-width: 1200px;
 }
