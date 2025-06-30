@@ -2260,3 +2260,68 @@ body::before {
     filter: brightness(0) invert(1);
     opacity: 0.95;
 }
+
+/* ---- NUEVAS SLIDES ---- */
+
+/* Competencias LOMLOE y STEAM */
+.competencias-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2.5rem 0 1.5rem 0;
+    justify-items: center;
+}
+.competencia-item {
+    background: rgba(120,119,198,0.13);
+    border: 1.5px solid #7877c6;
+    border-radius: 18px;
+    padding: 2rem 1.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(120,119,198,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.competencia-item:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(120,119,198,0.18);
+}
+
+/* Styled list para evaluación, transferibilidad y referencias */
+.styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.styled-list li {
+    background: rgba(40,30,60,0.7);
+    border-left: 4px solid #ff77c6;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    color: #e0e0ff;
+    font-size: 1.08rem;
+    box-shadow: 0 1px 8px rgba(120,119,198,0.07);
+    transition: background 0.2s;
+}
+.styled-list li:hover {
+    background: rgba(120,119,198,0.18);
+}
+
+/* Transferibilidad y referencias */
+#slide-transferibilidad .slide-content,
+#slide-referencias .slide-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#slide-referencias .styled-list li {
+    border-left: 4px solid #7877c6;
+    background: rgba(120,119,198,0.10);
+    color: #fff;
+}
+#slide-referencias .slide-title {
+    margin-bottom: 1.5rem;
+}
