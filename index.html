@@ -318,38 +318,26 @@
             <div class="slide-content" aria-label="Diapositiva 8: Metodología" role="region">
                 <h2 class="slide-title">Diseño metodológico riguroso</h2>
                 <div class="methodology-layout">
-                    <div class="method-card approach">
+                    <div class="method-card approach" data-tooltip="El enfoque Investigación-Acción implica que el profesorado investiga y mejora su propia práctica educativa. La metodología mixta combina datos cuantitativos y cualitativos para un análisis más completo.">
                         <h3>Enfoque</h3>
                         <div class="method-content">
                             <p><i class="fas fa-sync-alt"></i> Investigación-Acción</p>
                             <p><i class="fas fa-balance-scale"></i> Metodología Mixta (QUAN + QUAL)</p>
                         </div>
                     </div>
-                    <div class="method-card sample">
+                    <div class="method-card sample" data-tooltip="La muestra está formada por 12 jóvenes con discapacidad intelectual, participantes en el proyecto educativo inclusivo.">
                         <h3>Muestra</h3>
                         <div class="sample-stats">
                             <p class="sample-header">12 participantes AFANIAS (18-28 años)</p>
                             <div class="sample-breakdown">
-                                <div class="sample-item">
-                                    <span class="percentage">33%</span>
-                                    <span class="label">DI leve</span>
-                                </div>
-                                <div class="sample-item">
-                                    <span class="percentage">25%</span>
-                                    <span class="label">DI moderada</span>
-                                </div>
-                                <div class="sample-item">
-                                    <span class="percentage">17%</span>
-                                    <span class="label">TEA + DI</span>
-                                </div>
-                                <div class="sample-item">
-                                    <span class="percentage">25%</span>
-                                    <span class="label">Otras</span>
-                                </div>
+                                <div class="sample-item">33% DI leve</div>
+                                <div class="sample-item">25% DI moderada</div>
+                                <div class="sample-item">17% TEA + DI</div>
+                                <div class="sample-item">25% Otras</div>
                             </div>
                         </div>
                     </div>
-                    <div class="method-card instruments">
+                    <div class="method-card instruments" data-tooltip="Los instrumentos de recogida de datos incluyen pre-test y post-test, observaciones, registros y entrevistas para evaluar el impacto del escape room.">
                         <h3>Instrumentos</h3>
                         <div class="instruments-timeline">
                             <div class="phase">
@@ -378,7 +366,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="method-card analysis">
+                    <div class="method-card analysis" data-tooltip="El análisis incluye pruebas estadísticas (Wilcoxon) para comparar antes y después, cálculo del tamaño del efecto, fiabilidad entre evaluadores (Kappa) y triangulación de datos para asegurar la validez de los resultados.">
                         <h3>Análisis</h3>
                         <div class="analysis-items">
                             <p><i class="fas fa-chart-bar"></i> Wilcoxon (pre-post)</p>
@@ -399,7 +387,10 @@
                     <div class="chart-section">
                         <h3>Incremento Competencias STEAM</h3>
                         <canvas id="steamChart"></canvas>
-                        <p class="significance">Todos los incrementos p<0.05</p>
+                    </div>
+                    <div class="chart-section">
+                        <h3>Comparativa Pre-test / Post-test</h3>
+                        <canvas id="steamChart2"></canvas>
                     </div>
                     <div class="metrics-section">
                         <div class="metric-card satisfaction">

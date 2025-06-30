@@ -8,6 +8,7 @@ let presentationMode = false;
 // Variables globales para los gráficos de Chart.js
 let accessChartInstance = null;
 let steamChartInstance = null;
+let steamChart2Instance = null;
 
 // Elementos del DOM
 const prevBtn = document.getElementById('prevBtn');
@@ -339,6 +340,10 @@ function initializeCharts() {
     // Configuración global
     Chart.defaults.color = '#e0e0ff';
     Chart.defaults.font.family = 'Inter, sans-serif';
+    
+    updateAccessChart();
+    updateSteamChart();
+    updateSteamChart2();
 }
 
 function updateAccessChart() {
@@ -407,27 +412,20 @@ function updateSteamChart() {
                     'rgba(120, 219, 255, 0.8)',
                     'rgba(255, 219, 120, 0.8)'
                 ],
-                borderWidth: 0
+                borderRadius: 12,
+                borderSkipped: false
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
             animation: {
-                duration: 1500,
-                easing: 'easeOutBounce'
+                animateScale: true,
+                animateRotate: false,
+                easing: 'easeOutQuart',
+                duration: 1500
             },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 80,
-                    ticks: {
-                        callback: function(value) {
-                            return value + '%';
-                        }
-                    }
-                }
-            },
+            indexAxis: 'x',
             plugins: {
                 legend: {
                     display: false
@@ -438,6 +436,65 @@ function updateSteamChart() {
                             return 'Incremento: ' + context.parsed.y + '%';
                         }
                     }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 80,
+                    grid: { color: 'rgba(120,119,198,0.12)' },
+                    ticks: { color: '#fff', font: { weight: 'bold' } }
+                },
+                x: {
+                    grid: { color: 'rgba(120,119,198,0.08)' },
+                    ticks: { color: '#fff', font: { weight: 'bold' } }
+                }
+            }
+        }
+    });
+}
+
+function updateSteamChart2() {
+    const ctx = document.getElementById('steamChart2');
+    if (!ctx) return;
+    if (steamChart2Instance) {
+        steamChart2Instance.destroy();
+    }
+    steamChart2Instance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Pre-test', 'Post-test'],
+            datasets: [{
+                label: 'Competencias STEAM',
+                data: [2.1, 4.3],
+                backgroundColor: ['#7877c6', '#ff77c6'],
+                borderRadius: 12,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+                animateScale: true,
+                animateRotate: false,
+                easing: 'easeOutQuart',
+                duration: 1500
+            },
+            indexAxis: 'x',
+            plugins: {
+                legend: { display: false },
+                tooltip: { enabled: true }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(120,119,198,0.12)' },
+                    ticks: { color: '#fff', font: { weight: 'bold' } }
+                },
+                x: {
+                    grid: { color: 'rgba(120,119,198,0.08)' },
+                    ticks: { color: '#fff', font: { weight: 'bold' } }
                 }
             }
         }
