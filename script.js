@@ -23,15 +23,13 @@ const navTitle = document.getElementById('navTitle');
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
     slides = document.querySelectorAll('.slide');
-    totalSlides = slides.length;
+    totalSlides = slides.length; // Ahora será 18 slides
     updateSlideCounter();
     showSlide(0);
     setupEventListeners();
     setupKeyboardShortcuts();
     setupTouchGestures();
     initializeCharts();
-    loadPresenterNotes();
-    startPresentationTracking();
 });
 
 // Funciones de inicialización
@@ -68,9 +66,6 @@ function setupEventListeners() {
             goToSlide(1);
         });
     }
-    
-    // Detectar cambios en pantalla completa
-    document.addEventListener('fullscreenchange', updateFullscreenIcon);
 }
 
 function showSlide(n) {
@@ -85,11 +80,7 @@ function showSlide(n) {
     updateSlideCounter();
     updateNavigationButtons();
     applySlideEffects(currentSlide + 1);
-    
-    // Validar que la slide existe antes de guardar
-    if (currentSlide + 1 <= totalSlides) {
-        localStorage.setItem('tfm-current-slide', currentSlide + 1);
-    }
+    localStorage.setItem('tfm-current-slide', currentSlide + 1);
 }
 
 function nextSlide() {
@@ -149,11 +140,6 @@ function handleKeyPress(e) {
             e.preventDefault();
             togglePresentationMode();
             break;
-        case 'r':
-        case 'R':
-            e.preventDefault();
-            resetTimer();
-            break;
         case '1':
         case '2':
         case '3':
@@ -211,18 +197,10 @@ function toggleFullscreen() {
         document.documentElement.requestFullscreen().catch(err => {
             console.log(`Error al entrar en pantalla completa: ${err.message}`);
         });
+        fullscreenBtn.innerHTML = '<i class="fas fa-compress"></i>';
     } else {
         document.exitFullscreen();
-    }
-}
-
-function updateFullscreenIcon() {
-    if (fullscreenBtn) {
-        if (document.fullscreenElement) {
-            fullscreenBtn.innerHTML = '<i class="fas fa-compress"></i>';
-        } else {
         fullscreenBtn.innerHTML = '<i class="fas fa-expand"></i>';
-        }
     }
 }
 
@@ -233,11 +211,6 @@ function toggleTimer() {
     } else {
         startTimer();
     }
-}
-
-function resetTimer() {
-    stopTimer();
-    startTimer();
 }
 
 function startTimer() {
@@ -321,18 +294,6 @@ function applySlideEffects(slideNumber) {
                 updateAccessChart();
             }
             break;
-        case 6: // Competencias
-            animateCompetences();
-            break;
-        case 7: // Timeline
-            animateEras();
-            break;
-        case 8: // Adaptaciones
-            animateAdaptations();
-            break;
-        case 9: // Metodología
-            animateMethodology();
-            break;
         case 11: // Resultados cuantitativos
             if (typeof Chart !== 'undefined') {
                 updateSteamChart();
@@ -345,9 +306,6 @@ function applySlideEffects(slideNumber) {
             break;
         case 13: // Testimonios
             animateTestimonials();
-            break;
-        case 15: // Sostenibilidad
-            animateSustainability();
             break;
     }
 }
@@ -390,10 +348,7 @@ function animateTestimonials() {
 
 // Gráficos con Chart.js
 function initializeCharts() {
-    if (typeof Chart === 'undefined') {
-        console.log('Chart.js no está disponible');
-        return;
-    }
+    if (typeof Chart === 'undefined') return;
     
     // Configuración global
     Chart.defaults.color = '#e0e0ff';
@@ -409,12 +364,10 @@ function initializeCharts() {
 
 function updateAccessChart() {
     const ctx = document.getElementById('accessChart');
-    if (!ctx || typeof Chart === 'undefined') return;
-    
+    if (!ctx) return;
     if (accessChartInstance) {
         accessChartInstance.destroy();
     }
-    
     let animating = true;
     accessChartInstance = new Chart(ctx, {
         type: 'doughnut',
@@ -479,12 +432,10 @@ function updateAccessChart() {
 
 function updateSteamChart() {
     const ctx = document.getElementById('steamChart');
-    if (!ctx || typeof Chart === 'undefined') return;
-    
+    if (!ctx) return;
     if (steamChartInstance) {
         steamChartInstance.destroy();
     }
-    
     steamChartInstance = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -542,12 +493,10 @@ function updateSteamChart() {
 
 function updateSteamChart2() {
     const ctx = document.getElementById('steamChart2');
-    if (!ctx || typeof Chart === 'undefined') return;
-    
+    if (!ctx) return;
     if (steamChart2Instance) {
         steamChart2Instance.destroy();
     }
-    
     steamChart2Instance = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -592,7 +541,7 @@ function updateSteamChart2() {
 // Utilidades
 function preloadImages() {
     const imagesToPreload = [
-        'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjRkZGRkZGIi8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMDAwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VUkpDPC90ZXh0Pgo8L3N2Zz4K'
+        'logo.png'
     ];
     
     imagesToPreload.forEach(src => {
@@ -605,18 +554,12 @@ function checkUrlParameters() {
     const urlParams = new URLSearchParams(window.location.search);
     const slide = urlParams.get('slide');
     if (slide && !isNaN(slide)) {
-        const slideNum = parseInt(slide);
-        if (slideNum >= 1 && slideNum <= totalSlides) {
-            goToSlide(slideNum);
-        }
+        goToSlide(parseInt(slide));
     } else {
         // Recuperar última diapositiva de localStorage
         const savedSlide = localStorage.getItem('tfm-current-slide');
         if (savedSlide && !isNaN(savedSlide)) {
-            const slideNum = parseInt(savedSlide);
-            if (slideNum >= 1 && slideNum <= totalSlides) {
-                goToSlide(slideNum);
-            }
+            goToSlide(parseInt(savedSlide));
         }
     }
 }
@@ -641,7 +584,6 @@ function showKeyboardHelp() {
     Fin: Última diapositiva
     F: Pantalla completa
     T: Iniciar/detener timer
-    R: Reset timer
     P: Modo presentación
     1-9: Ir a diapositiva específica
     ?: Mostrar esta ayuda
@@ -663,192 +605,91 @@ function toggleCheck(element) {
     }
 }
 
-// Funciones adicionales para animaciones específicas
-function animateCompetences() {
-    const competences = document.querySelectorAll('.competencia-item:not(.inactive)');
-    competences.forEach((comp, index) => {
-        setTimeout(() => {
-            comp.style.transform = 'scale(1.05)';
-            setTimeout(() => {
-                comp.style.transform = 'scale(1)';
-            }, 200);
-        }, index * 100);
-    });
-}
-
-function animateEras() {
-    const eras = document.querySelectorAll('.era-item');
-    eras.forEach((era, index) => {
-        setTimeout(() => {
-            era.classList.add('animated', 'fadeInUp');
-        }, index * 150);
-    });
-}
-
-function animateAdaptations() {
-    const adaptations = document.querySelectorAll('.adaptacion-steam-card');
-    adaptations.forEach((adaptation, index) => {
-        setTimeout(() => {
-            adaptation.classList.add('animated', 'fadeIn');
-        }, index * 100);
-    });
-}
-
-function animateMethodology() {
-    const phases = document.querySelectorAll('.metodologia-phase');
-    phases.forEach((phase, index) => {
-        setTimeout(() => {
-            phase.classList.add('animated', 'fadeInUp');
-        }, index * 200);
-    });
-}
-
-function animateSustainability() {
-    const items = document.querySelectorAll('.sustainability-card');
-    items.forEach((item, index) => {
-        setTimeout(() => {
-            item.classList.add('animated', 'fadeInLeft');
-        }, index * 300);
-    });
-}
-
-// Funciones de navegación mejoradas
-function jumpToSection(section) {
-    const sectionMap = {
-        'intro': 3,
-        'objectives': 4,
-        'theory': 5,
-        'competences': 6,
-        'design': 7,
-        'adaptations': 8,
-        'methodology': 9,
-        'instruments': 10,
-        'results': 11,
-        'findings': 12,
-        'voices': 13,
-        'transfer': 14,
-        'sustainability': 15,
-        'limitations': 16,
-        'conclusions': 17,
-        'challenges': 18,
-        'checklist': 19,
-        'reflection': 20,
-        'questions': 21,
-        'thanks': 22,
-        'resources': 23
-    };
-    
-    if (sectionMap[section]) {
-        goToSlide(sectionMap[section]);
+// Animaciones CSS adicionales
+const animationStyles = `
+<style>
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-// Sistema de bookmarks
-function addBookmark(slideNum, name) {
-    const bookmarks = JSON.parse(localStorage.getItem('tfm-bookmarks') || '{}');
-    bookmarks[slideNum] = name;
-    localStorage.setItem('tfm-bookmarks', JSON.stringify(bookmarks));
-}
-
-function getBookmarks() {
-    return JSON.parse(localStorage.getItem('tfm-bookmarks') || '{}');
-}
-
-function removeBookmark(slideNum) {
-    const bookmarks = getBookmarks();
-    delete bookmarks[slideNum];
-    localStorage.setItem('tfm-bookmarks', JSON.stringify(bookmarks));
-}
-
-// Funciones de exportación
-function exportToPDF() {
-    window.print();
-}
-
-function exportSlideAsImage(slideNum) {
-    const slide = document.getElementById(`slide-${slideNum}`);
-    if (!slide) return;
-    
-    // Implementar captura de pantalla usando html2canvas si está disponible
-    if (typeof html2canvas !== 'undefined') {
-        html2canvas(slide).then(canvas => {
-            const link = document.createElement('a');
-            link.download = `slide-${slideNum}.png`;
-            link.href = canvas.toDataURL();
-            link.click();
-        });
-    } else {
-        console.log('html2canvas no está disponible para exportar imágenes');
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-// Sistema de notas del presenter
-let presenterNotes = {};
-
-function addNote(slideNum, note) {
-    presenterNotes[slideNum] = note;
-    localStorage.setItem('tfm-presenter-notes', JSON.stringify(presenterNotes));
-}
-
-function getNote(slideNum) {
-    return presenterNotes[slideNum] || '';
-}
-
-function loadPresenterNotes() {
-    const saved = localStorage.getItem('tfm-presenter-notes');
-    if (saved) {
-        presenterNotes = JSON.parse(saved);
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-// Sistema de estadísticas de presentación
-let presentationStats = {
-    startTime: null,
-    slideTime: {},
-    totalTime: 0,
-    slideVisits: {}
-};
-
-function startPresentationTracking() {
-    presentationStats.startTime = Date.now();
-    presentationStats.slideTime[currentSlide + 1] = Date.now();
-}
-
-function trackSlideChange(fromSlide, toSlide) {
-    const now = Date.now();
-    
-    if (presentationStats.slideTime[fromSlide]) {
-        const timeOnSlide = now - presentationStats.slideTime[fromSlide];
-        presentationStats.totalTime += timeOnSlide;
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
-    
-    presentationStats.slideTime[toSlide] = now;
-    presentationStats.slideVisits[toSlide] = (presentationStats.slideVisits[toSlide] || 0) + 1;
-}
-
-function getPresentationStats() {
-    const totalMinutes = Math.round(presentationStats.totalTime / 60000);
-    const mostVisited = Object.keys(presentationStats.slideVisits)
-        .reduce((a, b) => presentationStats.slideVisits[a] > presentationStats.slideVisits[b] ? a : b);
-    
-    return {
-        totalTime: totalMinutes,
-        mostVisitedSlide: mostVisited,
-        slideVisits: presentationStats.slideVisits
-    };
-}
-
-// Actualizar showSlide para incluir tracking
-const originalShowSlide = showSlide;
-showSlide = function(n) {
-    const oldSlide = currentSlide + 1;
-    originalShowSlide(n);
-    const newSlide = currentSlide + 1;
-    
-    if (oldSlide !== newSlide) {
-        trackSlideChange(oldSlide, newSlide);
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
-};
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.animated.fadeInDown { animation-name: fadeInDown; }
+.animated.fadeInUp { animation-name: fadeInUp; }
+.animated.fadeInLeft { animation-name: fadeInLeft; }
+.animated.fadeInRight { animation-name: fadeInRight; }
+.animated.fadeIn { animation-name: fadeIn; }
+.animated.bounceIn { animation-name: bounceIn; }
+</style>
+`;
+
+// Inyectar estilos de animación
+document.head.insertAdjacentHTML('beforeend', animationStyles);
 
 // Exportar funciones para uso externo
 window.presentationControls = {
@@ -857,132 +698,5 @@ window.presentationControls = {
     goToSlide,
     toggleFullscreen,
     toggleTimer,
-    resetTimer,
-    togglePresentationMode,
-    jumpToSection,
-    addBookmark,
-    getBookmarks,
-    removeBookmark,
-    exportToPDF,
-    exportSlideAsImage,
-    addNote,
-    getNote,
-    getPresentationStats
-};
-
-// Funciones de configuración avanzada
-function setTimerDuration(minutes) {
-    if (timerInterval) {
-        stopTimer();
-    }
-    
-    // Actualizar la duración por defecto
-    const startTimerOriginal = startTimer;
-    startTimer = function() {
-        let mins = minutes;
-        let secs = 0;
-        
-        timerElement.classList.add('active');
-        
-        timerInterval = setInterval(() => {
-            if (secs === 0) {
-                if (mins === 0) {
-                    stopTimer();
-                    alert('¡Tiempo terminado!');
-                    return;
-                }
-                mins--;
-                secs = 59;
-            } else {
-                secs--;
-            }
-            
-            minutesElement.textContent = mins.toString().padStart(2, '0');
-            secondsElement.textContent = secs.toString().padStart(2, '0');
-            
-            // Advertencias
-            if (mins === Math.ceil(minutes * 0.2) && secs === 0) {
-                timerElement.style.background = 'rgba(255, 119, 198, 0.8)';
-            }
-            
-            if (mins === Math.ceil(minutes * 0.1) && secs === 0) {
-                timerElement.style.background = 'rgba(255, 77, 77, 0.8)';
-            }
-        }, 1000);
-    };
-}
-
-// Configuración de tema
-function setTheme(themeName) {
-    const themes = {
-        default: {
-            '--primary-color': '#7877c6',
-            '--secondary-color': '#ff77c6',
-            '--accent-color': '#78dbff',
-            '--text-color': '#e0e0e0'
-        },
-        dark: {
-            '--primary-color': '#333366',
-            '--secondary-color': '#cc4499',
-            '--accent-color': '#4499cc',
-            '--text-color': '#cccccc'
-        },
-        light: {
-            '--primary-color': '#9999ff',
-            '--secondary-color': '#ff99cc',
-            '--accent-color': '#99ccff',
-            '--text-color': '#333333'
-        }
-    };
-    
-    if (themes[themeName]) {
-        const root = document.documentElement;
-        Object.entries(themes[themeName]).forEach(([property, value]) => {
-            root.style.setProperty(property, value);
-        });
-    }
-}
-
-// Modo ensayo (rehearsal mode)
-let rehearsalMode = false;
-let rehearsalData = {
-    attempts: 0,
-    bestTime: Infinity,
-    averageTime: 0,
-    notes: []
-};
-
-function toggleRehearsalMode() {
-    rehearsalMode = !rehearsalMode;
-    
-    if (rehearsalMode) {
-        console.log('Modo ensayo activado');
-        startPresentationTracking();
-    } else {
-        console.log('Modo ensayo desactivado');
-        const stats = getPresentationStats();
-        rehearsalData.attempts++;
-        
-        if (stats.totalTime < rehearsalData.bestTime) {
-            rehearsalData.bestTime = stats.totalTime;
-        }
-        
-        // Calcular tiempo promedio
-        rehearsalData.averageTime = (rehearsalData.averageTime * (rehearsalData.attempts - 1) + stats.totalTime) / rehearsalData.attempts;
-        
-        console.log(`Ensayo ${rehearsalData.attempts} completado:`, {
-            tiempo: stats.totalTime,
-            mejorTiempo: rehearsalData.bestTime,
-            tiempoPromedio: rehearsalData.averageTime
-        });
-    }
-}
-
-// Agregar funciones adicionales al objeto global
-window.presentationControls = {
-    ...window.presentationControls,
-    setTimerDuration,
-    setTheme,
-    toggleRehearsalMode,
-    getRehearsal: () => rehearsalData
+    togglePresentationMode
 };
