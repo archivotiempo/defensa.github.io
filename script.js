@@ -23,7 +23,7 @@ const navTitle = document.getElementById('navTitle');
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
     slides = document.querySelectorAll('.slide');
-    totalSlides = slides.length; // Ahora será 23 slides
+    totalSlides = slides.length; // Ahora será 18 slides
     updateSlideCounter();
     showSlide(0);
     setupEventListeners();
