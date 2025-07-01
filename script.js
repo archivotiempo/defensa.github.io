@@ -23,7 +23,7 @@ const navTitle = document.getElementById('navTitle');
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
     slides = document.querySelectorAll('.slide');
-    totalSlides = slides.length;
+    totalSlides = slides.length; // Ahora será 23 slides
     updateSlideCounter();
     showSlide(0);
     setupEventListeners();
@@ -287,21 +287,25 @@ function applySlideEffects(slideNumber) {
             animateElement('.subtitle', 'fadeInUp');
             animateElement('.author-info', 'fadeIn', 500);
             break;
-        case 2: // Contexto
+        case 3: // Contexto
             animateElement('.barrier-section', 'fadeInLeft');
             animateElement('.opportunity-section', 'fadeInRight', 300);
             if (typeof Chart !== 'undefined') {
                 updateAccessChart();
             }
             break;
-        case 8: // Resultados
+        case 11: // Resultados cuantitativos
             if (typeof Chart !== 'undefined') {
                 updateSteamChart();
+                updateSteamChart2();
             }
             animateMetrics();
             break;
-        case 9: // Hallazgos
+        case 12: // Hallazgos cualitativos
             animateFindings();
+            break;
+        case 13: // Testimonios
+            animateTestimonials();
             break;
     }
 }
@@ -333,6 +337,15 @@ function animateFindings() {
     });
 }
 
+function animateTestimonials() {
+    const quotes = document.querySelectorAll('.quote-card');
+    quotes.forEach((quote, index) => {
+        setTimeout(() => {
+            quote.classList.add('animated', 'fadeIn');
+        }, index * 300);
+    });
+}
+
 // Gráficos con Chart.js
 function initializeCharts() {
     if (typeof Chart === 'undefined') return;
@@ -341,9 +354,12 @@ function initializeCharts() {
     Chart.defaults.color = '#e0e0ff';
     Chart.defaults.font.family = 'Inter, sans-serif';
     
-    updateAccessChart();
-    updateSteamChart();
-    updateSteamChart2();
+    // Inicializar gráficos cuando sea necesario
+    setTimeout(() => {
+        updateAccessChart();
+        updateSteamChart();
+        updateSteamChart2();
+    }, 1000);
 }
 
 function updateAccessChart() {
@@ -525,7 +541,7 @@ function updateSteamChart2() {
 // Utilidades
 function preloadImages() {
     const imagesToPreload = [
-        'https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_URJC.svg'
+        'logo.png'
     ];
     
     imagesToPreload.forEach(src => {
@@ -573,6 +589,20 @@ function showKeyboardHelp() {
     ?: Mostrar esta ayuda
     `;
     alert(help);
+}
+
+// Función para el checklist interactivo
+function toggleCheck(element) {
+    const icon = element.querySelector('i');
+    const span = element.querySelector('span');
+    
+    if (element.classList.contains('checked')) {
+        element.classList.remove('checked');
+        icon.className = 'far fa-square';
+    } else {
+        element.classList.add('checked');
+        icon.className = 'fas fa-check-square';
+    }
 }
 
 // Animaciones CSS adicionales
@@ -670,17 +700,3 @@ window.presentationControls = {
     toggleTimer,
     togglePresentationMode
 };
-
-// Función para el checklist interactivo
-function toggleCheck(element) {
-    const icon = element.querySelector('i');
-    const span = element.querySelector('span');
-    
-    if (element.classList.contains('checked')) {
-        element.classList.remove('checked');
-        icon.className = 'far fa-square';
-    } else {
-        element.classList.add('checked');
-        icon.className = 'fas fa-check-square';
-    }
-}

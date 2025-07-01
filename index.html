@@ -15,7 +15,7 @@
             <div id="navTitle" class="nav-title" style="cursor:pointer;">TFM - Escape Room STEAM Inclusivo</div>
             <div class="nav-controls">
                 <button id="prevBtn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
-                <span id="slideCounter" class="slide-counter">1 / 21</span>
+                <span id="slideCounter" class="slide-counter">1 / 23</span>
                 <button id="nextBtn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
                 <button id="fullscreenBtn" class="nav-btn"><i class="fas fa-expand"></i></button>
             </div>
@@ -53,6 +53,584 @@
             </div>
         </div>
 
+        <!-- Diapositiva 10: Instrumentos y evaluación -->
+        <div class="slide" id="slide-10">
+            <div class="slide-content" aria-label="Diapositiva 10: Instrumentos y evaluación" role="region">
+                <h2 class="slide-title">Instrumentos y fases de evaluación</h2>
+                <div class="instrumentos-block-vertical">
+                    <h3><i class="fas fa-vial"></i> Instrumentos</h3>
+                    <div class="instrumentos-cards-vertical">
+                        <div class="instrumento-card-vertical">
+                            <div class="instrumento-title">PRE-TEST</div>
+                            <ul>
+                                <li>Competencias STEAM</li>
+                                <li>Motivación intrínseca</li>
+                                <li>Autoeficacia</li>
+                                <li>Habilidades sociales</li>
+                            </ul>
+                        </div>
+                        <div class="instrumento-card-vertical">
+                            <div class="instrumento-title">DURANTE</div>
+                            <ul>
+                                <li>Observación sistemática</li>
+                                <li>Registros de comportamiento</li>
+                                <li>Vídeos etnográficos</li>
+                                <li>Pasaporte del explorador</li>
+                            </ul>
+                        </div>
+                        <div class="instrumento-card-vertical">
+                            <div class="instrumento-title">POST-TEST</div>
+                            <ul>
+                                <li>Competencias STEAM</li>
+                                <li>Satisfacción (94%)</li>
+                                <li>Entrevistas cualitativas</li>
+                                <li>Seguimiento a 4 semanas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="eval-cards-grid">
+                    <div class="eval-card"><i class="fas fa-vial"></i><span>Rúbricas competenciales multinivel</span></div>
+                    <div class="eval-card"><i class="fas fa-user-edit"></i><span>Autoevaluación accesible (pictogramas)</span></div>
+                    <div class="eval-card"><i class="fas fa-eye"></i><span>Observación y registros sistemáticos</span></div>
+                    <div class="eval-card"><i class="fas fa-comments"></i><span>Encuestas de satisfacción visuales</span></div>
+                </div>
+                <div class="triangulacion-block">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Triangulación metodológica: evaluación inicial, continua y final, con convergencia del <strong>89%</strong> en la validación por pares.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 11: Resultados Cuantitativos -->
+        <div class="slide" id="slide-11">
+            <div class="slide-content" aria-label="Diapositiva 11: Resultados Cuantitativos" role="region">
+                <h2 class="slide-title">Impacto cuantitativo medible y significativo</h2>
+                <div class="results-layout">
+                    <!-- Primera fila: Gráfico STEAM + Cards de impacto socioemocional -->
+                    <div class="results-row">
+                        <div class="chart-section">
+                            <h3>Incremento Competencias STEAM</h3>
+                            <canvas id="steamChart"></canvas>
+                            <div class="significance">
+                                <strong>Tamaños del efecto Cohen: 1.41 - 2.81</strong> (impacto sustancial)
+                            </div>
+                        </div>
+                        <div class="impacto-socioemocional-block grid2x2">
+                            <div class="impacto-card">
+                                <i class="fas fa-users"></i>
+                                <div class="impacto-title">Participación activa</div>
+                                <div class="impacto-desc">Incremento del 83% (del 67% inicial)</div>
+                            </div>
+                            <div class="impacto-card">
+                                <i class="fas fa-comments"></i>
+                                <div class="impacto-title">Interacciones espontáneas</div>
+                                <div class="impacto-desc">Aumento del 58% entre pares</div>
+                            </div>
+                            <div class="impacto-card">
+                                <i class="fas fa-user-slash"></i>
+                                <div class="impacto-title">Aislamiento social</div>
+                                <div class="impacto-desc">Eliminación completa</div>
+                            </div>
+                            <div class="impacto-card">
+                                <i class="fas fa-crown"></i>
+                                <div class="impacto-title">Liderazgo emergente</div>
+                                <div class="impacto-desc">5 participantes desarrollaron roles</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Segunda fila: Gráfico Pre/Post + Cards de métricas -->
+                    <div class="results-row">
+                        <div class="chart-section">
+                            <h3>Comparativa Pre-test / Post-test</h3>
+                            <canvas id="steamChart2"></canvas>
+                        </div>
+                        <div class="metrics-section grid2x2">
+                            <div class="metric-card satisfaction">
+                                <div class="metric-value">94%</div>
+                                <div class="metric-label">Satisfacción</div>
+                                <i class="fas fa-smile-beam"></i>
+                            </div>
+                            <div class="metric-card attention">
+                                <div class="metric-value">2.3x</div>
+                                <div class="metric-label">Atención Sostenida</div>
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="metric-card objectives">
+                                <div class="metric-value">156%</div>
+                                <div class="metric-label">Persistencia</div>
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="metric-card transfer">
+                                <div class="metric-value">245%</div>
+                                <div class="metric-label">Iniciativas Espontáneas</div>
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tercera fila: Cards de resultados específicos -->
+                    <div class="resultados-cuantitativos-block">
+                        <div class="resultado-card">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="resultado-title">Incrementos específicos</div>
+                            <div class="resultado-desc">68% científicas, 72% tecnológicas, 65% matemáticas</div>
+                        </div>
+                        <div class="resultado-card">
+                            <i class="fas fa-history"></i>
+                            <div class="resultado-title">Efectividad por eras</div>
+                            <div class="resultado-desc">Edad Media: 95%, Imperio Romano: 100%</div>
+                        </div>
+                        <div class="resultado-card">
+                            <i class="fas fa-heart"></i>
+                            <div class="resultado-title">Autorregulación emocional</div>
+                            <div class="resultado-desc">11 de 12 participantes mejoraron</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 12: Hallazgos cualitativos -->
+        <div class="slide" id="slide-12">
+            <div class="slide-content" aria-label="Diapositiva 12: 5 descubrimientos transformadores" role="region">
+                <h2 class="slide-title">5 descubrimientos transformadores</h2>
+                <div class="findings-pentagon">
+                    <div class="finding" data-number="1">
+                        <div class="finding-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Gamificación democratizadora</h3>
+                        <p>La narrativa elimina barreras de acceso a conceptos STEAM</p>
+                        <div class="evidence">127 conexiones interdisciplinares documentadas</div>
+                    </div>
+                    <div class="finding" data-number="2">
+                        <div class="finding-icon"><i class="fas fa-crown"></i></div>
+                        <h3>Experticia distribuida</h3>
+                        <p>Cada participante lideró según sus fortalezas</p>
+                        <div class="evidence">43 episodios de liderazgo registrados</div>
+                    </div>
+                    <div class="finding" data-number="3">
+                        <div class="finding-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Narrativa como andamiaje</h3>
+                        <p>La historia facilita la comprensión de lo abstracto</p>
+                        <div class="evidence">"Como en las películas de viajes en el tiempo"</div>
+                    </div>
+                    <div class="finding" data-number="4">
+                        <div class="finding-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Adaptaciones universales</h3>
+                        <p>Lo diseñado para algunos mejora la experiencia de todos</p>
+                        <div class="evidence">100% valoración positiva de adaptaciones</div>
+                    </div>
+                    <div class="finding" data-number="5">
+                        <div class="finding-icon"><i class="fas fa-balance-scale-right"></i></div>
+                        <h3>Autorregulación emergente</h3>
+                        <p>Aparece espontáneamente la gestión emocional</p>
+                        <div class="evidence">"Respira, piensa, lo puedes hacer"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 13: Voces que transforman -->
+        <div class="slide" id="slide-13">
+            <div class="slide-content" aria-label="Diapositiva 13: Voces que transforman" role="region">
+                <h2 class="slide-title">Voces que transforman</h2>
+                <div class="quotes-container">
+                    <div class="quotes-grid">
+                        <div class="quote-card participant">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Me gustó cuando montamos el dinosaurio... Me sentí como un detective en la prueba de las pistas"</p>
+                            <cite>- Participante 3, Era Dinosaurios</cite>
+                        </div>
+                        <div class="quote-card participant">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Por primera vez me siento un científico de verdad"</p>
+                            <cite>- Participante 9, Era Moderna</cite>
+                        </div>
+                        <div class="quote-card participant">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"¡Yo puedo! ¡Déjame intentarlo otra vez!"</p>
+                            <cite>- Participante 7, Era Digital</cite>
+                        </div>
+                        <div class="quote-card participant">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Somos un equipo de exploradores del tiempo"</p>
+                            <cite>- Participante 12, Reflexión final</cite>
+                        </div>
+                    </div>
+                    <div class="teacher-observations">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Observaciones docentes</h3>
+                        <div class="observation">
+                            <i class="fas fa-eye"></i>
+                            <p>"Nunca había visto a M. tan concentrado durante 20 minutos seguidos"</p>
+                        </div>
+                        <div class="observation">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>"L. explicó a sus compañeros el mecanismo de poleas. Fue extraordinario"</p>
+                        </div>
+                        <div class="observation">
+                            <i class="fas fa-heart"></i>
+                            <p>"El cambio en autoestima y motivación ha sido notable en todo el grupo"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 14: Transferencia y seguimiento -->
+        <div class="slide" id="slide-14">
+            <div class="slide-content" aria-label="Diapositiva 14: Transferencia y seguimiento" role="region">
+                <h2 class="slide-title">Transferencia y seguimiento a 4 semanas</h2>
+                <div class="sustainability-grid">
+                    <div class="sustainability-card pedagogic">
+                        <h3><i class="fas fa-exchange-alt"></i> Transferencia Observada</h3>
+                        <div class="sustainability-items">
+                            <div class="item">📊 89% utilizó estrategias en matemáticas</div>
+                            <div class="item">🔬 67% aplicó métodos en ciencias naturales</div>
+                            <div class="item">📚 78% conectó conocimientos en historia</div>
+                            <div class="item">🎯 83% mantuvo vocabulario específico</div>
+                        </div>
+                    </div>
+                    <div class="sustainability-card scalability">
+                        <h3><i class="fas fa-clock"></i> Persistencia Temporal</h3>
+                        <div class="sustainability-items">
+                            <div class="item">🧠 Mantenimiento del 83% del vocabulario</div>
+                            <div class="item">🤝 Mejora continua en juego cooperativo</div>
+                            <div class="item">💪 Persistencia ante dificultades mantenida</div>
+                            <div class="item">🎲 Solicitudes de "más escape rooms"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="impact-social">
+                    <i class="fas fa-rocket"></i>
+                    <p><strong>Escalabilidad demostrada:</strong> El diseño permite adaptación a diferentes niveles educativos, duraciones y contextos</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 15: Sostenibilidad pedagógica -->
+        <div class="slide" id="slide-15">
+            <div class="slide-content" aria-label="Diapositiva 15: Sostenibilidad pedagógica y escalabilidad" role="region">
+                <h2 class="slide-title">Sostenibilidad pedagógica y escalabilidad</h2>
+                <div class="sustainability-grid">
+                    <div class="sustainability-card pedagogic">
+                        <h3><i class="fas fa-graduation-cap"></i> Sostenibilidad Pedagógica</h3>
+                        <div class="sustainability-items">
+                            <div class="item">👩‍🏫 Formación docente: 3 horas</div>
+                            <div class="item">📹 Videotutoriales por era</div>
+                            <div class="item">📚 Manual paso a paso</div>
+                            <div class="item">🌐 Comunidad de práctica online</div>
+                        </div>
+                    </div>
+                    <div class="sustainability-card scalability">
+                        <h3><i class="fas fa-expand-arrows-alt"></i> Escalabilidad</h3>
+                        <div class="sustainability-items">
+                            <div class="item">↔️ Horizontal: Otras discapacidades</div>
+                            <div class="item">↕️ Vertical: Infantil a FP</div>
+                            <div class="item">🔄 Temática: Otras áreas curriculares</div>
+                            <div class="item">🗺️ Geográfica: 5 centros interesados</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qr-download">
+                    <div class="qr-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <p><strong>Recursos disponibles:</strong> Accede a guías, materiales y videotutoriales</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 16: Limitaciones y líneas futuras -->
+        <div class="slide" id="slide-16">
+            <div class="slide-content" aria-label="Diapositiva 16: Limitaciones y líneas futuras" role="region">
+                <h2 class="slide-title">Limitaciones y líneas futuras</h2>
+                <div class="limitations-future">
+                    <div class="column limitations">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Limitaciones</h3>
+                        <ul>
+                            <li>Tamaño muestral reducido (n=12)</li>
+                            <li>Ausencia de grupo control</li>
+                            <li>Seguimiento limitado (4 semanas)</li>
+                            <li>Contexto único (AFANIAS)</li>
+                            <li>Generalización estadística limitada</li>
+                        </ul>
+                    </div>
+                    <div class="column future">
+                        <h3><i class="fas fa-rocket"></i> Líneas Futuras</h3>
+                        <ul>
+                            <li>Estudio multicéntrico (n>50)</li>
+                            <li>Versión digital con realidad aumentada</li>
+                            <li>Seguimiento longitudinal (6 meses)</li>
+                            <li>Aplicación a otras áreas curriculares</li>
+                            <li>Formación del profesorado a gran escala</li>
+                            <li>Validación internacional</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="commitment">
+                    <i class="fas fa-heart"></i>
+                    <p>"Continuar investigando para que ningún estudiante quede excluido de la aventura del conocimiento"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 17: Conclusiones -->
+        <div class="slide" id="slide-17">
+            <div class="slide-content" aria-label="Diapositiva 17: Conclusiones" role="region">
+                <h2 class="slide-title">Transformando la educación inclusiva</h2>
+                <div class="conclusions-pyramid">
+                    <div class="pyramid-level specific">
+                        <h3>Resultados específicos</h3>
+                        <ul>
+                            <li>✓ Incrementos significativos en todas las competencias STEAM</li>
+                            <li>✓ Mejora en motivación, autoeficacia y autorregulación</li>
+                            <li>✓ Modelo validado y replicable con 23 adaptaciones</li>
+                        </ul>
+                    </div>
+                    <div class="pyramid-level educational">
+                        <h3>Implicaciones educativas</h3>
+                        <ul>
+                            <li>✓ Los escape rooms inclusivos son viables y efectivos</li>
+                            <li>✓ El DUA + gamificación genera innovación para todos</li>
+                            <li>✓ La diversidad es fortaleza, no limitación</li>
+                        </ul>
+                    </div>
+                    <div class="pyramid-level paradigm">
+                        <h3>Transformación paradigmática</h3>
+                        <div class="key-messages">
+                            <p class="message">"Cuando diseñamos para los márgenes, innovamos para el centro"</p>
+                            <p class="message">"La verdadera inclusión no adapta contenidos, transforma metodologías"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 18: Evaluación y Seguimiento -->
+        <div class="slide" id="slide-18">
+            <div class="slide-content" aria-label="Diapositiva 18: Evaluación y Seguimiento" role="region">
+                <h2 class="slide-title">Evaluación y seguimiento</h2>
+                <div class="evaluation-methods">
+                    <div class="evaluation-method">
+                        <h3><i class="fas fa-chart-column"></i> Evaluación Cuantitativa</h3>
+                        <ul>
+                            <li>Tests de conocimiento antes y después</li>
+                            <li>Encuestas de satisfacción</li>
+                            <li>Métricas de participación</li>
+                            <li>Tiempo de resolución</li>
+                            <li>Número de pistas utilizadas</li>
+                        </ul>
+                    </div>
+                    <div class="evaluation-method">
+                        <h3><i class="fas fa-clipboard-question"></i> Evaluación Cualitativa</h3>
+                        <ul>
+                            <li>Observación directa del comportamiento</li>
+                            <li>Entrevistas con participantes</li>
+                            <li>Reflexiones escritas</li>
+                            <li>Debriefing grupal</li>
+                            <li>Portafolios de evidencias</li>
+                        </ul>
+                    </div>
+                    <div class="evaluation-method">
+                        <h3><i class="fas fa-arrows-rotate"></i> Evaluación Continua</h3>
+                        <ul>
+                            <li>Diarios de aprendizaje</li>
+                            <li>Autoevaluación de competencias</li>
+                            <li>Evaluación entre pares</li>
+                            <li>Rúbricas de evaluación</li>
+                            <li>Feedback inmediato</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 19: Desafíos y Soluciones -->
+        <div class="slide" id="slide-19">
+            <div class="slide-content" aria-label="Diapositiva 19: Desafíos y Soluciones" role="region">
+                <h2 class="slide-title">Desafíos y soluciones</h2>
+                <div class="challenges-solutions">
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-clock"></i> Gestión del Tiempo</h3>
+                        <p><strong>Problema:</strong> Los estudiantes pueden quedarse bloqueados en puzzles difíciles</p>
+                        <p><strong>Solución:</strong> Sistema de pistas escalonadas y tiempo límite flexible</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-users"></i> Diferencias de Nivel</h3>
+                        <p><strong>Problema:</strong> Estudiantes con diferentes capacidades en el mismo grupo</p>
+                        <p><strong>Solución:</strong> Roles diferenciados y puzzles con múltiples niveles de dificultad</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-tools"></i> Recursos Limitados</h3>
+                        <p><strong>Problema:</strong> Falta de materiales o espacio físico adecuado</p>
+                        <p><strong>Solución:</strong> Escape rooms digitales y materiales reciclados</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3><i class="fas fa-clipboard-check"></i> Evaluación Objetiva</h3>
+                        <p><strong>Problema:</strong> Dificultad para medir el aprendizaje en experiencias lúdicas</p>
+                        <p><strong>Solución:</strong> Rúbricas específicas y múltiples métodos de evaluación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 20: Checklist final -->
+        <div class="slide" id="slide-20">
+            <div class="slide-content" aria-label="Diapositiva 20: Checklist final" role="region">
+                <h2 class="slide-title">Checklist final</h2>
+                <div class="checklist-container">
+                    <div class="checklist-section">
+                        <h3><i class="fas fa-check-circle"></i> Logros Alcanzados</h3>
+                        <div class="checklist-items">
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Escape room inclusivo diseñado e implementado</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>23 adaptaciones específicas validadas</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Incrementos significativos en competencias STEAM</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Modelo replicable y sostenible</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Evidencias de transferencia y persistencia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checklist-section">
+                        <h3><i class="fas fa-arrow-right"></i> Próximos Pasos</h3>
+                        <div class="checklist-items">
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Estudio multicéntrico ampliado</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Formación del profesorado</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Desarrollo de versión digital</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Expansión a otras áreas curriculares</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Publicación científica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 21: El poder transformador del juego inclusivo -->
+        <div class="slide" id="slide-21">
+            <div class="slide-content reflection" aria-label="Diapositiva 21: El poder transformador del juego inclusivo" role="region">
+                <h2 class="slide-title">El poder transformador del juego inclusivo</h2>
+                <div class="reflection-content">
+                    <div class="main-message">
+                        <p>Hemos demostrado que los <strong>escape rooms educativos inclusivos</strong> no son solo una metodología innovadora, sino una <strong>puerta hacia la equidad educativa</strong>.</p>
+                        <p>Cada adaptación, cada pista progresiva, cada momento de colaboración construye un futuro donde <strong>todos los estudiantes pueden ser protagonistas</strong> de su aprendizaje.</p>
+                    </div>
+                    <div class="final-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>
+                            "El juego no es solo el lenguaje natural del aprendizaje; es el camino hacia una educación verdaderamente inclusiva donde cada diferencia se convierte en una fortaleza."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 22: Preguntas -->
+        <div class="slide" id="slide-22">
+            <div class="slide-content questions" aria-label="Diapositiva 22: Preguntas" role="region">
+                <h2 class="slide-title">¿Preguntas?</h2>
+                <div class="questions-content">
+                    <div class="question-icon">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <p>Estaré encantada de profundizar en cualquier aspecto del proyecto que les resulte de interés</p>
+                    <div class="tribunal-row">
+                        <div class="tribunal-card">
+                            <i class="fas fa-user"></i>
+                            <div>Presidenta: Estefanía Martín Barroso</div>
+                        </div>
+                        <div class="tribunal-card">
+                            <i class="fas fa-user"></i>
+                            <div>Secretario: Maximiliano Paredes Velasco</div>
+                        </div>
+                        <div class="tribunal-card">
+                            <i class="fas fa-user"></i>
+                            <div>Vocal: Najib Abu-Warda Pérez</div>
+                        </div>
+                    </div>
+                    <img src="logo.png" alt="URJC" class="urjc-logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 23: Agradecimientos -->
+        <div class="slide" id="slide-23">
+            <div class="slide-content thanks" aria-label="Diapositiva 23: Agradecimientos" role="region">
+                <h2 class="slide-title">Agradecimientos</h2>
+                <div class="thanks-list">
+                    <div class="thanks-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>
+                            <h4>Al tribunal evaluador</h4>
+                            <p>Por su tiempo y dedicación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="final-quote">
+                    <i class="fas fa-heart"></i>
+                    <blockquote>"La educación es el arma más poderosa para cambiar el mundo"<br><span style="color: #b7aaff; font-size: 1rem;">- Nelson Mandela</span></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timer para práctica -->
+    <div class="timer" id="timer">
+        <span id="minutes">10</span>:<span id="seconds">00</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+                        <i class="fas fa-user-graduate"></i>
+                        <div>
+                            <h4>Al Dr. Oriol Borrás Gené</h4>
+                            <p>Por su guía, apoyo y visión inclusiva</p>
+                        </div>
+                    </div>
+                    <div class="thanks-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <h4>Al Centro AFANIAS y sus profesionales</h4>
+                            <p>Por abrir sus puertas a la innovación</p>
+                        </div>
+                    </div>
+                    <div class="thanks-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>A los 12 participantes</h4>
+                            <p>Verdaderos exploradores del tiempo y del conocimiento</p>
+                        </div>
+                    </div>
+                    <div class="thanks-item">
+
         <!-- Diapositiva 2: Índice de la presentación -->
         <div class="slide" id="slide-2">
             <div class="slide-content" aria-label="Diapositiva 2: Índice de la presentación" role="region">
@@ -61,20 +639,18 @@
                     <div class="index-card"><i class="fas fa-question-circle"></i> ¿Por qué un escape room educativo inclusivo?</div>
                     <div class="index-card"><i class="fas fa-bullseye"></i> Objetivos de la investigación</div>
                     <div class="index-card"><i class="fas fa-book"></i> Fundamentación teórica integradora</div>
+                    <div class="index-card"><i class="fas fa-flask"></i> Competencias clave y STEAM</div>
                     <div class="index-card"><i class="fas fa-history"></i> 7 eras, 7 desafíos STEAM</div>
                     <div class="index-card"><i class="fas fa-universal-access"></i> 23 adaptaciones para la diversidad</div>
-                    <div class="index-card"><i class="fas fa-vials"></i> Diseño metodológico riguroso</div>
-                    <div class="index-card"><i class="fas fa-chart-bar"></i> Impacto medible y significativo</div>
+                    <div class="index-card"><i class="fas fa-microscope"></i> Diseño metodológico riguroso</div>
+                    <div class="index-card"><i class="fas fa-vials"></i> Instrumentos y evaluación</div>
+                    <div class="index-card"><i class="fas fa-chart-bar"></i> Impacto cuantitativo medible</div>
                     <div class="index-card"><i class="fas fa-lightbulb"></i> 5 descubrimientos transformadores</div>
                     <div class="index-card"><i class="fas fa-comments"></i> Voces que transforman</div>
-                    <div class="index-card"><i class="fas fa-project-diagram"></i> Sostenibilidad pedagógica y escalabilidad</div>
-                    <div class="index-card"><i class="fas fa-balance-scale"></i> Honestidad académica y proyección</div>
+                    <div class="index-card"><i class="fas fa-project-diagram"></i> Sostenibilidad y escalabilidad</div>
+                    <div class="index-card"><i class="fas fa-balance-scale"></i> Limitaciones y líneas futuras</div>
                     <div class="index-card"><i class="fas fa-graduation-cap"></i> Transformando la educación inclusiva</div>
-                    <div class="index-card"><i class="fas fa-chart-line"></i> Evaluación y seguimiento</div>
-                    <div class="index-card"><i class="fas fa-exclamation-triangle"></i> Desafíos y soluciones</div>
-                    <div class="index-card"><i class="fas fa-check-square"></i> Checklist final</div>
-                    <div class="index-card"><i class="fas fa-gamepad"></i> El poder transformador del juego inclusivo</div>
-                    <div class="index-card"><i class="fas fa-question"></i> Gracias y ronda de preguntas</div>
+                    <div class="index-card"><i class="fas fa-question"></i> Preguntas y debate</div>
                     <div class="index-card"><i class="fas fa-hands-helping"></i> Agradecimientos</div>
                 </div>
             </div>
@@ -117,9 +693,9 @@
                     </div>
                 </div>
                 <div class="contexto-destacado">
-                    <div class="contexto-item"><i class="fas fa-users"></i> 12 estudiantes de AFANIAS (18-28 años) con diferentes perfiles de discapacidad intelectual</div>
-                    <div class="contexto-item"><i class="fas fa-bolt"></i> 83,3% mostró alta motivación en actividades prácticas</div>
-                    <div class="contexto-item"><i class="fas fa-smile-beam"></i> 91,7% respondió positivamente a metodologías lúdicas</div>
+                    <div class="contexto-item"><i class="fas fa-users"></i> <strong>12 estudiantes AFANIAS</strong> (18-28 años) con diferentes perfiles de discapacidad intelectual</div>
+                    <div class="contexto-item"><i class="fas fa-bolt"></i> <strong>83,3%</strong> mostró alta motivación en actividades prácticas</div>
+                    <div class="contexto-item"><i class="fas fa-smile-beam"></i> <strong>91,7%</strong> respondió positivamente a metodologías lúdicas</div>
                 </div>
             </div>
         </div>
@@ -132,7 +708,7 @@
                     <div class="objective-card main">
                         <i class="fas fa-bullseye"></i>
                         <h3>Objetivo General</h3>
-                        <p>Diseñar, implementar y evaluar un escape room educativo inclusivo para el desarrollo de competencias STEAM</p>
+                        <p>Diseñar, implementar y evaluar un escape room educativo inclusivo para el desarrollo de competencias STEAM en estudiantes con discapacidad intelectual</p>
                     </div>
                     <div class="objectives-grid">
                         <div class="objective-card">
@@ -158,60 +734,8 @@
                         <div class="objective-card">
                             <i class="fas fa-check-circle"></i>
                             <h4>Validar principios DUA</h4>
-                            <p>En gamificación</p>
+                            <p>En gamificación educativa</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Diapositiva: Adaptaciones para la diversidad -->
-        <div class="slide" id="slide-adaptaciones">
-            <div class="slide-content" aria-label="Diapositiva: 23 adaptaciones para la diversidad" role="region">
-                <h2 class="slide-title">23 adaptaciones para la diversidad</h2>
-                <p class="adaptaciones-intro">
-                    El diseño del escape room integra <strong>23 adaptaciones inclusivas</strong> para responder a las necesidades de todos los perfiles: TEA, discapacidad visual, motriz, auditiva, cognitiva, daltonismo y más. Cada adaptación se implementó con ejemplos reales y materiales accesibles, garantizando la participación y el éxito de todo el alumnado.
-                </p>
-                <div class="adaptaciones-steam-grid-3col">
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-puzzle-piece"></i>
-                        <div class="adaptacion-steam-title">TEA</div>
-                        <div class="adaptacion-steam-desc">Estructura predecible, zonas de calma, historias sociales.<br><span class='ejemplo'>Ej: Agenda visual diaria y espacio de relajación.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-low-vision"></i>
-                        <div class="adaptacion-steam-title">Discapacidad visual</div>
-                        <div class="adaptacion-steam-desc">Materiales táctiles, braille, alto contraste.<br><span class='ejemplo'>Ej: Tarjetas en relieve, texturas y textos ampliados.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-wheelchair"></i>
-                        <div class="adaptacion-steam-title">Discapacidad motriz</div>
-                        <div class="adaptacion-steam-desc">Herramientas ergonómicas, accesibilidad física.<br><span class='ejemplo'>Ej: Piezas grandes, pulsadores y mesas adaptadas.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-ear-listen"></i>
-                        <div class="adaptacion-steam-title">Discapacidad auditiva</div>
-                        <div class="adaptacion-steam-desc">Pistas visuales, subtítulos, apoyo escrito.<br><span class='ejemplo'>Ej: Instrucciones en pictogramas y vídeos subtitulados.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-brain"></i>
-                        <div class="adaptacion-steam-title">Dificultades cognitivas</div>
-                        <div class="adaptacion-steam-desc">Instrucciones simplificadas, apoyos visuales, tiempo extra.<br><span class='ejemplo'>Ej: Guía paso a paso y pictogramas de refuerzo.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-palette"></i>
-                        <div class="adaptacion-steam-title">Daltonismo (ColorADD)</div>
-                        <div class="adaptacion-steam-desc">Sistema de símbolos para colores.<br><span class='ejemplo'>Ej: Códigos ColorADD en candados y pruebas visuales.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card">
-                        <i class="fas fa-image"></i>
-                        <div class="adaptacion-steam-title">Pictogramas ARASAAC</div>
-                        <div class="adaptacion-steam-desc">Apoyo visual universal.<br><span class='ejemplo'>Ej: Secuencias de pistas y normas con pictogramas.</span></div>
-                    </div>
-                    <div class="adaptacion-steam-card especial">
-                        <i class="fas fa-lightbulb"></i>
-                        <div class="adaptacion-steam-title">Sistema de pistas progresivas</div>
-                        <div class="adaptacion-steam-desc">Cuatro niveles de apoyo, respetando la dignidad adulta.<br><span class='ejemplo'>Ej: Pistas visuales, verbales, manipulativas y ayuda directa.</span></div>
                     </div>
                 </div>
             </div>
@@ -221,58 +745,86 @@
         <div class="slide" id="slide-5">
             <div class="slide-content" aria-label="Diapositiva 5: Marco Teórico" role="region">
                 <h2 class="slide-title">Fundamentación teórica integradora</h2>
-                <div class="theory-quad-layout">
-                    <div class="theory-quad theory-quad-dua">
-                        <i class="fas fa-eye"></i>
-                        <div class="quad-title">DUA<br><span class='quad-ref'>(CAST, 2018)</span></div>
-                        <ul>
-                            <li>Múltiples formas de representación</li>
-                            <li>Múltiples formas de acción/expresión</li>
-                            <li>Múltiples formas de implicación</li>
-                        </ul>
-                    </div>
-                    <div class="theory-quad theory-quad-gamif">
-                        <i class="fas fa-gamepad"></i>
-                        <div class="quad-title">Gamificación<br><span class='quad-ref'>(Deterding et al., 2011)</span></div>
-                        <ul>
-                            <li>Elementos de juego en educación</li>
-                            <li>Motivación intrínseca</li>
-                            <li>Retroalimentación inmediata</li>
-                        </ul>
-                    </div>
-                    <div class="theory-quad theory-quad-auto">
-                        <i class="fas fa-hands"></i>
-                        <div class="quad-title">Autodeterminación<br><span class='quad-ref'>(Deci & Ryan, 1985)</span></div>
-                        <ul>
-                            <li>Autonomía</li>
-                            <li>Competencia</li>
-                            <li>Relación social</li>
-                        </ul>
-                    </div>
-                    <div class="theory-quad theory-quad-social">
-                        <i class="fas fa-universal-access"></i>
-                        <div class="quad-title">Modelo Social<br><span class='quad-ref'>(ONU, 2006)</span></div>
-                        <ul>
-                            <li>Eliminar barreras contextuales</li>
-                            <li>Diseño universal desde el inicio</li>
-                            <li>Dignidad y participación plena</li>
-                        </ul>
-                    </div>
-                    <div class="theory-quad-center">
-                        <div class="center-circle">
-                            ESCAPE ROOM<br>INCLUSIVO
+                <div class="theory-enhanced-layout">
+                    <div class="dua-cards-block">
+                        <div class="dua-card">
+                            <i class="fas fa-eye"></i>
+                            <div class="dua-title">DUA - Representación</div>
+                            <div class="dua-desc">Múltiples formas de presentar información</div>
                         </div>
+                        <div class="dua-card">
+                            <i class="fas fa-hands"></i>
+                            <div class="dua-title">DUA - Acción</div>
+                            <div class="dua-desc">Múltiples formas de expresión</div>
+                        </div>
+                        <div class="dua-card">
+                            <i class="fas fa-heart"></i>
+                            <div class="dua-title">DUA - Implicación</div>
+                            <div class="dua-desc">Múltiples formas de motivación</div>
+                        </div>
+                    </div>
+                    <div class="neuro-block">
+                        <h3><i class="fas fa-brain"></i> Base Neuroeducativa</h3>
+                        <ul>
+                            <li><i class="fas fa-puzzle-piece"></i> Inteligencias múltiples (Gardner)</li>
+                            <li><i class="fas fa-gamepad"></i> Gamificación estructurada</li>
+                            <li><i class="fas fa-universal-access"></i> Modelo social de discapacidad</li>
+                            <li><i class="fas fa-balance-scale"></i> Teoría de autodeterminación</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="theory-text-refuerzo">
-                    La propuesta se fundamenta en el DUA (CAST, 2018), garantizando accesibilidad y motivación a través de la neuroeducación y las inteligencias múltiples de Gardner. Así, cada estudiante encuentra su vía óptima de aprendizaje y expresión.
+                    La propuesta se fundamenta en el <strong>DUA (CAST, 2018)</strong>, garantizando accesibilidad y motivación a través de la neuroeducación y las inteligencias múltiples de Gardner. Cada estudiante encuentra su vía óptima de aprendizaje y expresión.
                 </div>
             </div>
         </div>
 
-        <!-- Diapositiva 6: Diseño - Estructura Narrativa -->
+        <!-- Diapositiva 6: Competencias clave y STEAM -->
         <div class="slide" id="slide-6">
-            <div class="slide-content" aria-label="Diapositiva 6: Diseño - Estructura Narrativa" role="region">
+            <div class="slide-content" aria-label="Diapositiva 6: Competencias clave y STEAM" role="region">
+                <h2 class="slide-title">Competencias clave y STEAM</h2>
+                <div class="competencias-grid">
+                    <div class="competencia-item cmct">
+                        <i class="fas fa-flask"></i>
+                        <div>
+                            <div class="competencia-title">CMCT</div>
+                            <div class="competencia-desc">Matemática, Ciencia y Tecnología</div>
+                        </div>
+                    </div>
+                    <div class="competencia-item cd">
+                        <i class="fas fa-laptop"></i>
+                        <div>
+                            <div class="competencia-title">CD</div>
+                            <div class="competencia-desc">Competencia Digital</div>
+                        </div>
+                    </div>
+                    <div class="competencia-item cpsaa">
+                        <i class="fas fa-user-friends"></i>
+                        <div>
+                            <div class="competencia-title">CPSAA</div>
+                            <div class="competencia-desc">Personal, Social y Aprender a Aprender</div>
+                        </div>
+                    </div>
+                    <div class="competencia-item ccec">
+                        <i class="fas fa-palette"></i>
+                        <div>
+                            <div class="competencia-title">CCEC</div>
+                            <div class="competencia-desc">Conciencia y Expresión Culturales</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contexto-destacado">
+                    <div class="contexto-item">
+                        <i class="fas fa-target"></i>
+                        <strong>Todas las eras y retos están alineados con los ámbitos STEAM y competencias LOMLOE</strong> (véase Anexo A.2)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 7: Diseño - Estructura Narrativa -->
+        <div class="slide" id="slide-7">
+            <div class="slide-content" aria-label="Diapositiva 7: Diseño - Estructura Narrativa" role="region">
                 <h2 class="slide-title">"El archivo de la historia": 7 eras, 7 desafíos STEAM</h2>
                 <div class="timeline-container">
                     <div class="timeline">
@@ -321,15 +873,68 @@
                     </div>
                     <div class="passport-preview">
                         <i class="fas fa-passport"></i>
-                        <p>Pasaporte del Explorador</p>
+                        <p><strong>Pasaporte del Explorador</strong></p>
+                        <p>Formato profesional evitando infantilización</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Diapositiva 7: Metodología restaurada y mejorada -->
-        <div class="slide" id="slide-7">
-            <div class="slide-content" aria-label="Diapositiva 7: Metodología" role="region">
+        <!-- Diapositiva 8: Adaptaciones para la diversidad -->
+        <div class="slide" id="slide-8">
+            <div class="slide-content" aria-label="Diapositiva 8: 23 adaptaciones para la diversidad" role="region">
+                <h2 class="slide-title">23 adaptaciones para la diversidad</h2>
+                <p class="adaptaciones-intro">
+                    El diseño del escape room integra <strong>23 adaptaciones inclusivas</strong> para responder a las necesidades de todos los perfiles: TEA, discapacidad visual, motriz, auditiva, cognitiva, daltonismo y más. Cada adaptación se implementó con ejemplos reales y materiales accesibles.
+                </p>
+                <div class="adaptaciones-steam-grid-3col">
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <div class="adaptacion-steam-title">TEA</div>
+                        <div class="adaptacion-steam-desc">Estructura predecible, zonas de calma, historias sociales<br><span class='ejemplo'>Ej: Agenda visual diaria y espacio de relajación</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-low-vision"></i>
+                        <div class="adaptacion-steam-title">Discapacidad visual</div>
+                        <div class="adaptacion-steam-desc">Materiales táctiles, braille, alto contraste<br><span class='ejemplo'>Ej: Tarjetas en relieve, texturas y textos ampliados</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-wheelchair"></i>
+                        <div class="adaptacion-steam-title">Discapacidad motriz</div>
+                        <div class="adaptacion-steam-desc">Herramientas ergonómicas, accesibilidad física<br><span class='ejemplo'>Ej: Piezas grandes, pulsadores y mesas adaptadas</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-ear-listen"></i>
+                        <div class="adaptacion-steam-title">Discapacidad auditiva</div>
+                        <div class="adaptacion-steam-desc">Pistas visuales, subtítulos, apoyo escrito<br><span class='ejemplo'>Ej: Instrucciones en pictogramas y vídeos subtitulados</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-brain"></i>
+                        <div class="adaptacion-steam-title">Dificultades cognitivas</div>
+                        <div class="adaptacion-steam-desc">Instrucciones simplificadas, apoyos visuales, tiempo extra<br><span class='ejemplo'>Ej: Guía paso a paso y pictogramas de refuerzo</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-palette"></i>
+                        <div class="adaptacion-steam-title">Daltonismo (ColorADD)</div>
+                        <div class="adaptacion-steam-desc">Sistema de símbolos para colores<br><span class='ejemplo'>Ej: Códigos ColorADD en candados y pruebas visuales</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card">
+                        <i class="fas fa-image"></i>
+                        <div class="adaptacion-steam-title">Pictogramas ARASAAC</div>
+                        <div class="adaptacion-steam-desc">Apoyo visual universal<br><span class='ejemplo'>Ej: Secuencias de pistas y normas con pictogramas</span></div>
+                    </div>
+                    <div class="adaptacion-steam-card especial">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="adaptacion-steam-title">Sistema de pistas progresivas</div>
+                        <div class="adaptacion-steam-desc">Cuatro niveles de apoyo, respetando la dignidad adulta<br><span class='ejemplo'>Ej: Pistas visuales, verbales, manipulativas y ayuda directa</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 9: Metodología -->
+        <div class="slide" id="slide-9">
+            <div class="slide-content" aria-label="Diapositiva 9: Metodología" role="region">
                 <h2 class="slide-title">Diseño metodológico riguroso</h2>
                 <p class="metodologia-intro">
                     Se empleó una <strong>metodología mixta</strong> con triangulación de datos: evaluación inicial, continua y final, garantizando la validez y fiabilidad de los resultados. La convergencia entre métodos alcanzó un <strong>89% en la validación por pares</strong>.
@@ -376,7 +981,7 @@
                         <h3><i class="fas fa-chart-bar"></i> Análisis</h3>
                         <p>Estadística descriptiva, análisis de contenido y validación por pares (convergencia del 89%).</p>
                     </div>
-                    </div>
+                </div>
                 <div class="muestra-block-vertical">
                     <h3><i class="fas fa-users"></i> Muestra</h3>
                     <div class="muestra-main-text">12 participantes AFANIAS (18-28 años)</div>
@@ -387,56 +992,50 @@
                         <div class="muestra-card-vertical"><span class="muestra-num">25% Otras</span></div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 10: Instrumentos y evaluación -->
+        <div class="slide" id="slide-10">
+            <div class="slide-content" aria-label="Diapositiva 10: Instrumentos y evaluación" role="region">
+                <h2 class="slide-title">Instrumentos y fases de evaluación</h2>
                 <div class="instrumentos-block-vertical">
                     <h3><i class="fas fa-vial"></i> Instrumentos</h3>
                     <div class="instrumentos-cards-vertical">
                         <div class="instrumento-card-vertical">
                             <div class="instrumento-title">PRE-TEST</div>
-                                <ul>
-                                    <li>Competencias</li>
-                                    <li>Motivación</li>
-                                    <li>Autoeficacia</li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li>Competencias STEAM</li>
+                                <li>Motivación intrínseca</li>
+                                <li>Autoeficacia</li>
+                                <li>Habilidades sociales</li>
+                            </ul>
+                        </div>
                         <div class="instrumento-card-vertical">
                             <div class="instrumento-title">DURANTE</div>
-                                <ul>
-                                    <li>Observación</li>
-                                    <li>Registros</li>
-                                    <li>Vídeos</li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li>Observación sistemática</li>
+                                <li>Registros de comportamiento</li>
+                                <li>Vídeos etnográficos</li>
+                                <li>Pasaporte del explorador</li>
+                            </ul>
+                        </div>
                         <div class="instrumento-card-vertical">
                             <div class="instrumento-title">POST-TEST</div>
-                                <ul>
-                                    <li>Competencias</li>
-                                    <li>Satisfacción</li>
-                                    <li>Entrevistas</li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li>Competencias STEAM</li>
+                                <li>Satisfacción (94%)</li>
+                                <li>Entrevistas cualitativas</li>
+                                <li>Seguimiento a 4 semanas</li>
+                            </ul>
                         </div>
                     </div>
-                <div class="adaptaciones-simplified-grid">
-                    <div class="adaptacion-simplified-card">
-                        <i class="fas fa-icons"></i>
-                        <div class="adaptacion-title">Pictogramas ARASAAC</div>
-                        <div class="adaptacion-desc">Instrucciones y rutinas accesibles</div>
-                    </div>
-                    <div class="adaptacion-simplified-card">
-                        <i class="fas fa-braille"></i>
-                        <div class="adaptacion-title">Materiales táctiles y braille</div>
-                        <div class="adaptacion-desc">Para discapacidad visual</div>
-                    </div>
-                    <div class="adaptacion-simplified-card">
-                        <i class="fas fa-puzzle-piece"></i>
-                        <div class="adaptacion-title">Historias sociales</div>
-                        <div class="adaptacion-desc">Estructura predecible para TEA</div>
-                    </div>
-                    <div class="adaptacion-simplified-card">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="adaptacion-title">Sistema ColorADD</div>
-                        <div class="adaptacion-desc">Accesibilidad para daltonismo</div>
-                    </div>
+                </div>
+                <div class="eval-cards-grid">
+                    <div class="eval-card"><i class="fas fa-vial"></i><span>Rúbricas competenciales multinivel</span></div>
+                    <div class="eval-card"><i class="fas fa-user-edit"></i><span>Autoevaluación accesible (pictogramas)</span></div>
+                    <div class="eval-card"><i class="fas fa-eye"></i><span>Observación y registros sistemáticos</span></div>
+                    <div class="eval-card"><i class="fas fa-comments"></i><span>Encuestas de satisfacción visuales</span></div>
                 </div>
                 <div class="triangulacion-block">
                     <i class="fas fa-project-diagram"></i>
@@ -445,63 +1044,19 @@
             </div>
         </div>
 
-        <!-- Diapositiva fusionada: Transferibilidad, Limitaciones y Honestidad académica -->
-        <div class="slide" id="slide-transfer-honestidad">
-            <div class="slide-content" aria-label="Diapositiva: Transferibilidad, Limitaciones y Honestidad" role="region">
-                <h2 class="slide-title">Transferibilidad, Limitaciones y Honestidad académica</h2>
-                <div class="fusion-grid">
-                    <div class="fusion-section transfer">
-                        <h3><i class="fas fa-exchange-alt"></i> Transferibilidad y Limitaciones</h3>
-                        <ul>
-                            <li><i class="fas fa-clone"></i> Modelo replicable en contextos educativos y sociales</li>
-                            <li><i class="fas fa-arrows-alt-h"></i> Escalabilidad a diferentes etapas (Primaria-ESO, adultos)</li>
-                            <li><i class="fas fa-user-friends"></i> Muestra reducida (n=12), sin grupo control</li>
-                            <li><i class="fas fa-lightbulb"></i> Líneas futuras: estudios longitudinales y multicentro</li>
-                        </ul>
-                    </div>
-                    <div class="fusion-section honestidad">
-                        <h3><i class="fas fa-balance-scale"></i> Honestidad académica y proyección</h3>
-                        <ul>
-                            <li><i class="fas fa-exclamation-triangle"></i> Tamaño muestral limitado</li>
-                            <li><i class="fas fa-user-check"></i> Ausencia de grupo control</li>
-                            <li><i class="fas fa-clock"></i> Seguimiento temporal breve</li>
-                            <li><i class="fas fa-rocket"></i> Proyección: estudio multicéntrico y validación internacional</li>
-                        </ul>
-                        <div class="commitment">
-                            <i class="fas fa-heart"></i>
-                            <p>"Continuar investigando para que ningún estudiante quede excluido de la aventura del conocimiento"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Diapositiva mejorada: Instrumentos y fases de evaluación -->
-        <div class="slide" id="slide-evaluacion">
-            <div class="slide-content" aria-label="Diapositiva: Evaluación" role="region">
-                <h2 class="slide-title">Instrumentos y fases de evaluación</h2>
-                <div class="eval-cards-grid">
-                    <div class="eval-card"><i class="fas fa-vial"></i><span>Pre-test y post-test adaptados</span></div>
-                    <div class="eval-card"><i class="fas fa-clipboard-list"></i><span>Rúbricas competenciales (multinivel)</span></div>
-                    <div class="eval-card"><i class="fas fa-user-edit"></i><span>Autoevaluación accesible (pictogramas)</span></div>
-                    <div class="eval-card"><i class="fas fa-passport"></i><span>Pasaporte del explorador</span></div>
-                    <div class="eval-card"><i class="fas fa-eye"></i><span>Observación y registros sistemáticos</span></div>
-                    <div class="eval-card"><i class="fas fa-comments"></i><span>Entrevistas y encuestas de satisfacción</span></div>
-                </div>
-                <p style="margin-top:1.5rem; text-align:center;">Evaluación mixta (cuantitativa y cualitativa) alineada con el diseño metodológico del TFM.</p>
-            </div>
-        </div>
-
-        <!-- Diapositiva 9: Resultados Cuantitativos -->
-        <div class="slide" id="slide-9">
-            <div class="slide-content" aria-label="Diapositiva 9: Resultados Cuantitativos" role="region">
-                <h2 class="slide-title">Impacto medible y significativo</h2>
+        <!-- Diapositiva 11: Resultados Cuantitativos -->
+        <div class="slide" id="slide-11">
+            <div class="slide-content" aria-label="Diapositiva 11: Resultados Cuantitativos" role="region">
+                <h2 class="slide-title">Impacto cuantitativo medible y significativo</h2>
                 <div class="results-layout">
-                    <!-- Primera fila: Gráfico STEAM + Cards de impacto socioemocional (2x2) -->
+                    <!-- Primera fila: Gráfico STEAM + Cards de impacto socioemocional -->
                     <div class="results-row">
                         <div class="chart-section">
                             <h3>Incremento Competencias STEAM</h3>
                             <canvas id="steamChart"></canvas>
+                            <div class="significance">
+                                <strong>Tamaños del efecto Cohen: 1.41 - 2.81</strong> (impacto sustancial)
+                            </div>
                         </div>
                         <div class="impacto-socioemocional-block grid2x2">
                             <div class="impacto-card">
@@ -522,11 +1077,11 @@
                             <div class="impacto-card">
                                 <i class="fas fa-crown"></i>
                                 <div class="impacto-title">Liderazgo emergente</div>
-                                <div class="impacto-desc">5 participantes desarrollaron roles de liderazgo</div>
+                                <div class="impacto-desc">5 participantes desarrollaron roles</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Segunda fila: Gráfico Pre/Post + Cards de métricas (2x2) -->
+                    <!-- Segunda fila: Gráfico Pre/Post + Cards de métricas -->
                     <div class="results-row">
                         <div class="chart-section">
                             <h3>Comparativa Pre-test / Post-test</h3>
@@ -544,59 +1099,55 @@
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div class="metric-card objectives">
-                                <div class="metric-value">95%</div>
-                                <div class="metric-label">Objetivos Alcanzados</div>
+                                <div class="metric-value">156%</div>
+                                <div class="metric-label">Persistencia</div>
                                 <i class="fas fa-trophy"></i>
                             </div>
                             <div class="metric-card transfer">
-                                <div class="metric-value">83%</div>
-                                <div class="metric-label">Transferencia</div>
-                                <i class="fas fa-exchange-alt"></i>
+                                <div class="metric-value">245%</div>
+                                <div class="metric-label">Iniciativas Espontáneas</div>
+                                <i class="fas fa-lightbulb"></i>
                             </div>
                         </div>
                     </div>
-                    <!-- Tercera fila: Cards de resultados cuantitativos -->
+                    <!-- Tercera fila: Cards de resultados específicos -->
                     <div class="resultados-cuantitativos-block">
                         <div class="resultado-card">
                             <i class="fas fa-chart-line"></i>
-                            <div class="resultado-title">Incrementos en competencias</div>
+                            <div class="resultado-title">Incrementos específicos</div>
                             <div class="resultado-desc">68% científicas, 72% tecnológicas, 65% matemáticas</div>
                         </div>
                         <div class="resultado-card">
-                            <i class="fas fa-signal"></i>
-                            <div class="resultado-title">Tamaño del efecto (Cohen)</div>
-                            <div class="resultado-desc">Entre 1.41 y 2.81 (impacto sustancial)</div>
+                            <i class="fas fa-history"></i>
+                            <div class="resultado-title">Efectividad por eras</div>
+                            <div class="resultado-desc">Edad Media: 95%, Imperio Romano: 100%</div>
                         </div>
                         <div class="resultado-card">
-                            <i class="fas fa-bolt"></i>
-                            <div class="resultado-title">Persistencia e iniciativa</div>
-                            <div class="resultado-desc">+156% en persistencia, +245% en iniciativas espontáneas</div>
+                            <i class="fas fa-heart"></i>
+                            <div class="resultado-title">Autorregulación emocional</div>
+                            <div class="resultado-desc">11 de 12 participantes mejoraron</div>
                         </div>
-                    </div>
-                    <div class="highlight-result">
-                        <i class="fas fa-heart"></i>
-                        <p>11 de 12 participantes mejoraron en autorregulación emocional</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Diapositiva 10: Hallazgos Cualitativos -->
-        <div class="slide" id="slide-10">
-            <div class="slide-content" aria-label="Diapositiva 10: Hallazgos Cualitativos" role="region">
+        <!-- Diapositiva 12: Hallazgos cualitativos -->
+        <div class="slide" id="slide-12">
+            <div class="slide-content" aria-label="Diapositiva 12: 5 descubrimientos transformadores" role="region">
                 <h2 class="slide-title">5 descubrimientos transformadores</h2>
                 <div class="findings-pentagon">
                     <div class="finding" data-number="1">
                         <div class="finding-icon"><i class="fas fa-gamepad"></i></div>
                         <h3>Gamificación democratizadora</h3>
                         <p>La narrativa elimina barreras de acceso a conceptos STEAM</p>
-                        <div class="evidence">127 conexiones interdisciplinares</div>
+                        <div class="evidence">127 conexiones interdisciplinares documentadas</div>
                     </div>
                     <div class="finding" data-number="2">
                         <div class="finding-icon"><i class="fas fa-crown"></i></div>
                         <h3>Experticia distribuida</h3>
                         <p>Cada participante lideró según sus fortalezas</p>
-                        <div class="evidence">43 episodios registrados</div>
+                        <div class="evidence">43 episodios de liderazgo registrados</div>
                     </div>
                     <div class="finding" data-number="3">
                         <div class="finding-icon"><i class="fas fa-book-open"></i></div>
@@ -608,7 +1159,7 @@
                         <div class="finding-icon"><i class="fas fa-globe"></i></div>
                         <h3>Adaptaciones universales</h3>
                         <p>Lo diseñado para algunos mejora la experiencia de todos</p>
-                        <div class="evidence">100% valoración positiva</div>
+                        <div class="evidence">100% valoración positiva de adaptaciones</div>
                     </div>
                     <div class="finding" data-number="5">
                         <div class="finding-icon"><i class="fas fa-balance-scale-right"></i></div>
@@ -620,52 +1171,87 @@
             </div>
         </div>
 
-        <!-- Diapositiva 11: Evidencias de Impacto -->
-        <div class="slide" id="slide-11">
-            <div class="slide-content" aria-label="Diapositiva 11: Evidencias de Impacto" role="region">
+        <!-- Diapositiva 13: Voces que transforman -->
+        <div class="slide" id="slide-13">
+            <div class="slide-content" aria-label="Diapositiva 13: Voces que transforman" role="region">
                 <h2 class="slide-title">Voces que transforman</h2>
                 <div class="quotes-container">
                     <div class="quotes-grid">
                         <div class="quote-card participant">
                             <i class="fas fa-quote-left"></i>
-                            <p>Por primera vez me siento un científico de verdad</p>
-                            <cite>- P9, Era Moderna</cite>
+                            <p>"Me gustó cuando montamos el dinosaurio... Me sentí como un detective en la prueba de las pistas"</p>
+                            <cite>- Participante 3, Era Dinosaurios</cite>
                         </div>
                         <div class="quote-card participant">
                             <i class="fas fa-quote-left"></i>
-                            <p>¡Yo puedo! ¡Déjame intentarlo otra vez!</p>
-                            <cite>- P3, Era Digital</cite>
+                            <p>"Por primera vez me siento un científico de verdad"</p>
+                            <cite>- Participante 9, Era Moderna</cite>
                         </div>
                         <div class="quote-card participant">
                             <i class="fas fa-quote-left"></i>
-                            <p>Esto es como en el ascensor de mi casa, ¡ya lo entiendo!</p>
-                            <cite>- P7, Sistema poleas</cite>
+                            <p>"¡Yo puedo! ¡Déjame intentarlo otra vez!"</p>
+                            <cite>- Participante 7, Era Digital</cite>
                         </div>
                         <div class="quote-card participant">
                             <i class="fas fa-quote-left"></i>
-                            <p>Somos un equipo de exploradores del tiempo</p>
-                            <cite>- P12, Reflexión final</cite>
+                            <p>"Somos un equipo de exploradores del tiempo"</p>
+                            <cite>- Participante 12, Reflexión final</cite>
                         </div>
                     </div>
                     <div class="teacher-observations">
-                        <h3>Observaciones docentes</h3>
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Observaciones docentes</h3>
                         <div class="observation">
                             <i class="fas fa-eye"></i>
-                            <p>"Nunca había visto a M. tan concentrado durante 20 minutos"</p>
+                            <p>"Nunca había visto a M. tan concentrado durante 20 minutos seguidos"</p>
                         </div>
                         <div class="observation">
                             <i class="fas fa-lightbulb"></i>
-                            <p>"L. explicó a sus compañeros el mecanismo. Fue extraordinario"</p>
+                            <p>"L. explicó a sus compañeros el mecanismo de poleas. Fue extraordinario"</p>
+                        </div>
+                        <div class="observation">
+                            <i class="fas fa-heart"></i>
+                            <p>"El cambio en autoestima y motivación ha sido notable en todo el grupo"</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Diapositiva 12: Modelo Transferible -->
-        <div class="slide" id="slide-12">
-            <div class="slide-content" aria-label="Diapositiva 12: Modelo Transferible" role="region">
-                <h2 class="slide-title">Un diseño sostenible y replicable</h2>
+        <!-- Diapositiva 14: Transferencia y seguimiento -->
+        <div class="slide" id="slide-14">
+            <div class="slide-content" aria-label="Diapositiva 14: Transferencia y seguimiento" role="region">
+                <h2 class="slide-title">Transferencia y seguimiento a 4 semanas</h2>
+                <div class="sustainability-grid">
+                    <div class="sustainability-card pedagogic">
+                        <h3><i class="fas fa-exchange-alt"></i> Transferencia Observada</h3>
+                        <div class="sustainability-items">
+                            <div class="item">📊 89% utilizó estrategias en matemáticas</div>
+                            <div class="item">🔬 67% aplicó métodos en ciencias naturales</div>
+                            <div class="item">📚 78% conectó conocimientos en historia</div>
+                            <div class="item">🎯 83% mantuvo vocabulario específico</div>
+                        </div>
+                    </div>
+                    <div class="sustainability-card scalability">
+                        <h3><i class="fas fa-clock"></i> Persistencia Temporal</h3>
+                        <div class="sustainability-items">
+                            <div class="item">🧠 Mantenimiento del 83% del vocabulario</div>
+                            <div class="item">🤝 Mejora continua en juego cooperativo</div>
+                            <div class="item">💪 Persistencia ante dificultades mantenida</div>
+                            <div class="item">🎲 Solicitudes de "más escape rooms"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="impact-social">
+                    <i class="fas fa-rocket"></i>
+                    <p><strong>Escalabilidad demostrada:</strong> El diseño permite adaptación a diferentes niveles educativos, duraciones y contextos</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 15: Sostenibilidad pedagógica -->
+        <div class="slide" id="slide-15">
+            <div class="slide-content" aria-label="Diapositiva 15: Sostenibilidad pedagógica y escalabilidad" role="region">
+                <h2 class="slide-title">Sostenibilidad pedagógica y escalabilidad</h2>
                 <div class="sustainability-grid">
                     <div class="sustainability-card pedagogic">
                         <h3><i class="fas fa-graduation-cap"></i> Sostenibilidad Pedagógica</h3>
@@ -686,35 +1272,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="impact-social">
-                    <i class="fas fa-hands-helping"></i>
-                    <p>Impacto social y transferencia</p>
+                <div class="qr-download">
+                    <div class="qr-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <p><strong>Recursos disponibles:</strong> Accede a guías, materiales y videotutoriales</p>
                 </div>
             </div>
         </div>
 
-        <!-- Diapositiva 13: Limitaciones y Líneas Futuras -->
-        <div class="slide" id="slide-13">
-            <div class="slide-content" aria-label="Diapositiva 13: Limitaciones y Líneas Futuras" role="region">
-                <h2 class="slide-title">Honestidad académica y proyección</h2>
+        <!-- Diapositiva 16: Limitaciones y líneas futuras -->
+        <div class="slide" id="slide-16">
+            <div class="slide-content" aria-label="Diapositiva 16: Limitaciones y líneas futuras" role="region">
+                <h2 class="slide-title">Limitaciones y líneas futuras</h2>
                 <div class="limitations-future">
                     <div class="column limitations">
                         <h3><i class="fas fa-exclamation-triangle"></i> Limitaciones</h3>
                         <ul>
-                            <li>Tamaño muestral (n=12)</li>
-                            <li>Ausencia grupo control</li>
-                            <li>Seguimiento 3 semanas</li>
-                            <li>Un solo contexto</li>
+                            <li>Tamaño muestral reducido (n=12)</li>
+                            <li>Ausencia de grupo control</li>
+                            <li>Seguimiento limitado (4 semanas)</li>
+                            <li>Contexto único (AFANIAS)</li>
+                            <li>Generalización estadística limitada</li>
                         </ul>
                     </div>
                     <div class="column future">
                         <h3><i class="fas fa-rocket"></i> Líneas Futuras</h3>
                         <ul>
-                            <li>Estudio multicéntrico</li>
-                            <li>Versión digital RA</li>
-                            <li>Seguimiento longitudinal</li>
-                            <li>Otras áreas STEAM</li>
-                            <li>Formación profesorado</li>
+                            <li>Estudio multicéntrico (n>50)</li>
+                            <li>Versión digital con realidad aumentada</li>
+                            <li>Seguimiento longitudinal (6 meses)</li>
+                            <li>Aplicación a otras áreas curriculares</li>
+                            <li>Formación del profesorado a gran escala</li>
                             <li>Validación internacional</li>
                         </ul>
                     </div>
@@ -726,9 +1315,9 @@
             </div>
         </div>
 
-        <!-- Diapositiva 14: Conclusiones -->
-        <div class="slide" id="slide-14">
-            <div class="slide-content" aria-label="Diapositiva 14: Conclusiones" role="region">
+        <!-- Diapositiva 17: Conclusiones -->
+        <div class="slide" id="slide-17">
+            <div class="slide-content" aria-label="Diapositiva 17: Conclusiones" role="region">
                 <h2 class="slide-title">Transformando la educación inclusiva</h2>
                 <div class="conclusions-pyramid">
                     <div class="pyramid-level specific">
@@ -736,7 +1325,7 @@
                         <ul>
                             <li>✓ Incrementos significativos en todas las competencias STEAM</li>
                             <li>✓ Mejora en motivación, autoeficacia y autorregulación</li>
-                            <li>✓ Modelo validado y replicable</li>
+                            <li>✓ Modelo validado y replicable con 23 adaptaciones</li>
                         </ul>
                     </div>
                     <div class="pyramid-level educational">
@@ -758,9 +1347,9 @@
             </div>
         </div>
 
-        <!-- Diapositiva 15: Evaluación y Seguimiento -->
-        <div class="slide" id="slide-15">
-            <div class="slide-content" aria-label="Diapositiva 15: Evaluación y Seguimiento" role="region">
+        <!-- Diapositiva 18: Evaluación y Seguimiento -->
+        <div class="slide" id="slide-18">
+            <div class="slide-content" aria-label="Diapositiva 18: Evaluación y Seguimiento" role="region">
                 <h2 class="slide-title">Evaluación y seguimiento</h2>
                 <div class="evaluation-methods">
                     <div class="evaluation-method">
@@ -797,9 +1386,9 @@
             </div>
         </div>
 
-        <!-- Diapositiva 16: Desafíos y Soluciones -->
-        <div class="slide" id="slide-16">
-            <div class="slide-content" aria-label="Diapositiva 16: Desafíos y Soluciones" role="region">
+        <!-- Diapositiva 19: Desafíos y Soluciones -->
+        <div class="slide" id="slide-19">
+            <div class="slide-content" aria-label="Diapositiva 19: Desafíos y Soluciones" role="region">
                 <h2 class="slide-title">Desafíos y soluciones</h2>
                 <div class="challenges-solutions">
                     <div class="challenge-item">
@@ -826,105 +1415,149 @@
             </div>
         </div>
 
-        <!-- Diapositiva 17: Preguntas (estilo imagen) -->
-        <div class="slide" id="slide-17">
-            <div class="slide-content questions" aria-label="Diapositiva 17: Preguntas" role="region" style="max-width: 700px; margin: 0 auto;">
-                <h2 class="slide-title" style="margin-bottom: 1.5rem;">¿Preguntas?</h2>
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <div style="background: #b7aaff; color: #2d2d4d; border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem;">
+        <!-- Diapositiva 20: Checklist final -->
+        <div class="slide" id="slide-20">
+            <div class="slide-content" aria-label="Diapositiva 20: Checklist final" role="region">
+                <h2 class="slide-title">Checklist final</h2>
+                <div class="checklist-container">
+                    <div class="checklist-section">
+                        <h3><i class="fas fa-check-circle"></i> Logros Alcanzados</h3>
+                        <div class="checklist-items">
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Escape room inclusivo diseñado e implementado</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>23 adaptaciones específicas validadas</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Incrementos significativos en competencias STEAM</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Modelo replicable y sostenible</span>
+                            </div>
+                            <div class="checklist-item checked" onclick="toggleCheck(this)">
+                                <i class="fas fa-check-square"></i>
+                                <span>Evidencias de transferencia y persistencia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checklist-section">
+                        <h3><i class="fas fa-arrow-right"></i> Próximos Pasos</h3>
+                        <div class="checklist-items">
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Estudio multicéntrico ampliado</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Formación del profesorado</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Desarrollo de versión digital</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Expansión a otras áreas curriculares</span>
+                            </div>
+                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                <i class="far fa-square"></i>
+                                <span>Publicación científica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 21: El poder transformador del juego inclusivo -->
+        <div class="slide" id="slide-21">
+            <div class="slide-content reflection" aria-label="Diapositiva 21: El poder transformador del juego inclusivo" role="region">
+                <h2 class="slide-title">El poder transformador del juego inclusivo</h2>
+                <div class="reflection-content">
+                    <div class="main-message">
+                        <p>Hemos demostrado que los <strong>escape rooms educativos inclusivos</strong> no son solo una metodología innovadora, sino una <strong>puerta hacia la equidad educativa</strong>.</p>
+                        <p>Cada adaptación, cada pista progresiva, cada momento de colaboración construye un futuro donde <strong>todos los estudiantes pueden ser protagonistas</strong> de su aprendizaje.</p>
+                    </div>
+                    <div class="final-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>
+                            "El juego no es solo el lenguaje natural del aprendizaje; es el camino hacia una educación verdaderamente inclusiva donde cada diferencia se convierte en una fortaleza."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 22: Preguntas -->
+        <div class="slide" id="slide-22">
+            <div class="slide-content questions" aria-label="Diapositiva 22: Preguntas" role="region">
+                <h2 class="slide-title">¿Preguntas?</h2>
+                <div class="questions-content">
+                    <div class="question-icon">
                         <i class="fas fa-question"></i>
                     </div>
-                    <p style="font-size: 1.25rem; text-align: center; margin-bottom: 2rem;">Estaré encantada de profundizar en cualquier aspecto del proyecto que les resulte de interés</p>
-                    <div style="display: flex; gap: 1.5rem; width: 100%; justify-content: center; margin-bottom: 2rem;">
-                        <div style="background: #232345; border-radius: 16px; padding: 1rem 1.5rem; color: #fff; min-width: 180px; display: flex; flex-direction: column; align-items: center;">
-                            <i class="fas fa-user" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <div style="font-weight: 600;">Presidenta: Estefanía Martín Barroso</div>
+                    <p>Estaré encantada de profundizar en cualquier aspecto del proyecto que les resulte de interés</p>
+                    <div class="tribunal-row">
+                        <div class="tribunal-card">
+                            <i class="fas fa-user"></i>
+                            <div>Presidenta: Estefanía Martín Barroso</div>
                         </div>
-                        <div style="background: #232345; border-radius: 16px; padding: 1rem 1.5rem; color: #fff; min-width: 180px; display: flex; flex-direction: column; align-items: center;">
-                            <i class="fas fa-user" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <div style="font-weight: 600;">Secretario: Maximiliano Paredes Velasco</div>
+                        <div class="tribunal-card">
+                            <i class="fas fa-user"></i>
+                            <div>Secretario: Maximiliano Paredes Velasco</div>
                         </div>
-                        <div style="background: #232345; border-radius: 16px; padding: 1rem 1.5rem; color: #fff; min-width: 180px; display: flex; flex-direction: column; align-items: center;">
-                            <i class="fas fa-user" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
-                            <div style="font-weight: 600;">Vocal: Najib Abu-Warda Pérez</div>
+                        <div class="tribunal-card">
+                            <i class="fas fa-user"></i>
+                            <div>Vocal: Najib Abu-Warda Pérez</div>
                         </div>
                     </div>
-                    <div style="margin-top: 1.5rem;">
-                        <img src="logo.png" alt="URJC" style="height: 40px; filter: brightness(0) invert(1);">
-                    </div>
+                    <img src="logo.png" alt="URJC" class="urjc-logo">
                 </div>
             </div>
         </div>
 
-        <!-- Diapositiva 18: Agradecimientos (2x2 + frase) -->
-        <div class="slide" id="slide-18">
-            <div class="slide-content thanks" aria-label="Diapositiva 18: Agradecimientos" role="region">
+        <!-- Diapositiva 23: Agradecimientos -->
+        <div class="slide" id="slide-23">
+            <div class="slide-content thanks" aria-label="Diapositiva 23: Agradecimientos" role="region">
                 <h2 class="slide-title">Agradecimientos</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem;">
-                    <div class="thanks-item" style="background: #232345; border-radius: 16px; padding: 2rem; display: flex; align-items: center; gap: 1.2rem;">
-                        <i class="fas fa-user-graduate" style="font-size: 2rem; color: #b7aaff;"></i>
+                <div class="thanks-list">
+                    <div class="thanks-item">
+                        <i class="fas fa-user-graduate"></i>
                         <div>
-                            <h4 style="color: #fff; margin-bottom: 0.5rem;">Al Dr. Oriol Borrás Gené</h4>
-                            <p style="color: #e0e0ff; margin: 0;">Por su guía, apoyo y visión inclusiva</p>
+                            <h4>Al Dr. Oriol Borrás Gené</h4>
+                            <p>Por su guía, apoyo y visión inclusiva</p>
                         </div>
                     </div>
-                    <div class="thanks-item" style="background: #232345; border-radius: 16px; padding: 2rem; display: flex; align-items: center; gap: 1.2rem;">
-                        <i class="fas fa-university" style="font-size: 2rem; color: #b7aaff;"></i>
+                    <div class="thanks-item">
+                        <i class="fas fa-university"></i>
                         <div>
-                            <h4 style="color: #fff; margin-bottom: 0.5rem;">Al Centro AFANIAS y sus profesionales</h4>
-                            <p style="color: #e0e0ff; margin: 0;">Por abrir sus puertas a la innovación</p>
+                            <h4>Al Centro AFANIAS y sus profesionales</h4>
+                            <p>Por abrir sus puertas a la innovación</p>
                         </div>
                     </div>
-                    <div class="thanks-item" style="background: #232345; border-radius: 16px; padding: 2rem; display: flex; align-items: center; gap: 1.2rem;">
-                        <i class="fas fa-users" style="font-size: 2rem; color: #b7aaff;"></i>
+                    <div class="thanks-item">
+                        <i class="fas fa-users"></i>
                         <div>
-                            <h4 style="color: #fff; margin-bottom: 0.5rem;">A los 12 participantes</h4>
-                            <p style="color: #e0e0ff; margin: 0;">Verdaderos exploradores del tiempo y del conocimiento</p>
+                            <h4>A los 12 participantes</h4>
+                            <p>Verdaderos exploradores del tiempo y del conocimiento</p>
                         </div>
                     </div>
-                    <div class="thanks-item" style="background: #232345; border-radius: 16px; padding: 2rem; display: flex; align-items: center; gap: 1.2rem;">
-                        <i class="fas fa-chalkboard-teacher" style="font-size: 2rem; color: #b7aaff;"></i>
+                    <div class="thanks-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
                         <div>
-                            <h4 style="color: #fff; margin-bottom: 0.5rem;">Al tribunal evaluador</h4>
-                            <p style="color: #e0e0ff; margin: 0;">Por su tiempo y dedicación</p>
+                            <h4>Al tribunal evaluador</h4>
+                            <p>Por su tiempo y dedicación</p>
                         </div>
                     </div>
                 </div>
-                <div class="mandela-quote" style="background: linear-gradient(135deg, rgba(255, 119, 198, 0.13), rgba(120, 119, 198, 0.13)); border-radius: 18px; padding: 1.5rem 2rem; text-align: center;">
-                    <blockquote style="font-size: 1.2rem; color: #fff; margin: 0;">"La educación es el arma más poderosa para cambiar el mundo"<br><span style="color: #b7aaff; font-size: 1rem;">- Nelson Mandela</span></blockquote>
-                </div>
-            </div>
-        </div>
-
-        <!-- Diapositiva X: Referencias bibliográficas -->
-        <div class="slide" id="slide-referencias">
-            <div class="slide-content" aria-label="Diapositiva: Referencias" role="region">
-                <h2 class="slide-title">Referencias seleccionadas (APA 7)</h2>
-                <ul class="styled-list">
-                    <li>CAST. (2018). Universal Design for Learning Guidelines version 2.2.</li>
-                    <li>Deterding, S., Dixon, D., Khaled, R., & Nacke, L. (2011). From game design elements to gamefulness: defining "gamification". MindTrek.</li>
-                    <li>Ministerio de Educación y Formación Profesional y Deportes. (2022). LOMLOE.</li>
-                    <li>ONU. (2006). Convención sobre los Derechos de las Personas con Discapacidad.</li>
-                    <li>Gardner, H. (1983). Frames of Mind: The Theory of Multiple Intelligences.</li>
-                </ul>
-                <p style="font-size:1rem; margin-top:1rem;">Bibliografía completa en el TFM escrito.</p>
-            </div>
-        </div>
-
-        <!-- Diapositiva 19: Cierre/Contacto -->
-        <div class="slide" id="slide-18">
-            <div class="slide-content" aria-label="Diapositiva 18: Cierre y contacto" role="region">
-                <h2 class="slide-title">¡Gracias!</h2>
-                <div style="text-align:center; margin-bottom:2rem;">
-                    <div style="font-size:2rem; font-weight:600; color:#b7aaff; margin-bottom:1rem;">Raquel Cuesta Barberá</div>
-                    <div style="margin-bottom:0.5rem;"><i class="fas fa-envelope"></i> r.cuesta@alumnos.urjc.es</div>
-                    <div style="margin-bottom:0.5rem;"><i class="fas fa-university"></i> URJC</div>
-                    <div style="margin-bottom:0.5rem;"><i class="fas fa-chalkboard-teacher"></i> Tutor: Dr. Oriol Borrás Gené</div>
-                </div>
-                <div class="questions-block">
-                    <div style="font-size:2rem; color:#b7aaff;"><i class="fas fa-question-circle"></i></div>
-                    <h3>¿Preguntas o comentarios?</h3>
-                    <p>¡Estaré encantada de responder y debatir!</p>
+                <div class="final-quote">
+                    <i class="fas fa-heart"></i>
+                    <blockquote>"La educación es el arma más poderosa para cambiar el mundo"<br><span style="color: #b7aaff; font-size: 1rem;">- Nelson Mandela</span></blockquote>
                 </div>
             </div>
         </div>
