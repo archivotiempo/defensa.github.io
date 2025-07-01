@@ -2208,6 +2208,83 @@ body::before {
     font-size: 1rem;
 }
 
+/* --- Agradecimientos (slide 22) --- */
+.thanks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.thanks-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(40, 40, 70, 0.7);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 4px 24px rgba(80, 60, 160, 0.08);
+    border: 1.5px solid rgba(120, 119, 198, 0.18);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.thanks-card i {
+    font-size: 2.2rem;
+    color: #b7aaff;
+    min-width: 2.2rem;
+    text-shadow: 0 2px 8px #2a1a4d33;
+}
+
+.thanks-card strong {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.thanks-card p {
+    color: #e0e0ff;
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.thanks-quote {
+    margin-top: 2.5rem;
+    background: rgba(120, 119, 198, 0.13);
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #fff;
+    font-style: italic;
+    box-shadow: 0 2px 16px rgba(120, 119, 198, 0.08);
+}
+
+.thanks-author {
+    display: block;
+    color: #b7aaff;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .thanks-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 1.2rem;
+    }
+    .thanks-card {
+        padding: 1.2rem 1rem;
+    }
+    .thanks-quote {
+        font-size: 1.05rem;
+        padding: 1rem 0.5rem;
+    }
+}
+
 /* Responsive */
 @media (max-width: 1100px) {
     .results-row {
@@ -2473,4 +2550,170 @@ body::before {
 .slide-title, .main-title, .subtitle, .text-content h3, .objective-card h3, .objective-card h4, .step-content h4, .result-item h4, .conclusion-card h3, .bibliography-section h3, .thanks-content h3, .text-content p, .text-content ul, .index-list, .author-info p, .bibliography-list, .thanks-content p, .contact-info p {
     color: #fff !important;
     text-shadow: 0 2px 8px #000a, 0 1px 0 #fff2;
+}
+
+/* --- Slide 5: Fundamentación teórica integradora --- */
+.theory-main-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin: 2.5rem 0 2.5rem 0;
+    flex-wrap: wrap;
+}
+
+.dua-circles-block {
+    display: flex;
+    gap: 2.2rem;
+    flex: 2;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.dua-circle {
+    background: rgba(40, 40, 70, 0.7);
+    border: 2.5px solid #b7aaff;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 24px rgba(120, 119, 198, 0.10);
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    min-width: 180px;
+}
+
+.dua-circle i {
+    font-size: 2.7rem;
+    color: #e0aaff;
+    margin-bottom: 0.7rem;
+}
+
+.dua-title {
+    color: #e0d6ff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.dua-desc {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.neuro-box {
+    background: rgba(40, 40, 70, 0.7);
+    border: 2.5px solid #b7aaff;
+    border-radius: 24px;
+    padding: 2.2rem 2.5rem 2.2rem 2.5rem;
+    min-width: 320px;
+    max-width: 400px;
+    flex: 1.2;
+    box-shadow: 0 4px 24px rgba(120, 119, 198, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+.neuro-title {
+    color: #b7aaff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.neuro-title i {
+    font-size: 1.5rem;
+    color: #b7aaff;
+}
+
+.neuro-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.neuro-list li {
+    color: #e0e0ff;
+    font-size: 1.08rem;
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.neuro-list li i {
+    font-size: 1.35rem;
+    color: #e0aaff;
+    min-width: 1.35rem;
+}
+
+.theory-reinforce-bar {
+    margin: 2.5rem auto 0 auto;
+    background: rgba(120, 119, 198, 0.13);
+    border-radius: 16px;
+    padding: 1.1rem 2rem;
+    text-align: center;
+    font-size: 1.13rem;
+    color: #fff;
+    font-style: normal;
+    box-shadow: 0 2px 16px rgba(120, 119, 198, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+}
+
+.theory-reinforce-bar i {
+    font-size: 1.5rem;
+    color: #b7aaff;
+}
+
+@media (max-width: 1200px) {
+    .theory-main-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .dua-circles-block {
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    .neuro-box {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .dua-circles-block {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .dua-circle {
+        width: 160px;
+        height: 160px;
+        min-width: 120px;
+    }
+    .neuro-box {
+        padding: 1.2rem 1rem;
+    }
+    .theory-reinforce-bar {
+        font-size: 0.98rem;
+        padding: 0.7rem 0.5rem;
+    }
 }
