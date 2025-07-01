@@ -645,12 +645,15 @@ body::before {
 /* Diapositiva 6: Competencias LOMLOE */
 .competencias-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.2rem;
-    margin: 2.5rem 0 1.5rem 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.3rem 1.3rem;
+    margin: 2.2rem auto 1.2rem auto;
     justify-items: center;
     position: relative;
     z-index: 1;
+    max-width: 1100px;
+    width: 100%;
 }
 
 .competencia-item {
@@ -722,6 +725,51 @@ body::before {
     font-size: 1.1rem;
     font-weight: 400;
     color: #e0e0ff;
+}
+
+.competencia-item.ccl,
+.competencia-item.cp,
+.competencia-item.cc,
+.competencia-item.ce {
+    background: rgba(120,119,198,0.07);
+    border: 2.5px dashed #b7aaff55;
+    color: #b7aaff99;
+    filter: grayscale(0.7) brightness(1.1);
+    opacity: 0.7;
+    box-shadow: none;
+}
+.competencia-item.ccl i,
+.competencia-item.cp i,
+.competencia-item.cc i,
+.competencia-item.ce i {
+    color: #b7aaff99;
+}
+.competencia-item.ccl .competencia-title,
+.competencia-item.cp .competencia-title,
+.competencia-item.cc .competencia-title,
+.competencia-item.ce .competencia-title {
+    color: #b7aaff99;
+}
+
+@media (max-width: 1200px) {
+    .competencias-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 900px;
+    }
+}
+@media (max-width: 900px) {
+    .competencias-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+        max-width: 98vw;
+    }
+    .competencia-item {
+        min-width: 0;
+        max-width: 100%;
+        padding: 1.2rem 0.7rem;
+    }
 }
 
 /* Diapositiva 7: Línea temporal */
@@ -3212,39 +3260,26 @@ body::before {
     margin-bottom: 0.2rem;
 }
 
-.competencias-grid-2x4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1.5rem 2.2rem;
-    margin: 2.5rem 0 1.5rem 0;
-    justify-items: center;
-    position: relative;
-    z-index: 1;
+.competencia-item {
+    min-width: 220px;
+    max-width: 260px;
+    padding: 1.1rem 0.7rem;
+    min-height: 90px;
+    max-height: 90px;
+    height: 90px;
+    font-size: 1.05rem;
 }
-.competencia-item.inactive {
-    border-color: #888a99 !important;
-    background: rgba(120,119,198,0.06);
-    color: #b0b0b0;
-    box-shadow: none;
-    opacity: 0.7;
+
+.competencia-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.15rem;
 }
-.competencia-item.inactive i {
-    color: #b0b0b0 !important;
+
+.competencia-desc {
+    font-size: 0.98rem;
 }
-.competencia-item.inactive .competencia-title,
-.competencia-item.inactive .competencia-desc {
-    color: #b0b0b0 !important;
-}
-@media (max-width: 1100px) {
-    .competencias-grid-2x4 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-    }
-}
-@media (max-width: 700px) {
-    .competencias-grid-2x4 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-    }
+
+.competencias-grid {
+    max-width: 950px;
+    gap: 0.7rem 0.7rem;
 }
