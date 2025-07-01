@@ -117,22 +117,45 @@ body::before {
 /* Timer */
 .timer {
     position: fixed;
-    top: 80px;
-    right: 2rem;
+    top: 20px;
+    right: 20px;
     background: rgba(15, 15, 35, 0.8);
-    backdrop-filter: blur(20px);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    font-weight: 600;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    z-index: 999;
-    display: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
 }
 
 .timer.active {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timer-reset {
+    background: rgba(255, 119, 198, 0.3);
+    border: none;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.timer-reset:hover {
+    background: rgba(255, 119, 198, 0.6);
+    transform: scale(1.1);
 }
 
 /* Contenedor de diapositivas */
@@ -154,10 +177,18 @@ body::before {
     background: #0a0a13;
     overflow-y: auto;
     padding: 80px 2rem 2rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .slide.active {
     display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slide:not(.active) {
+    opacity: 0;
+    transform: scale(0.98);
 }
 
 .slide-content {
@@ -3210,4 +3241,532 @@ body::before {
     width: 100%;
     text-align: center;
     margin-bottom: 0.2rem;
+}
+
+.competencias-grid-2x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem 2.2rem;
+    margin: 2.5rem 0 1.5rem 0;
+    justify-items: center;
+    position: relative;
+    z-index: 1;
+}
+.competencia-item.inactive {
+    border-color: #888a99 !important;
+    background: rgba(120,119,198,0.06);
+    color: #b0b0b0;
+    box-shadow: none;
+    opacity: 0.7;
+}
+.competencia-item.inactive i {
+    color: #b0b0b0 !important;
+}
+.competencia-item.inactive .competencia-title,
+.competencia-item.inactive .competencia-desc {
+    color: #b0b0b0 !important;
+}
+@media (max-width: 1100px) {
+    .competencias-grid-2x4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .competencias-grid-2x4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
+/* Indicadores de slides */
+.slide-indicators {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+    background: rgba(15, 15, 35, 0.8);
+    padding: 10px 15px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slide-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.slide-indicator:hover {
+    background: rgba(120, 119, 198, 0.6);
+    transform: scale(1.2);
+}
+
+.slide-indicator.active {
+    background: #ff77c6;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 119, 198, 0.5);
+}
+
+/* Animación de cambio de slide */
+@keyframes slideChange {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mejorar responsive de grids */
+@media (max-width: 1200px) {
+    .slide-content {
+        max-width: 95%;
+        padding: 2rem;
+    }
+    
+    .competencias-grid-2x4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .adaptaciones-steam-grid-3col {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .results-row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .results-row > .chart-section {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .results-row > .impacto-socioemocional-block.grid2x2,
+    .results-row > .metrics-section.grid2x2 {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .slide-indicators {
+        bottom: 10px;
+        gap: 6px;
+        padding: 8px 12px;
+    }
+    
+    .slide-indicator {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .competencias-grid-2x4 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .adaptaciones-steam-grid-3col {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .results-row > .impacto-socioemocional-block.grid2x2,
+    .results-row > .metrics-section.grid2x2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .metodologia-timeline {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .timeline-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .metodologia-phase {
+        width: 100%;
+    }
+    
+    .theory-quadrants {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .central-concept {
+        margin: 1rem 0;
+    }
+    
+    .theory-reinforce-bar, .theory-reinforce-bar-strong {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-content {
+        max-width: 98%;
+        padding: 1.5rem;
+    }
+    
+    .slide-title {
+        font-size: 1.5rem;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .timeline {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .era-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .adaptaciones-steam-grid-3col {
+        grid-template-columns: 1fr;
+    }
+    
+    .adaptacion-steam-card {
+        padding: 1rem;
+    }
+    
+    .instrumentos-cards-vertical {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .instrumento-card-vertical {
+        width: 100%;
+    }
+    
+    .pyramid-level.educational,
+    .pyramid-level.paradigm {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .thanks-item {
+        width: 100%;
+    }
+    
+    .tribunal-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .tribunal-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .adaptaciones-steam-grid-3col {
+        grid-template-columns: 1fr;
+    }
+    
+    .slide-indicators {
+        bottom: 5px;
+        gap: 4px;
+        padding: 6px 10px;
+    }
+    
+    .slide-indicator {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .timer {
+        top: 10px;
+        right: 10px;
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Mejorar la navegación en móviles */
+@media (max-width: 480px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .nav-title {
+        font-size: 0.9rem;
+    }
+    
+    .nav-controls {
+        gap: 0.5rem;
+    }
+    
+    .nav-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .slide-counter {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mejorar accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .slide-indicator:hover {
+        transform: none;
+    }
+    
+    .timer-reset:hover {
+        transform: none;
+    }
+}
+
+/* Mejorar contraste para accesibilidad */
+@media (prefers-contrast: high) {
+    .slide-indicator {
+        border: 2px solid #fff;
+    }
+    
+    .slide-indicator.active {
+        border-color: #000;
+    }
+    
+    .timer {
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn {
+        border: 1px solid #fff;
+    }
+}
+
+/* Mejorar el modo presentación */
+.presentation-mode .slide-indicators {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.presentation-mode:hover .slide-indicators {
+    opacity: 1;
+}
+
+.presentation-mode .timer {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.presentation-mode:hover .timer {
+    opacity: 1;
+}
+
+/* Mejorar el feedback visual de navegación */
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+.slide-indicator:active {
+    transform: scale(0.9);
+}
+
+/* Mejorar la legibilidad en pantallas ultraanchas */
+@media (min-width: 1920px) {
+    .slide-content {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+/* Mejorar el contraste del texto en diferentes fondos */
+.slide-content {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.slide-title {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Mejorar la visibilidad de los gráficos */
+.chart-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mejorar el hover de elementos interactivos */
+.index-card:hover,
+.objective-card:hover,
+.adaptacion-steam-card:hover,
+.quote-card:hover,
+.sustainability-card:hover,
+.checklist-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Mejorar la transición de slides */
+.slide {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slide:not(.active) {
+    opacity: 0;
+    transform: scale(0.98);
+}
+
+/* Mejorar la visibilidad del timer en diferentes fondos */
+.timer {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mejorar la accesibilidad del teclado */
+.nav-btn:focus,
+.slide-indicator:focus,
+.timer-reset:focus {
+    outline: 2px solid #ff77c6;
+    outline-offset: 2px;
+}
+
+/* Mejorar la legibilidad en modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .slide-content {
+        background: rgba(15, 15, 35, 0.95);
+    }
+}
+
+/* Mejorar la legibilidad en modo claro */
+@media (prefers-color-scheme: light) {
+    .slide-content {
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+    }
+    
+    .slide-title {
+        color: #333;
+    }
+}
+
+/* Mejorar la impresión */
+@media print {
+    .slide-indicators,
+    .timer,
+    .navbar {
+        display: none !important;
+    }
+    
+    .slide {
+        page-break-after: always;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    
+    .slide-content {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Ajuste específico para la slide de competencias clave y STEAM */
+#slide-6 .slide-content {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    max-width: 1200px !important;
+    width: 100% !important;
+}
+
+#slide-6 .competencias-grid-2x4 {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 2rem auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem 2rem;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+#slide-6 .competencia-item {
+    min-width: 0;
+    min-height: 110px;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 1.08rem;
+    padding: 1.5rem 1rem;
+}
+
+@media (max-width: 1200px) {
+    #slide-6 .slide-content {
+        max-width: 98vw !important;
+        padding-left: 0.2rem !important;
+        padding-right: 0.2rem !important;
+    }
+    #slide-6 .competencias-grid-2x4 {
+        max-width: 98vw;
+        gap: 0.7rem 1rem;
+    }
+    #slide-6 .competencia-item {
+        font-size: 0.98rem;
+        padding: 1.1rem 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #slide-6 .competencias-grid-2x4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #slide-6 .competencias-grid-2x4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        max-width: 100vw;
+    }
+}
+
+/* Eliminar estilos de slide-indicators y slide-indicator */
+.slide-indicators, .slide-indicator, .slide-indicator.active, .slide-indicator:hover {
+    display: none !important;
 }
