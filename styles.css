@@ -3283,3 +3283,77 @@ body::before {
     max-width: 950px;
     gap: 0.7rem 0.7rem;
 }
+
+.slide#slide-evaluacion-seguimiento .agenda-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    justify-items: center;
+    align-items: stretch;
+}
+
+@media (max-width: 900px) {
+    .slide#slide-evaluacion-seguimiento .agenda-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+}
+
+.slide#slide-evaluacion-seguimiento .agenda-card {
+    min-width: 0;
+    max-width: 370px;
+    width: 100%;
+    background: rgba(120,119,198,0.13);
+    border-radius: 18px;
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+    box-shadow: 0 2px 12px rgba(120,119,198,0.08);
+    border: 2.5px solid #7877c6;
+    color: #fff;
+    text-align: left;
+    font-size: 1.08rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.slide#slide-evaluacion-seguimiento .agenda-card h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+    color: #b7aaff !important;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.slide#slide-evaluacion-seguimiento ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    list-style: none;
+}
+
+.slide#slide-evaluacion-seguimiento li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    color: #e0e0ff;
+    position: relative;
+}
+
+.slide#slide-evaluacion-seguimiento li::before {
+    content: '✔';
+    color: #10B981;
+    font-weight: bold;
+    margin-right: 0.7em;
+    font-size: 1.08em;
+    position: relative;
+    left: 0;
+    top: 0.5px;
+}
+
+.slide#slide-evaluacion-seguimiento li span {
+    color: inherit;
+}
