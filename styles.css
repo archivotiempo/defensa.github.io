@@ -3357,3 +3357,59 @@ body::before {
 .slide#slide-evaluacion-seguimiento li span {
     color: inherit;
 }
+
+.escapify-logo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+    border-radius: 12px;
+    padding: 0.2rem 1.1rem 0.2rem 0.7rem;
+    background: rgba(120,119,198,0.07);
+    box-shadow: 0 2px 12px rgba(120,119,198,0.08);
+}
+.escapify-logo-link:hover {
+    box-shadow: 0 8px 32px rgba(120,119,198,0.22);
+    background: rgba(120,119,198,0.16);
+}
+.escapify-lock-icon {
+    display: inline-block;
+    background: linear-gradient(135deg, #b7aaff 0%, #2563eb 60%, #78dbff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #7a8cff;
+    font-size: 2.5rem;
+    transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), filter 0.3s;
+}
+.escapify-logo-link:hover .escapify-lock-icon {
+    transform: translateY(-16px) scale(1.22) rotate(-18deg);
+    filter: drop-shadow(0 6px 18px #b7aaff99);
+}
+.escapify-logo-link span:last-child {
+    background: linear-gradient(90deg, #b7aaff 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b7aaff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px #181c2a22;
+    transition: color 0.3s;
+}
+.escapify-logo-link:hover span:last-child {
+    color: #78dbff;
+    filter: drop-shadow(0 2px 8px #2563eb44);
+}
+.escapify-logo-block {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.escapify-logo-block div {
+    margin-top: 0.7rem;
+    font-size: 1.08rem;
+    color: #e0e0ff;
+    font-style: italic;
+}
