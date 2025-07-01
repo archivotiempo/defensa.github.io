@@ -2757,3 +2757,101 @@ body::before {
     box-shadow: 0 8px 32px rgba(120,119,198,0.18);
     border-color: #ff77c6;
 }
+
+.resultados-cuantitativos-block {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2.5rem 0 1.5rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.resultado-card {
+    background: rgba(120,119,198,0.13);
+    border: 2.5px solid #ff77c6;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 500;
+    box-shadow: 0 2px 12px rgba(120,119,198,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 240px;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.resultado-card i {
+    font-size: 2rem;
+    color: #ff77c6;
+    margin-bottom: 0.5rem;
+}
+.resultado-title {
+    font-size: 1.15rem;
+    color: #b7aaff;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+.resultado-desc {
+    font-size: 1.02rem;
+    color: #e0e0ff;
+    font-weight: 400;
+}
+.resultado-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(120,119,198,0.18);
+    border-color: #b7aaff;
+}
+
+.impacto-socioemocional-block {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2.5rem 0 1.5rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.impacto-card {
+    background: rgba(120,119,198,0.13);
+    border: 2.5px solid #b7aaff;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 500;
+    box-shadow: 0 2px 12px rgba(120,119,198,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 240px;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.impacto-card i {
+    font-size: 2rem;
+    color: #b7aaff;
+    margin-bottom: 0.5rem;
+}
+.impacto-title {
+    font-size: 1.15rem;
+    color: #b7aaff;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+.impacto-desc {
+    font-size: 1.02rem;
+    color: #e0e0ff;
+    font-weight: 400;
+}
+.impacto-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(120,119,198,0.18);
+    border-color: #ff77c6;
+}
