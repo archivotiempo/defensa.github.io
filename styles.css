@@ -140,7 +140,7 @@ body::before {
     position: relative;
     padding-top: 80px;
     padding-bottom: 60px;
-    background: #fff !important;
+    background: #f3f4f8 !important;
 }
 
 /* Transición fade para las diapositivas */
