@@ -1436,6 +1436,22 @@ body::before {
     font-weight: 500;
 }
 
+.resultados-cuantitativos-grid3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+    align-items: stretch;
+    justify-items: stretch;
+    margin: 2.5rem 0 0 0;
+}
+@media (max-width: 900px) {
+    .resultados-cuantitativos-grid3 {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin: 1.5rem 0 0 0;
+    }
+}
+
 .resultados-cuantitativos-block {
     display: flex;
     flex-direction: row;
