@@ -368,13 +368,12 @@ function updateAccessChart() {
     if (accessChartInstance) {
         accessChartInstance.destroy();
     }
-    let animating = true;
     accessChartInstance = new Chart(ctx, {
         type: 'doughnut',
         data: {
             labels: ['Con acceso STEAM', 'Sin acceso STEAM'],
             datasets: [{
-                data: [0, 0],
+                data: [35, 65], // Ambos valores visibles desde el inicio
                 backgroundColor: ['#7877c6', '#ff77c6'],
                 borderWidth: 0
             }]
@@ -386,27 +385,7 @@ function updateAccessChart() {
                 animateRotate: true,
                 animateScale: true,
                 duration: 900,
-                easing: 'easeInOutQuart',
-                onProgress: function(animation) {
-                    if (!animating) return;
-                    const chart = animation.chart;
-                    const dataset = chart.data.datasets[0];
-                    const progress = animation.currentStep / animation.numSteps;
-                    dataset.data = [35 * progress, 0];
-                    chart.update('none');
-                },
-                onComplete: function(animation) {
-                    if (!animating) return;
-                    const chart = animation.chart;
-                    chart.data.datasets[0].data = [35, 0];
-                    chart.update();
-                    setTimeout(() => {
-                        chart.options.animation = false;
-                        chart.data.datasets[0].data = [35, 65];
-                        chart.update();
-                        animating = false;
-                    }, 50);
-                }
+                easing: 'easeInOutQuart'
             },
             plugins: {
                 legend: {
