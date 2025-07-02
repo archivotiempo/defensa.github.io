@@ -3921,3 +3921,76 @@ body::before {
         height: auto;
     }
 }
+
+/* Grid para la slide de escalabilidad */
+.scalability-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.2rem;
+    margin: 2.5rem 0 2.2rem 0;
+    justify-items: center;
+}
+
+.scalability-card {
+    background: rgba(255,255,255,0.13);
+    border: 2.5px solid #b7aaff;
+    border-radius: 22px;
+    box-shadow: 0 4px 24px rgba(120,119,198,0.10);
+    padding: 2.2rem 2rem 1.5rem 2rem;
+    min-width: 320px;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.scalability-card:hover {
+    box-shadow: 0 8px 32px rgba(120,119,198,0.18);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.scalability-icon {
+    font-size: 2.7rem;
+    margin-bottom: 0.7rem;
+    filter: drop-shadow(0 2px 8px rgba(120,119,198,0.10));
+}
+
+.scalability-card h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 1.1rem;
+    text-align: center;
+}
+
+.scalability-card ul {
+    list-style: disc inside;
+    color: #e0e0ff;
+    font-size: 1.08rem;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .scalability-grid {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+    }
+    .scalability-card {
+        min-width: 0;
+        max-width: 100%;
+        padding: 1.3rem 0.7rem 1.1rem 0.7rem;
+    }
+    .scalability-icon {
+        font-size: 2.1rem;
+    }
+    .scalability-card h3 {
+        font-size: 1.08rem;
+    }
+    .scalability-card ul {
+        font-size: 0.99rem;
+    }
+}
