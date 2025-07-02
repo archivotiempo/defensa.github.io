@@ -1,0 +1,1220 @@
+Universidad Rey Juan Carlos
+
+TRABAJO FIN DE MÁSTER
+
+
+MÁSTER UNIVERSITARIO EN FORMACIÓN DEL PROFESORADO DE EDUCACIÓN SECUNDARIA OBLIGATORIA Y BACHILLERATO, FORMACIÓN PROFESIONAL Y ENSEÑANZA DE IDIOMAS.
+INFORMÁTICA Y TECNOLOGÍA
+2024-2025
+
+Apellidos y Nombre del Alumno/a
+
+Director/a TFM:
+
+Índice de contenidos
+
+
+Resumen
+
+La presente investigación aborda el diseño, implementación y evaluación de un escape room educativo inclusivo denominado «El archivo de la historia: Un viaje a través del tiempo» para el desarrollo de competencias STEAM (Science, Technology, Engineering, Arts and Mathematics) en estudiantes con discapacidad intelectual y otras necesidades especiales. El estudio, realizado con 12 participantes de AFANIAS (Asociación Pro-Personas con Discapacidad Intelectual) con edades comprendidas entre 18 y 28 años, empleó una metodología mixta de investigación-acción para evaluar la efectividad de la gamificación como herramienta pedagógica inclusiva.
+El escape room se estructuró como un viaje temporal a través de siete eras históricas (dinosaurios, prehistoria, edad antigua,  edad media, edad moderna, edad contemporánea y era digital), integrando desafíos STEAM adaptados mediante principios de diseño universal. Se implementaron 23 adaptaciones específicas incluyendo instrucciones visuales (véase Anexo D.3) secuenciales, materiales manipulativos con texturas diferenciadas, sistema de colores ColorADD (véase Anexo D.6), zona de calma y tecnologías de apoyo, todas diseñadas para garantizar la participación equitativa de perfiles funcionales diversos.
+Los resultados demuestran incrementos significativos en todas las dimensiones STEAM evaluadas: 68 % en competencias científicas, 72 % en tecnológicas y 65 % en matemáticas (p<0.05). Se documentaron 127 conexiones interdisciplinares (véase Anexo K.6) y 43 episodios de "experticia distribuida" donde diferentes participantes asumieron roles de liderazgo según sus fortalezas específicas. El índice de satisfacción alcanzó el 94 %, con tiempo de atención sostenida 2,3 veces superior al habitual en actividades educativas tradicionales.
+Los análisis cualitativos revelaron cinco hallazgos principales: la gamificación como democratizadora del acceso a competencias científico-tecnológicas, la narrativa histórica como andamiaje cognitivo natural, la complementariedad de perfiles como motor de inclusión, las adaptaciones universalmente beneficiosas y el desarrollo emergente de autorregulación emocional. Las adaptaciones más efectivas fueron aquellas basadas en multimodalidad sensorial (95 % efectividad), instrucciones secuenciales visuales (92 % efectividad) y sistemas de verificación inmediata (89 % efectividad).
+El estudio confirma que el Diseño Universal Aplicado a experiencias gamificadas no solo facilita la participación de estudiantes con necesidades especiales, sino que enriquece la experiencia educativa para todos los participantes. La investigación aporta un modelo transferible de escape room inclusivo, validado empíricamente, que redefine las posibilidades de la educación STEAM para poblaciones tradicionalmente excluidas de estos aprendizajes.
+Las implicaciones pedagógicas incluyen la reconceptualización del rol docente hacia facilitador de experiencias, la valoración de la diversidad como recurso educativo y la necesidad de integrar sistemáticamente elementos lúdicos en el currículo. Las limitaciones del estudio, centradas en el tamaño de muestra y ausencia de grupo control, sugieren líneas futuras de investigación longitudinal y comparativa.
+La investigación demuestra que cuando se diseña para la diversidad desde el origen, utilizando principios de diseño universal y gamificación estructurada, es posible crear experiencias educativas que no solo incluyen, sino que se enriquecen con la participación de estudiantes con discapacidad intelectual, transformando la comprensión tradicional de la educación STEAM inclusiva.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+Palabras clave: escape room educativo, competencias STEAM, inclusivo, discapacidad intelectual, gamificación, Diseño Universal para el Aprendizaje, educación inclusiva. Abstract
+
+This research addresses the design, implementation and evaluation of an inclusive educational escape room called "The Archive of History: A Journey Through Time" for the development of STEAM (Science, Technology, Engineering, Arts and Mathematics) competences in students with intellectual disabilities and other special needs. The study, conducted with 12 participants from AFANIAS (Pro Association for People with Intellectual Disabilities) aged between 18 and 28 years, employed a mixed action-research methodology to evaluate the effectiveness of gamification as an inclusive pedagogical tool.
+The escape room was structured as a temporal journey through seven historical eras (dinosaurs, prehistory, ancient times, middle ages, modern times, contemporary times and digital age), integrating STEAM challenges adapted through universal design principles. Twenty-three specific adaptations were implemented including sequential visual instructions, manipulative materials with differentiated textures, ColorADD (see Annex D.6) color system, calm zone and assistive technologies, all designed to ensure equitable participation across diverse functional profiles.
+Results demonstrate significant increases in all evaluated STEAM dimensions: 68 % in scientific competences, 72 % in technological and 65 % in mathematical (p<0.05). One hundred twenty-seven interdisciplinary connections and 43 episodes of "distributed expertise" were documented where different participants assumed leadership roles according to their specific strengths. The satisfaction index reached 94 %, with sustained attention time 2.3 times higher than usual in traditional educational activities.
+Qualitative analyses revealed five main findings: gamification as a democratizer of access to scientific-technological competences, historical narrative as natural cognitive scaffolding, profile complementarity as an engine for inclusion, universally beneficial adaptations and emergent development of emotional self-regulation. The most effective adaptations were those based on sensory multimodality (95 % effectiveness), visual sequential instructions (92 % effectiveness) and immediate verification systems (89 % effectiveness).
+The study confirms that Universal Design Applied to gamified experiences not only facilitates participation of students with special needs but enriches the educational experience for all participants. The research provides a transferable model of inclusive escape room, empirically validated, that redefines the possibilities of STEAM education for populations traditionally excluded from these learnings.
+Pedagogical implications include reconceptualizing the teaching role toward experience facilitator, valuing diversity as an educational resource and the need to systematically integrate playful elements into curriculum. Study limitations, centered on sample size and absence of control group, suggest future lines of longitudinal and comparative research.
+The research demonstrates that when designing for diversity from the origin, using universal design principles and structured gamification, it is possible to create educational experiences that not only include but are enriched by the participation of students with intellectual disabilities, transforming traditional understanding of inclusive STEAM education.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Keywords: educational escape room, inclusive, STEAM competencies, intellectual disability, gamification, Universal Design for Learning, inclusive education.
+Abreviaturas y nomenclatura
+
+Organismos e instituciones
+APA - American Psychological Association
+CAST - Center for Applied Special Technology
+INE - Instituto Nacional de Estadística
+ONU - Organización de las Naciones Unidas
+Competencias clave (LOMLOE)
+CCL - Competencia en Comunicación Lingüística
+CP - Competencia Plurilingüe
+CMCTI - Competencia Matemática y en Ciencia, Tecnología e Ingeniería
+CD - Competencia Digital
+CPSAA - Competencia Personal, Social y de Aprender a Aprender
+CC - Competencia Ciudadana
+CE - Competencia Emprendedora
+CCEC - Competencia en Conciencia y Expresión Culturales
+Discapacidad y necesidades educativas
+DI - Discapacidad Intelectual
+DUA - Diseño Universal para el Aprendizaje
+SAAC - Sistemas Alternativos y Aumentativos de Comunicación
+TEA - Trastorno del Espectro Autista (véase Anexo D.4)
+UDL - Universal Design for Learning
+CEE - Centro de Educación Especial
+Tecnología y metodologías educativas
+NFC - Near Field Communication
+STEAM - Science, Technology, Engineering, Arts and Mathematics
+TIC - Tecnologías de la Información y Comunicación
+Marco legal y académico
+LOMLOE - Ley Orgánica de Modificación de la LOE
+TFM - Trabajo Fin de Máster
+Metodologías activas y ludificación
+ACP - Apoyo Conductual Positivo
+GBL - Game-Based Learning (Aprendizaje Basado en Juegos)
+IEP - Individualized Education Program (Programa de Educación Individualizado)
+PBIS - Positive Behavioral Interventions and Supports (Intervenciones y Apoyos Conductuales Positivos)
+PBL - Problem-Based Learning (Aprendizaje Basado en Problemas)
+
+Términos especializados
+
+Accesibilidad cognitiva - Conjunto de criterios y pautas que facilitan la comprensión y el uso de entornos, productos y servicios a personas con dificultades de comprensión o procesamiento de la información.
+Accesibilidad universal - Condición que permite que los entornos, productos y servicios puedan ser utilizados por todas las personas, independientemente de sus capacidades funcionales, para garantizar la igualdad de oportunidades.
+Ajustes razonables - Modificaciones y adaptaciones necesarias y adecuadas que no impongan una carga desproporcionada, cuando se requieran para garantizar el goce o ejercicio de los derechos en igualdad de condiciones.
+Apoyo conductual positivo - Metodología preventiva que busca mejorar la calidad de vida de las personas mediante estrategias proactivas para abordar problemas de conducta y promover comportamientos apropiados.
+Breakout educativo - Actividad colaborativa donde los estudiantes deben resolver una serie de retos y enigmas relacionados con contenidos curriculares para conseguir un objetivo común en un tiempo determinado.
+Coenseñanza - Modelo de enseñanza colaborativa donde dos o más profesionales educativos trabajan conjuntamente para planificar, instruir y evaluar a un grupo diverso de estudiantes en el mismo espacio físico.
+ColorADD – Código universal de comunicación del color diseñado para personas con deficiencia en la percepción cromática (véase Anexo D.6)
+Educación inclusiva - Proceso destinado a abordar y atender la diversidad de necesidades de todos los educandos mediante una participación creciente en el aprendizaje, reduciendo la exclusión del entorno educativo.
+Escape room educativo - Metodología activa que traslada el concepto de juego de escape físico al ámbito educativo, donde los estudiantes deben resolver acertijos y problemas para "escapar" mientras aprenden contenidos específicos.
+Gamificación - Aplicación de elementos y dinámicas propias del juego en entornos no lúdicos, especialmente en contextos educativos, para aumentar la motivación y el compromiso de los estudiantes.
+Instrucción diferenciada - Enfoque pedagógico que adapta la enseñanza a las diferentes necesidades, intereses y estilos de aprendizaje de los estudiantes dentro del mismo grupo-clase.
+Neurodivergencia - Término que describe las variaciones naturales en el funcionamiento neurológico humano, incluyendo condiciones como el autismo, TDAH, dislexia, entre otras.
+Serious games - Juegos diseñados específicamente con propósitos educativos, de entrenamiento o informativos, que van más allá del entretenimiento puro y buscan lograr objetivos de aprendizaje específicos.
+Introducción y fundamentación del proyecto
+ Justificación pedagógica
+
+Los escape rooms educativos han emergido como una metodología pedagógica innovadora que trasciende el entretenimiento para convertirse en entornos de aprendizaje significativo y activos. Diversos estudios han demostrado su eficacia para fomentar competencias transversales como el pensamiento crítico, la colaboración, la creatividad y la resolución de problemas complejos (Nicholson, 2018; Borrego et al., 2017).
+Este enfoque adquiere una relevancia particular al aplicarse al desarrollo de competencias STEAM (Science, Technology, Engineering, Arts and Mathematics) en población con discapacidad intelectual, colectivo que históricamente ha enfrentado barreras significativas para acceder a experiencias educativas innovadoras e inclusivas. Según el Instituto Nacional de Estadística (2020), aproximadamente el 2,5 % de la población española presenta discapacidad intelectual, lo que representa a más de 300.000 personas que requieren enfoques didácticos adaptados, motivadores y multisensoriales.
+La presente propuesta se enmarca en la Ley Orgánica 3/2020 (LOMLOE), alineándose con el desarrollo de las competencias clave del currículo básico, especialmente en lo relativo a la competencia digital, la competencia para aprender a aprender, la competencia social y ciudadana, y la competencia en conciencia y expresión cultural. La propuesta se desarrollará con base en dichos referentes curriculares, que se ampliarán en los apartados posteriores de este trabajo.
+
+Fundamentación teórica
+La fundamentación teórica de este proyecto se apoya en tres pilares que sustentan su diseño didáctico, accesible e inclusivo:
+Teoría de las inteligencias múltiples de Gardner (véase Anexo A.1) (1983): Reconoce que la inteligencia no constituye un constructo único, sino un conjunto de capacidades diversas que se manifiestan de manera diferenciada. En el contexto de El archivo de la historia: Un viaje a través del tiempo, esta teoría permite activar simultáneamente diversas inteligencias: lógico-matemática (resolución de enigmas), espacial (navegación entre épocas), corporal-cinestésica (manipulación de objetos), interpersonal (trabajo colaborativo) y musical (ambientación sensorial).
+Diseño Universal para el Aprendizaje (DUA): Basado en los principios establecidos por el CAST (2018), el DUA propone ofrecer múltiples formas de representación, expresión y participación, garantizando así que el aprendizaje sea accesible y significativo para todo el alumnado. Esta perspectiva permite crear experiencias educativas flexibles, adaptadas y motivadoras.
+Modelo social de la discapacidad: En coherencia con la Convención sobre los Derechos de las Personas con Discapacidad (ONU, 2006), este enfoque traslada el foco desde las limitaciones individuales hacia la eliminación de barreras contextuales, actitudinales y sociales, contribuyendo a la creación de entornos inclusivos y equitativos donde todas las personas puedan participar activamente.
+
+Contexto normativo y social
+El marco legal nacional e internacional respalda la necesidad de diseñar experiencias educativas inclusivas y equitativas. En este sentido, la Convención sobre los Derechos de las Personas con Discapacidad (ONU, 2006) establece en su artículo 24 el derecho de todas las personas a una educación inclusiva, en igualdad de condiciones y sin discriminación. El Comentario General n.º 4 (2016) subraya que dicha inclusión debe garantizarse "en todos los niveles del sistema educativo", con los apoyos necesarios para el éxito académico y la participación activa del alumnado con discapacidad.
+En el contexto español, la Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE), incorpora un enfoque centrado en la equidad y la atención a la diversidad. En su artículo 4, se establece que “la educación básica es obligatoria y gratuita para todas las personas”, incluyendo las medidas necesarias para el alumnado con necesidades educativas especiales. Asimismo, la normativa promueve metodologías activas, significativas y cooperativas como vía para garantizar el acceso y la permanencia en el sistema educativo.
+De forma complementaria, el currículo básico establecido por la LOMLOE pone un énfasis especial en el desarrollo de las competencias clave como eje vertebrador del aprendizaje a lo largo de la vida. Estas competencias, definidas en el marco europeo y adaptadas al sistema educativo español, incluyen: la competencia en comunicación lingüística (CCL), la competencia matemática y competencias básicas en ciencia y tecnología (CMCT), la competencia digital (CD), la competencia personal, social y de aprender a aprender (CPSAA), la competencia ciudadana (CC), la competencia emprendedora (CE) y la competencia en conciencia y expresiones culturales (CCEC).
+La presente propuesta didáctica se alinea especialmente con las competencias CPSAA, CMCT, CD y CCEC, a través de un enfoque interdisciplinar que combina elementos STEAM con estrategias de gamificación accesible. La incorporación de materiales multisensoriales, apoyos visuales, tecnologías adaptadas y trabajo colaborativo permite avanzar hacia un modelo educativo más inclusivo, participativo y significativo para el alumnado con discapacidad intelectual.
+
+Tabla 1. Correspondencia entre objetivos específicos del proyecto y competencias clave del currículo LOMLOE
+
+
+
+Nota: Elaboración propia a partir del diseño de objetivos didácticos (véase Anexo A.2) del proyecto y la definición de competencias clave del currículo LOMLOE (Ministerio de Educación y Formación Profesional y Deportes, 2022).
+
+1.2. Presentación de la propuesta didáctica
+«El archivo de la historia: Un viaje a través del tiempo» constituye una propuesta didáctica innovadora centrada en el diseño de un escape room educativo inclusivo que combina elementos físicos manipulables con recursos tecnológicos adaptativos. Mediante una narrativa inmersiva basada en viajes temporales, los participantes deben superar una serie de desafíos interdisciplinares que integran contenidos de las áreas STEAM en diferentes contextos históricos.
+La propuesta se articula en torno a una “maleta del explorador”, un dispositivo físico dividido en compartimentos temáticos organizados por eras históricas secuenciales: Era de los Dinosaurios, Prehistoria, Edad Antigua, Edad Media, Edad Moderna, Edad Contemporánea, Era Digital y Futuro. Cada era contiene retos específicamente diseñados para activar distintas competencias, ofreciendo una experiencia multinivel, multisensorial y gamificada.
+Los elementos clave que estructuran la experiencia educativa son los siguientes:
+Sistema de progresión gamificado: Cada participante recibe un Pasaporte del Explorador (véase Anexo I.2) Temporal, que debe ser sellado tras superar con éxito cada era. El avance se valida mediante un sistema de lectura NFC integrado.
+Narrativa multinivel: El relato se adapta a diferentes niveles de comprensión lectora y perfiles cognitivos, con versiones simplificadas (véase Anexo K.5), pictográficas y auditivas.
+Apoyos visuales integrados: Se emplean pictogramas (véase Anexo D.3) ARASAAC, mapas visuales, señalización accesible y esquemas espaciales para facilitar la comprensión y la orientación.
+Elementos manipulativos y multisensoriales: Cada reto incluye objetos físicos (piezas, engranajes, tarjetas, mecanismos) que permiten una interacción activa y significativa.
+Tecnología adaptativa: Se incorporan interfaces accesibles, mecanismos de validación interactiva, y sistemas de retroalimentación visual o sonora personalizables, según las necesidades del alumnado.
+Esta experiencia de aprendizaje, enmarcada en el paradigma del learning by doing, no solo busca el desarrollo de competencias curriculares, sino también la mejora de habilidades sociales, comunicativas y emocionales mediante el trabajo en equipo y la resolución colaborativa de desafíos históricos.
+
+1.2.1. Población objetivo
+El proyecto ha sido diseñado específicamente para jóvenes con discapacidad intelectual con edades comprendidas entre los 18 y los 28 años. Este grupo etario se caracteriza por encontrarse en una etapa de transición educativa y sociolaboral, en la que resulta especialmente relevante el desarrollo de habilidades funcionales, sociales y cognitivas. No obstante, la estructura modular y multinivel de la propuesta permite su adaptación a otros perfiles con necesidades educativas especiales, incluyendo alumnado con trastornos del espectro del autismo (TEA (véase Anexo D.4)), dificultades de aprendizaje, TDAH o discapacidades sensoriales, dentro del marco del Diseño Universal para el Aprendizaje (CAST, 2018).
+
+1.2.2. Contexto de implementación
+A efectos de este Trabajo Fin de Máster, se ha diseñado una implementación con un grupo de doce participantes vinculados al Centro AFANIAS, entidad especializada en la atención integral a personas con discapacidad intelectual. Los perfiles de los participantes han sido seleccionados considerando criterios de heterogeneidad funcional y niveles de autonomía, con el objetivo de representar la diversidad de situaciones que pueden encontrarse en contextos educativos reales. Las características específicas del grupo, así como las adaptaciones implementadas detalladas (véase Anexo I.5).
+
+1.3 Objetivos generales del TFM
+Los objetivos de este Trabajo Fin de Máster se articulan en torno a cuatro dimensiones fundamentales: pedagógica, inclusiva, competencial y de sostenibilidad:
+Diseñar una propuesta de intervención educativa inclusiva que integre coherentemente la gamificación, las mecánicas de escape room y el desarrollo de competencias STEAM, sustentada en evidencia científica y buenas prácticas pedagógicas.
+Promover el desarrollo integral del alumnado con discapacidad intelectual, abordando dimensiones cognitivas (como la resolución de problemas o el pensamiento lógico), sociales (colaboración, comunicación) y emocionales (autoestima, tolerancia a la frustración).
+Favorecer la participación activa y significativa del alumnado mediante retos accesibles, colaborativos y multinivel, respetando los diferentes ritmos de aprendizaje y garantizando experiencias de éxito para todo el alumnado.
+Proporcionar un modelo replicable y sostenible de escape room educativo inclusivo, acompañado de recursos prácticos como guías didácticas, materiales adaptados y protocolos de implementación transferibles a otros contextos educativos formales y no formales.
+
+1.4 Preguntas de investigación e hipótesis
+1.4.1 Preguntas de investigación
+Las preguntas de investigación se agrupan en tres dimensiones analíticas que estructuran el enfoque evaluativo de la intervención:
+Dimensión pedagógica:
+¿Qué impacto tiene la propuesta El archivo de la historia: Un viaje a través del tiempo en el desarrollo de competencias STEAM en jóvenes con discapacidad intelectual?
+¿Qué cambios se observan en los procesos de aprendizaje al incorporar metodologías gamificadas en contextos de educación especial?
+Dimensión motivacional y participativa:
+¿De qué manera influye la experiencia gamificada en los niveles de motivación intrínseca y en la participación activa del alumnado?
+¿Qué formas de autorregulación del aprendizaje se potencian a través de esta propuesta?
+Dimensión de accesibilidad e inclusión:
+¿Qué adaptaciones son más específicas para garantizar la accesibilidad universal de las experiencias del escape room?
+¿Cómo diseñar mecánicas de juego que respeten la diversidad funcional sin renunciar al desafío cognitivo?
+
+1.4.2 Hipótesis de investigación
+Las hipótesis se formulan atendiendo a criterios de especificidad, mensurabilidad y pertinencia en función de los objetivos y preguntas planteadas:
+La implementación de El archivo de la historia: Un viaje a través del tiempo incrementará significativamente (al menos un 30 %) los indicadores de participación activa del alumnado con discapacidad intelectual, medidos mediante rúbricas de observación sistemática. 
+Los participantes mejorarán sus competencias básicas STEAM en un 25 % respecto a la evaluación inicial, tal como se refleje en los instrumentos pre-test (véase Anexo B.1) y post-test adaptados.
+Las adaptaciones diseñadas permitirán que el 100 % del alumnado complete con éxito, y con los apoyos pertinentes,  al menos el 80 % de los retos planteados.
+Se registrará un aumento estadísticamente significativo en los niveles de motivación hacia el aprendizaje, medido a través de escalas adaptadas de autoeficacia y registros cualitativos de observación.
+
+Marco teórico
+2.1. Fundamentación neuropsicopedagógica
+La fundamentación neuropsicopedagógica de la presente propuesta, titulada «El archivo de la historia: Un viaje a través del tiempo», se diseña específicamente para el alumnado de AFANIAS, una asociación que desde 1964 presta apoyo integral a personas con discapacidad intelectual y a sus familias en la Comunidad de Madrid. Esta propuesta parte de una concepción inclusiva de la educación, atendiendo a la diversidad de ritmos, estilos y capacidades de aprendizaje del alumnado.
+
+2.1.1. Evolución del concepto de inteligencia
+La concepción clásica de la inteligencia, entendida como una capacidad general medible mediante el cociente intelectual (Spearman, 1904; Binet & Simon, 1916), ha dado paso a modelos contemporáneos que destacan su naturaleza multifactorial, contextual y dinámica (Gardner (véase Anexo A.1), 1983; Sternberg, 1985, 2015). Esta visión resulta fundamental en el marco de la educación inclusiva, ya que permite reconocer fortalezas diversas en el alumnado con discapacidad intelectual, frecuentemente ignoradas en contextos educativos tradicionales.
+
+2.1.2. Teoría de las inteligencias múltiples
+Howard Gardner (véase Anexo A.1) (1983, 1999, 2011) propone que la inteligencia no es una entidad unitaria, sino un conjunto de capacidades relativamente independientes: lingüística, lógico-matemática, espacial, musical, corporal-cinestésica, interpersonal, intrapersonal y naturalista. Esta teoría permite diseñar actividades educativas que se alinean con perfiles cognitivos variados, como los presentes en el alumnado de AFANIAS (Armstrong, 2009; Suárez et al., 2010). En este proyecto, la teoría se concreta en la planificación de retos que estimulan diferentes tipos de inteligencia:
+Matemática y científica: resolución de códigos, experimentos sencillos, cronologías.
+Lingüística: comprensión de textos adaptados mediante pictogramas (véase Anexo D.3) o lenguaje sencillo.
+Espacial: organización visual de pruebas, mapas y objetos.
+Interpersonal: trabajo en grupo, cooperación y comunicación efectiva.
+Corporal-cinestésica: manipulación de materiales físicos y sensoriales.
+
+2.1.3. Principios neuroeducativos
+La neuroeducación, como campo interdisciplinar que une neurociencia, psicología del desarrollo y pedagogía (Tokuhama-Espinosa, 2011; Howard-Jones, 2014), aporta principios clave para optimizar el aprendizaje:
+Las emociones influyen directamente en la consolidación del aprendizaje (Mora, 2013; Immordino-Yang & Damasio, 2007).
+La plasticidad cerebral permite la mejora cognitiva continua mediante experiencias significativas (Kolb & Whishaw, 2015).
+El aprendizaje multisensorial favorece la codificación y recuperación de información (Shams & Seitz, 2008).
+
+2.1.4. Constructivismo y aprendizaje significativo
+Desde el paradigma constructivista, el aprendizaje se entiende como un proceso activo de construcción de significados a partir de experiencias previas (Phillips, 1995). Piaget (véase Anexo A.1) (1975) destaca el papel del desarrollo cognitivo; Vygotsky (1978) introduce la Zona de Desarrollo Próximo y la mediación social como motores del aprendizaje colaborativo; Ausubel (1963, 2000) subraya la importancia de conectar los nuevos conocimientos con la estructura cognitiva del alumno. Esta propuesta recoge tales aportes en el diseño de una experiencia donde cada reto se relaciona con saberes previos, facilitando la construcción significativa del conocimiento.
+
+2.2. Discapacidad intelectual: conceptualización y características
+La American Association on Intellectual and Developmental Disabilities (AAIDD, 2021) define la discapacidad intelectual como una condición caracterizada por limitaciones significativas en el funcionamiento intelectual y la conducta adaptativa, originada antes de los 22 años. Estas limitaciones afectan a la comprensión, la comunicación, la autonomía y la interacción social.
+
+2.2.1. Características cognitivas relevantes
+El diseño de experiencias educativas inclusivas requiere atender a algunas características comunes en este alumnado:
+Procesamiento de información y memoria de trabajo limitada.
+Mayor efectividad con contenidos concretos y visuales.
+Beneficio de apoyos visuales, rutinas estructuradas y repeticiones.
+
+2.2.2. Potencialidades del grupo etario 18-28 años
+En el grupo destinatario de esta propuesta se observan fortalezas clave:
+Capacidad para seguir instrucciones secuenciales y resolver tareas con estructura.
+Interés por temáticas complejas y narrativas históricas.
+Mayor conciencia sobre sus propias contribuciones al grupo.
+Desarrollo de habilidades sociales y comunicativas en contextos cooperativos.
+
+2.3. Metodologías activas en educación inclusiva
+El aprendizaje activo, entendido como la implicación directa del estudiante en el proceso de construcción del conocimiento (Prince, 2004), resulta especialmente eficaz con alumnado que requiere experiencias concretas, multisensoriales y colaborativas.
+
+2.3.1. Aprendizaje cooperativo
+El aprendizaje cooperativo (Johnson & Johnson, 1999) se estructura en cinco elementos fundamentales: interdependencia positiva, responsabilidad individual, interacción promotora, habilidades interpersonales y evaluación grupal. En esta propuesta, estos elementos se integran mediante la asignación de roles, la resolución colaborativa de retos y la reflexión compartida.
+
+2.3.2. Competencias STEAM adaptadas
+La integración de competencias STEAM (Science, Technology, Engineering, Arts, Mathematics) se incorpora de forma contextualizada al marco histórico de la propuesta, fomentando competencias transversales como la experimentación, el uso de herramientas accesibles, la construcción práctica, la creatividad y la aplicación matemática situada. Aunque no se trata estrictamente de una competencia clave recogida como tal en la LOMLOE, esta integración favorece el desarrollo de competencias relacionadas con la competencia matemática y en ciencia, tecnología e ingeniería, así como la competencia digital y la competencia personal, social y de aprender a aprender.
+
+2.4. Gamificación educativa
+La gamificación educativa consiste en la aplicación estructurada de elementos de juego en contextos formativos (Deterding et al., 2011; Kapp, 2012), y se fundamenta en la Teoría de la Autodeterminación (Deci & Ryan, 1985), que identifica tres necesidades psicológicas básicas: autonomía, competencia y relación.
+
+2.4.1. Beneficios específicos para discapacidad intelectual
+Diversos estudios han mostrado que la gamificación contribuye al desarrollo de habilidades sociales, metacognitivas y motivacionales en personas con discapacidad intelectual (Hamari et al., 2014; Dicheva & Dichev, 2017). Además, aumenta el compromiso, mejora la retención del aprendizaje y permite valorar el progreso mediante retroalimentación constante.
+
+2.5. Escape rooms educativos inclusivos
+Los escape rooms educativos integran narrativa, resolución de problemas, trabajo colaborativo y retroalimentación inmediata, ofreciendo una experiencia motivadora e interdisciplinar (Borrego et al., 2017)
+
+2.5.1. Integración con el Diseño Universal para el Aprendizaje (DUA)
+La propuesta sigue los tres principios del DUA (CAST, 2018):
+Múltiples formas de representación: información presentada en formato visual, auditivo y manipulativo.
+Múltiples formas de acción y expresión: variedad de respuestas posibles, materiales adaptados.
+Múltiples formas de implicación: narrativa motivadora, posibilidad de contribución significativa.
+
+2.5.2. Diseño adaptado para discapacidad intelectual
+Los principios de diseño inclusivo incluyen simplicidad cognitiva, estructura clara y flexible, apoyos visuales, pictogramas (véase Anexo D.3), elementos manipulativos, tiempo flexible, refuerzo positivo frecuente. Las adaptaciones específicas comprenden réplicas históricas manipulables, sistemas de organización visual y accesibilidad tecnológica.
+
+2.6. Síntesis integradora
+La propuesta didáctica se fundamenta en la convergencia de cuatro pilares teóricos: la teoría de las inteligencias múltiples de Gardner (véase Anexo A.1), los principios del constructivismo de Vygotsky, los aportes de la neuroeducación y el enfoque de las metodologías activas. Esta base se articula mediante un diseño gamificado e inclusivo, propio de los escape rooms educativos, que configura un ecosistema de aprendizaje adaptado a las características del alumnado adulto joven con discapacidad intelectual. La propuesta no solo favorece la accesibilidad cognitiva, sensorial y social, sino que también promueve la participación significativa, el desarrollo de competencias transversales y la experiencia de éxito académico. En conjunto, responde a los principios de equidad, calidad e inclusión educativa establecidos por el marco normativo vigente.
+
+2.7. Vinculación con las competencias clave de la LOMLOE
+La propuesta "El archivo de la historia" se alinea con el desarrollo de las competencias clave establecidas por la LOMLOE (Ministerio de Educación y Formación Profesional, 2022):
+CCL: Competencia en comunicación lingüística: se fomenta mediante la interpretación de textos adaptados, la formulación de hipótesis y la expresión de ideas.
+CMCT: Competencia matemática y competencias básicas en ciencia y tecnología: integrada a través de la resolución de enigmas, uso de tecnología adaptada y experimentación.
+CD: Competencia digital: mediante la interacción con dispositivos digitales accesibles, códigos QR (véase Anexo C.5), aplicaciones y materiales interactivos.
+CPAA: Competencia para aprender a aprender: fortalecida a través de la metacognición, la planificación y la autorregulación de estrategias de resolución.
+CSC: Competencias sociales y cívicas: desarrolladas a través del trabajo colaborativo, la empatía y la valoración de la diversidad.
+SIEG: Sentido de iniciativa y espíritu emprendedor: incentivada mediante la toma de decisiones en grupo, la formulación de propuestas y la superación de retos.
+CC: Conciencia y expresiones culturales: trabajada mediante la exploración de distintas épocas históricas, el uso de referencias culturales y la creación artística.
+Estas competencias se trabajan mediante la resolución de retos, el uso de tecnología adaptada, el trabajo en equipo, la experimentación, la reflexión personal y la expresión artística. Esta vinculación garantiza que la propuesta no solo atiende a la diversidad, sino que contribuye al desarrollo integral del alumnado, en consonancia con los principios del currículo básico.
+
+2.8. Marco legal y normativo
+2.8.1. Normativa nacional sobre inclusión educativa
+La propuesta didáctica se fundamenta en los principios establecidos por la Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE), que modifica la Ley Orgánica de Educación. Esta norma introduce como ejes vertebradores del sistema educativo la equidad, la inclusión y la atención personalizada a la diversidad.
+En particular, el artículo 71 de la LOMLOE regula la atención al alumnado con necesidades educativas especiales, estableciendo que “la detección e identificación de las necesidades educativas se realizará lo antes posible y que las administraciones educativas garantizarán los recursos necesarios para que el alumnado con discapacidad pueda alcanzar el máximo desarrollo posible de sus capacidades personales y los objetivos establecidos con carácter general para todo el alumnado”.
+Asimismo, la ley promueve el Diseño Universal para el Aprendizaje (DUA) como principio orientador de las programaciones didácticas, reconociendo la necesidad de ofrecer múltiples formas de representación, expresión e implicación para garantizar la accesibilidad y la participación.
+
+2.8.2. Relevancia para “El archivo de la historia”
+La propuesta se alinea de manera directa con este marco normativo, al ofrecer un entorno educativo que prioriza la accesibilidad cognitiva, sensorial, emocional y social. Las pruebas del escape room están adaptadas desde su diseño para que todo el alumnado, independientemente de sus características personales, pueda participar de forma activa, significativa y autónoma, avanzando en el desarrollo de sus competencias clave.
+
+CONTEXTUALIZACIÓN Y ANÁLISIS DE NECESIDADES
+La presente investigación-acción se enmarca en un enfoque inclusivo y situado, atendiendo a las necesidades específicas de un grupo de estudiantes con discapacidad intelectual del Centro Ocupacional AFANIAS (Madrid), mediante la implementación de una propuesta didáctica gamificada: “El archivo de la historia: Un viaje a través del tiempo”. Esta propuesta se desarrolla en formato de escape room y busca el desarrollo de competencias clave y STEAM, conforme al marco curricular vigente de la LOMLOE (Ministerio de Educación y Formación Profesional, 2022).
+
+3.1. Caracterización del centro educativo
+El estudio se desarrolla en el Centro Ocupacional AFANIAS, institución especializada en atención a personas con discapacidad intelectual ubicada en Madrid. Según el Proyecto Educativo de Centro, la institución atiende a 180 usuarios con edades comprendidas entre 18 y 65 años, a través de programas de formación ocupacional, desarrollo personal y preparación para la vida autónoma y laboral.
+
+3.1.1. Filosofía institucional
+El centro fundamenta su acción educativa en cuatro pilares principales: la personalización del aprendizaje mediante adaptaciones curriculares significativas; la implementación de metodologías activas y funcionales que promuevan la participación; el desarrollo de competencias funcionales orientadas a la inclusión social y laboral; y el uso de tecnologías adaptadas al perfil del alumno para maximizar el acceso (véase Anexo K.4) al aprendizaje.
+
+3.1.2. Recursos disponibles
+El centro cuenta con un equipo multidisciplinar formado por educadores sociales, terapeutas ocupacionales, psicólogos y técnicos de integración laboral. Dispone de aulas adaptadas, mobiliario flexible, tecnología educativa (tablets, PDI, ordenadores adaptados) y talleres funcionales. 
+
+3.2. Características del alumnado destinatario
+3.2.1. Composición de la muestra
+Se ha trabajado con una muestra intencional conformada por 12 usuarios (n=12) del programa ocupacional durante el periodo 2024-2025, con edades comprendidas entre 20 y 35 años (M=27.3; DE=4.2). La muestra presenta diversidad funcional y comorbilidades asociadas, como se refleja en la tabla 3.1.
+Tabla 3.1. Distribución de la muestra por características principales
+
+
+3.2.2. Perfil cognitivo y de aprendizaje
+Siguiendo el modelo de funcionamiento propuesto por Schalock et al. (2021), el análisis revela las siguientes características predominantes:
+Capacidad de razonamiento concreto conservada, con dificultades significativas en pensamiento abstracto y generalización.
+Habilidades sociales de nivel básico-intermedio, requieren apoyo estructurado para tareas complejas.
+Alta motivación hacia actividades prácticas y manipulativas (100 %).
+Respuesta favorable al trabajo cooperativo estructurado (83.3 %).
+Respuesta positiva a metodologías lúdicas (91.7 %).
+
+3.3. Diagnóstico inicial de necesidades
+3.3.1. Metodología de evaluación
+Para establecer la línea base de competencias STEAM, se implementó un protocolo de evaluación multimodal que incluye: observación sistemática durante tareas STEAM estructuradas, evaluación de competencias básicas STEAM mediante pruebas adaptadas, cuestionarios de intereses con formato accesible, y entrevistas con educadores. 
+
+3.3.2. Resultados del diagnóstico inicial
+Los datos obtenidos muestran niveles emergentes o intermedios en la mayoría de las competencias STEAM evaluadas, con puntos críticos en evaluación de hipótesis, secuenciación y comprensión de causa-efecto. (Ver tabla 2 en Anexo D)
+Tabla 3.2. Evaluación inicial de competencias STEAM (escala 1-4)
+
+
+3.3.3. Identificación de barreras y facilitadores
+Principales barreras identificadas:
+Limitaciones en memoria de trabajo para secuencias >3 elementos (83.3 %).
+Períodos de atención sostenida limitados (M=18 minutos).
+Dificultades en comprensión de instrucciones complejas o multitarea (83.3 %).
+Principales facilitadores identificados:
+Alta respuesta por el juego y la manipulación de objetos físicos (100 %).
+Beneficio observable con estructura predecible y apoyos visuales.
+Excelente disposición para el trabajo en equipo (83.3 %).
+
+3.4. Alineación curricular y competencias objetivo
+La propuesta se alinea con los principios de Diseño Universal para el Aprendizaje (DUA) y con las competencias clave definidas por la LOMLOE. Se trabaja especialmente:
+Competencia en comunicación lingüística (CCL): comprensión de narrativas, expresión en equipo.
+Competencia matemática y competencias básicas en ciencia y tecnología (CMCT): resolución de retos, manipulación de elementos STEAM, pensamiento lógico.
+Competencia digital (CD): uso funcional y seguro de dispositivos digitales en el entorno educativo.
+Competencia personal, social y de aprender a aprender (CPSAA): autorregulación, perseverancia, trabajo colaborativo.
+Conciencia y expresiones culturales (CEC): reconocimiento y contextualización de épocas históricas.
+
+3.5. Consideraciones éticas
+La intervención se ha desarrollado bajo el cumplimiento del Código Deontológico del Colegio Oficial de Psicólogos y las directrices éticas en investigación con personas con discapacidad. Se ha obtenido el consentimiento informado (véase Anexo G.1) familiar, el asentimiento adaptado del alumnado y la autorización institucional del centro (véase Anexo G.5).
+
+3.6. Justificación de la propuesta
+El análisis contextual y diagnóstico realizado evidencia la pertinencia y viabilidad de implementar la propuesta didáctica «El archivo de la historia: Un viaje a través del tiempo» como respuesta pedagógica eficaz y adaptada a las necesidades del grupo destinatario. Esta propuesta se justifica por las siguientes razones fundamentales:
+Evidencias empíricas extraídas del diagnóstico inicial, que revelan un perfil cognitivo y funcional especialmente receptivo a metodologías basadas en la manipulación, la cooperación y el juego estructurado.
+Facilitadores específicos identificados, como la alta motivación ante dinámicas lúdicas, la preferencia por las tareas concretas y visuales, y una disposición positiva hacia el trabajo en equipo.
+Potencial inclusivo de la propuesta, sustentado en los principios del Diseño Universal para el Aprendizaje (DUA), que permite el acceso equitativo al conocimiento mediante múltiples formas de representación, expresión y compromiso.
+ 	La estructura del escape room educativo permite activar y fortalecer competencias clave y STEAM mediante la resolución de retos secuenciados, en un entorno seguro, motivador y accesible. Las limitaciones detectadas (atención sostenida limitada, dificultades en memoria de trabajo o comprensión de consignas complejas) se abordan mediante:
+Segmentación temporal de las tareas y descansos estructurados.
+Uso sistemático de apoyos visuales y pictográficos.
+Organización predecible y gradual de los retos, con posibilidad de apoyo progresivo.
+En definitiva, la propuesta ofrece una intervención educativa contextualizada, innovadora e inclusiva que responde a las necesidades detectadas y se ajusta a los marcos curriculares y éticos vigentes.
+
+Diseño de la propuesta de intervención
+La gamificación educativa ha demostrado ser una metodología especialmente efectiva para el alumnado con necesidades específicas de apoyo educativo, promoviendo el desarrollo de habilidades de comunicación, interacción social, expresión emocional y función simbólica (López-Escribano & Sánchez-Montoya, 2023). En el contexto de la discapacidad intelectual en población adulta, los entornos gamificados proporcionan un marco seguro para la experimentación y el aprendizaje, reduciendo la ansiedad asociada al error y favoreciendo la autoestima y la autonomía.
+Asimismo, el Diseño Universal para el Aprendizaje (DUA) se fundamenta en la premisa de que la diversidad es inherente al aprendizaje humano, y por tanto requiere aproximaciones pedagógicas flexibles que reconozcan y valoren las diferencias individuales (Alba Pastor, 2022). En este sentido, adaptar las metodologías educativas respetando la dignidad, trayectoria vital y capacidades del alumnado adulto con discapacidad intelectual constituye un imperativo ético y didáctico.
+A partir de esta base teórica, la propuesta metodológica se estructura en los siguientes principios fundamentales.
+
+4.1. Objetivos
+4.1.1. Objetivos generales
+Diseñar e implementar una experiencia educativa inclusiva mediante el escape room «El archivo de la historia: Un viaje a través del tiempo» que facilite el desarrollo de competencias STEAM en alumnado adulto con discapacidad intelectual, promoviendo la autodeterminación, la colaboración y el aprendizaje.
+Fomentar una educación accesible basada en los principios del Diseño Universal para el Aprendizaje (DUA), asegurando la participación plena del alumnado con necesidades específicas de apoyo educativo (NEAE) en entornos cooperativos.
+Evaluar el impacto de la gamificación inclusiva sobre el desarrollo de competencias cognitivas, sociales y emocionales, vinculándolas a los descriptores de las competencias clave establecidos en el currículo de Educación Primaria adaptado a contextos de formación de adultos (MEFP, 2022).
+
+4.1.2. Objetivos específicos
+Los objetivos específicos se estructuran según las dimensiones del aprendizaje:
+Diseñar una narrativa y conexión emocional para generar una ambientación histórica significativa que conecte con las experiencias vitales del alumnado, facilitando la inmersión en el aprendizaje y respetando su madurez emocional.
+Integrar el diseño adaptativo,  elaborar pruebas gamificadas de las eras históricas con niveles de dificultad graduables y múltiples formas de accesibilidad, apropiadas para las capacidades y experiencias de vida de adultos.
+Implementar un sistema de validación de progresos (como el "pasaporte del explorador (véase Anexo I.2)") accesible y motivador que refuerce el sentido de logro y autonomía personal.
+Generar instrumentos de observación y evaluación con rúbricas adaptadas a las características del alumnado que respeten su autonomía y dignidad, haciendo así una evaluación inclusiva (véase Anexo B).
+
+4.1.3. Objetivos didácticos por ámbitos STEAM
+Objetivos didácticos (véase Anexo A.2) por dimensión STEAM 
+Ámbito científico: Aplicar procesos de observación sistemática y formulación de hipótesis en la resolución de enigmas históricos.
+Ámbito tecnológico: Manipular objetos y herramientas históricas adaptadas, desarrollando competencias en tecnologías de apoyo.
+Ámbito de ingeniería: Diseñar y construir soluciones utilizando principios básicos de ingeniería aplicables a la resolución de problemas cotidianos.
+Ámbito artístico: Desarrollar representaciones artísticas inclusivas que integren elementos históricos y culturales.
+Ámbito matemático: Utilizar razonamiento lógico y reconocimiento de patrones matemáticos en contextos históricos.
+Ámbito socioemocional: Colaborar efectivamente en equipos diversos desarrollando capacidades de autorregulación emocional.
+
+4.2. Competencias
+4.2.1. Competencias clave (LOMLOE) adaptadas para educación inclusiva de adultos
+La propuesta se alinea con las ocho competencias clave del currículo básico (MEFP, 2022), adaptadas con un enfoque inclusivo y funcional. A continuación, se presentan resumidas con su equivalencia (véase Anexo A.4):
+Tabla 2. Adaptación de competencias clave LOMLOE
+
+
+4.2.2. Competencias STEAM integradas
+Las competencias STEAM se desarrollan de forma transversal, considerando tanto el desarrollo conceptual como su aplicación funcional en contextos de vida independiente.
+
+4.3. Contenidos
+4.3.1. Contenidos conceptuales adaptados
+Los contenidos se organizan en tres categorías principales:
+Conceptos históricos fundamentales: periodización histórica simplificada, personajes históricos relevantes, inventos y descubrimientos clave, y manifestaciones culturales como patrimonio compartido.
+Conceptos científico-tecnológicos aplicados: principios científicos básicos observables en la vida cotidiana, evolución de herramientas y tecnologías de uso común, conceptos matemáticos con aplicación práctica.
+Vocabulario funcional: terminología histórica básica, conceptos científicos y tecnológicos aplicables, vocabulario artístico y cultural para la apreciación estética.
+
+4.3.2. Contenidos procedimentales
+Se focalizan en metodologías de investigación adaptadas, estrategias de resolución de problemas y uso funcional de herramientas y materiales, priorizando la transferencia a contextos reales de vida independiente.
+
+4.3.3. Contenidos actitudinales
+Incluyen valoración de la diversidad e inclusión, actitudes hacia el aprendizaje permanente, y desarrollo de responsabilidad y autodeterminación.
+
+4.4. Metodología
+4.4.1. Principios metodológicos para adultos
+La metodología se basa en cinco principios fundamentales:
+Andragogía aplicada: Reconocimiento de las características específicas del aprendizaje adulto, incluyendo la experiencia previa como recurso de aprendizaje, la orientación hacia problemas reales y la motivación intrínseca.
+Autodeterminación: Promoción de la toma de decisiones autónomas y el control sobre el propio proceso de aprendizaje, fundamental para el desarrollo de la vida independiente.
+Aprendizaje significativo contextualizado: Conexión explícita entre los contenidos históricos y las experiencias de vida de los participantes, facilitando la transferencia a contextos reales.
+Enfoque competencial funcional: Desarrollo de competencias directamente aplicables a la vida cotidiana, el trabajo y la participación social.
+Valoración de la diversidad: Reconocimiento y aprovechamiento de las diferentes experiencias, conocimientos y habilidades que cada participante adulto aporta al grupo.
+
+4.4.2. Estrategias inclusivas basadas en DUA 3.0
+La implementación del DUA se estructura en tres principios:
+Múltiples formas de representación: Información presentada simultáneamente en formatos visual, auditivo y táctil.
+Múltiples formas de acción y expresión: Diversidad de modalidades de respuesta según capacidades individuales.
+Múltiples formas de implicación: Narrativa motivadora que conecte con experiencias vitales adultas.
+
+4.4.3. Organización espacial y temporal
+Configuración espacial adaptada: El entorno se organiza en estaciones temáticas que respetan la movilidad y necesidades de accesibilidad de adultos, incluyendo zona de descanso que respete la privacidad y autonomía personal.
+Estructura temporal flexible: Cada sesión de 70 minutos se divide en cuatro fases: activación (10 min), desarrollo (40 min), consolidación (10 min) y reflexión (10 min). (véase Anexo I.3)
+
+4.4.4. Agrupamientos y roles funcionales
+Configuración de equipos: Los grupos se forman considerando la complementariedad de experiencias vitales, habilidades y necesidades de apoyo, promoviendo la interdependencia positiva entre adultos.
+Sistema de roles adaptativos:
+Coordinador: Gestión de tiempos y secuencias
+Comunicador: Facilitación de la comunicación grupal
+Documentador: Registro del proceso y logros
+Especialista: Aportación de conocimientos específicos basados en experiencias previas
+
+4.5. Diseño del escape room
+4.5.1. Narrativa y ambientación para adultos
+Los participantes forman parte de una prestigiosa "sociedad de historiadores" que ha descubierto alteraciones en registros históricos cruciales. Como "investigadores especializados", deben utilizar «El archivo de la historia: Un viaje a través del tiempo» para corregir estas alteraciones.
+La narrativa se presenta en múltiples formatos adaptativos: versión completa para participantes con alta competencia lingüística, versión simplificada manteniendo dignidad adulta, versión pictográfica con pictogramas (véase Anexo D.3) profesionales (ARASAAC), versión auditiva con efectos sonoros, y versión táctil mediante objetos significativos.
+
+4.5.2. Estructura por eras históricas
+La progresión sigue una secuencia cronológica de seis eras que permite establecer conexiones con conocimientos previos:
+Era de los Dinosaurios: Origen de la vida, extinción masiva, nociones de tiempo geológico
+Prehistoria
+Edad de Piedra: Evolución humana, herramientas líticas, vida nómada
+Edad de los Metales: Sedentarismo, primeras aldeas, dominio del fuego y metalurgia
+Edad Antigua: Civilizaciones clásicas, escritura, arquitectura, organización social y mitología
+Edad Media: Feudalismo, arte religioso, castillos, códices e inicios de la ciencia escolástica
+Edad Moderna: Humanismo, descubrimientos geográficos, método científico, inventos técnicos
+Edad Contemporánea: Revolución industrial, urbanización, derechos humanos, avances científicos
+Era Digital y Futuro: Tecnología de la información, automatización, comunicación global, inteligencia artificial. Prospectiva tecnológica, sostenibilidad, exploración espacial, ética de la innovación
+Cada era conecta específicamente con experiencias vitales adultas y desarrolla competencias transferibles a contextos reales.
+
+4.5.3. Mecánicas de juego inclusivas adaptadas
+Sistema de pistas progresivas (véase Anexo C.4) personalizado: Se estructura en cuatro niveles de apoyo, desde pistas ambientales hasta apoyo colaborativo entre pares, respetando siempre la dignidad adulta.
+Sistema de progresión y recompensas dignificante: El "Pasaporte del explorador (véase Anexo I.2)" mantiene formato profesional, evitando elementos infantilizantes, e incluye certificación de habilidades transferibles con validez institucional.
+
+4.6. Adaptaciones y medidas de inclusión específicas
+4.6.1. Adaptaciones para discapacidad intelectual en adultos
+Los principios específicos incluyen mantenimiento de la dignidad personal evitando infantilización, respeto por la experiencia vital, adaptación de la complejidad sin comprometer el respeto personal, y promoción de la autonomía.
+Las estrategias adaptativas implementadas incluyen simplificación semántica respetuosa, scaffolding cognitivo progresivo considerando experiencias vitales previas, y conexión con contextos adultos conocidos.
+
+4.6.2. Adaptaciones específicas por perfil
+Considerando los usuarios de AFANIAS, se implementan adaptaciones específicas para:
+TEA (véase Anexo D.4): Cronograma visual detallado, minimización de cambios impredecibles y respeto por necesidades de procesamiento temporal.
+Discapacidad motriz: Herramientas adaptadas con agarres ergonómicos, altura de trabajo ajustable y materiales antideslizantes.
+Discapacidad visual (véase Anexo D.1): Materiales con texturas diferenciadas, descripciones verbales detalladas y modelos tridimensionales.
+TDAH: Alternancia entre actividades de alta y baja demanda atencional, elementos de movimiento constructivo y feedback inmediato.
+
+4.7. Secuenciación y temporalización
+4.7.1. Cronograma general adaptado
+La implementación se estructura en cuatro fases distribuidas a lo largo de ocho semanas:
+Preparación (Semanas -2 a -1): Evaluación inicial y adaptación de materiales
+Introducción (Semana 1): Presentación narrativa y formación de equipos (véase Anexo E.6).
+Implementación (Semanas 2-7): Progresión secuencial por eras históricas.
+Consolidación (Semana 8): Ceremonia de reconocimiento y evaluación final.
+
+4.7.2. Desarrollo de sesiones tipo
+Cada sesión de 70 minutos mantiene una estructura consistente optimizada para adultos, incluyendo activación personalizada, desarrollo con apoyo calibrado, validación dignificante, y reflexión conectada con objetivos personales.
+
+4.8. Recursos
+4.8.1. Recursos humanos especializados
+El equipo interdisciplinar incluye:
+Coordinador principal: Supervisión general (100 % durante implementación).
+Educador social especializado: Facilitación principal (presencia en todas las sesiones).
+Terapeuta ocupacional: Adaptaciones individualizadas (disponibilidad según necesidades)
+Psicólogo especializado: Apoyo emocional (véase Anexo D.8) (consulta y apoyo en crisis)
+Monitor de apoyo: Asistencia personal (1 monitor por cada 4 participantes)
+
+4.8.2. Recursos materiales específicos
+«El archivo de la historia: Un viaje a través del tiempo» - Componentes principales:
+Estructura central: Archivo modular con compartimentos organizados por eras históricas (80x60x30 cm)
+Componentes específicos por era: Tableros temáticos, piezas manipulativas y candados adaptativos
+Tecnología adaptativa integrada: Pantalla LED táctil, sensores RFID y sistema de iluminación LED
+Pasaporte del explorador (véase Anexo I.2): Formato profesional A4 con adaptaciones individuales
+
+4.8.3. Recursos espaciales adaptados
+Aula principal inclusiva de 80 m², configuración por estaciones históricas, zona de bienestar y autorregulación (15 m²) y área de documentación y seguimiento. La integración de estos recursos garantiza un entorno educativo óptimo donde la diversidad funcional se contempla como elemento enriquecedor, cumpliendo con los principios de autodeterminación, dignidad personal y desarrollo integral establecidos en el marco de derechos de las personas con discapacidad.
+
+Metodología de evaluación 
+5.1. Diseño de la Evaluación
+La evaluación de la experiencia educativa “El archivo de la historia: Un viaje a través del tiempo” adopta una metodología inclusiva y multimodal fundamentada en el Diseño Universal para el Aprendizaje (CAST, 2018) y orientada al desarrollo de competencias STEAM en alumnado con discapacidad intelectual. Este diseño evaluativo se estructura en tres fases complementarias —evaluación inicial, continua y final— que se implementan mediante triangulación metodológica (véase Anexo F.3) (Denzin & Lincoln, 2018), garantizando la validez y fiabilidad del proceso.
+
+5.1.1 Contexto de implementación
+La implementación se desarrolló en el Centro de Educación Especial de AFANIAS, ubicado en Madrid, entidad certificada con la norma ISO 9001:2015.
+El grupo participante estuvo conformado por 12 estudiantes, con edades comprendidas entre 19 y 28, todos ellos usuarios de los programas de transición a la vida adulta del centro. 
+
+5.1.2 Evaluación inicial (pre-test)
+La fase de evaluación inicial se desarrolló durante dos semanas previas a la implementación, estableciendo una línea base del perfil competencial STEAM y las necesidades específicas de accesibilidad de cada participante. Los instrumentos se adaptaron a tres modalidades: versión textual con vocabulario simplificado, versión con apoyo pictográfico ARASAAC y versión audio con soporte tecnológico (véase Anexo B.1).
+
+5.1.3 Evaluación continua (formativa)
+La evaluación formativa se implementó mediante observación sistemática durante las cinco eras históricas que componen la experiencia: Dinosaurios, Prehistoria, Edad Antigua, Edad Media, Edad Moderna, Edad Contemporánea, Era Digital y Futuro, distribuidas en tres sesiones de 60 minutos. El sistema de observación por era se recoge en el Anexo B.1, incluyendo fichas de registro por competencias y grado de participación.
+
+5.1.4. Evaluación final (sumativa)
+La evaluación final incluyó post-test (véase Anexo B.1) inmediatos y seguimiento a dos semanas, incorporando entrevistas a educadores sobre la transferencia observada y valoración familiar. Se utilizaron rúbricas y encuestas comparativas.
+
+5.2. Instrumentos de evaluación
+5.2.1. Rúbricas de evaluación competenciales adaptadas
+Se diseñaron rúbricas específicas con cuatro niveles de desempeño: iniciación, desarrollo, autonomía y transferencia, alineadas con las competencias clave de la LOMLOE (Ministerio de Educación, 2022) y las dimensiones STEAM (véase Anexo B.2).
+
+5.2.2. Instrumentos de autoevaluación multimodal
+La propuesta incorpora instrumentos de autoevaluación diseñados para adaptarse a la diversidad del alumnado, facilitando la reflexión sobre el propio aprendizaje desde una perspectiva accesible y significativa. Estos instrumentos permiten recoger información sobre cómo se han sentido y qué han aprendido los participantes, integrando formatos visuales, táctiles, auditivos y digitales para responder a diferentes estilos cognitivos y comunicativos. El objetivo es fomentar la metacognición, la autoestima y la autorregulación del aprendizaje en personas adultas con discapacidad intelectual.
+Por ejemplo, se utilizó un termómetro emocional pictográfico tras cada era histórica, donde el alumnado seleccionaba entre varias expresiones faciales ilustradas (feliz, indiferente, frustrado, entusiasmado, etc.) para indicar su vivencia emocional de la actividad. Esta información se complementaba con una breve reflexión guiada, oral o grabada, en función de las capacidades del participante. Otros instrumentos incluyen cuestionarios sensoriales adaptados y pasaportes individuales en los que cada “explorador” documentaba su progreso mediante fotos, dibujos o grabaciones.
+
+5.2.3. Pasaporte del explorador
+Cada participante completó un pasaporte individual incluyendo pasaporte temporal (véase Anexo C.6), galería de construcciones, registro de estrategias, reflexiones multimodales y certificado de explorador (véase Anexo I.2).
+
+5.3. Resultados de la evaluación
+5.3.1. Desarrollo de competencias STEAM
+Los resultados evidencian un incremento significativo en todas las competencias evaluadas. La progresión media pre-test (véase Anexo B.1) versus post-test mostró incrementos de 1,4 puntos en competencia científica, 1,4 en tecnológica, 1,3 en ingeniería, 1,2 en artística, 1,3 en matemática y 1,3 en socioemocional (escala 0-4). 
+
+5.3.2. Análisis por Eras Históricas
+La efectividad de aprendizaje varió según la era histórica: Dinosaurios (85 %), Prehistoria, Edad Antigua (92 %), Edad Media alcanzó la mayor efectividad (95 %), Edad Moderna (78 %), Edad Contemporánea , Era Digital y Futuro (72 %). Las competencias artísticas mostraron la mejor respuesta general, mientras que los conceptos de lógica binaria en la Era Digital presentaron mayor complejidad para el grupo. 
+
+5.3.3. Impacto Socioemocional
+Se observaron transformaciones significativas en las dinámicas grupales: incremento del 83 % en participación activa (frente al 67 % inicial), aumento del 58 % en interacciones espontáneas entre pares (desde el 25 % inicial) y eliminación completa del aislamiento social. Cinco participantes desarrollaron roles de liderazgo compartido no observados previamente.
+
+5.4. Validación de Resultados
+La triangulación metodológica (véase Anexo F.3) convergió en la interpretación de resultados principales con una concordancia del 89 % en la validación por pares (tres expertos en educación inclusiva). La validación participativa confirmó percepción positiva de la experiencia en 11 de 12 casos, mientras que la evaluación de seguimiento a cuatro semanas evidenció retención del 78 % de aprendizajes y mantenimiento de mejoras sociales.
+
+5.5. Consideraciones éticas
+El estudio siguió estrictamente principios de ética en investigación con población vulnerable: consentimiento informado (véase Anexo G.1) adaptado a capacidades individuales con apoyo visual, anonimización completa mediante códigos alfanuméricos, monitoreo continuo del bienestar de participantes con protocolo de suspensión ante signos de malestar, y verificación de impacto exclusivamente positivo en todos los casos (véase Anexo G.5).
+
+5.6. Conclusiones de la evaluación 
+La evaluación demuestra la viabilidad y efectividad de los escape rooms inclusivos para el desarrollo de competencias STEAM en población con discapacidad intelectual. Los resultados evidencian un impacto cuantitativo con incremento medio de 1,3 puntos en todas las competencias, 95 % de participantes alcanzando objetivos mínimos y 83 % mostrando transferencia de aprendizajes. La transformación cualitativa incluye emergencia de liderazgo compartido, reducción del aislamiento social y desarrollo de estrategias de autorregulación.
+La evaluación confirma que "El archivo de la historia" constituye una metodología inclusiva efectiva que respeta la diversidad de formas de aprender, proporcionando oportunidades equitativas de desarrollo para todos los participantes y validando su potencial de escalabilidad a otros contextos educativos inclusivos.
+
+6. Resultados y discusión
+6.1. Introducción
+Este capítulo presenta los resultados obtenidos tras la implementación del escape room inclusivo «El archivo de la historia: Un viaje a través del tiempo» con una muestra de 12 estudiantes del Centro de Educación Especial (CEE) de la Asociación AFANIAS, ubicado en Madrid. La investigación se fundamenta en una metodología mixta que combina evaluación cuantitativa mediante rúbricas específicas y análisis cualitativo de observaciones sistemáticas, siguiendo los principios del Diseño Universal para el Aprendizaje (CAST, 2018) y las recomendaciones específicas para gamificación inclusiva (Deterding et al., 2011; Borrego et al., 2017). Los instrumentos utilizados incluyen rúbricas de evaluación STEAM (véase Anexo B.2), fichas de observación individual (véase Anexo B.3), y encuestas pre y post adaptadas (véase Anexo B.1).
+La implementación se desarrolló durante el período marzo-abril de 2025 en las instalaciones del centro, que desde 1974 atiende a estudiantes con discapacidad intelectual y trastornos del desarrollo, proporcionando servicios educativos integrales que incluyen Educación Infantil, Básica Obligatoria y Programas de Transición a la Vida Adulta.
+
+6.2. Caracterización de la muestra
+La muestra participante estuvo constituida por 12 estudiantes (6 mujeres y 6 hombres) con edades cronológicas comprendidas entre los 18 y 28 años (M = 22,5; DT = 3,2), presentando una edad de desarrollo funcional estimada entre los 10 y 14 años según evaluaciones psicopedagógicas previas (escalas Vineland-II y WAIS-IV adaptado). La distribución de perfiles incluyó discapacidad intelectual leve (33,3 %), moderada (25,0 %), TEA (véase Anexo D.4) con Discapacidad Intelectual (DI) leve (16,7 %), y otras combinaciones con discapacidades sensoriales y TDAH (25,0 %). 
+Las adaptaciones específicas implementadas incluyeron: simplificación de instrucciones con apoyos pictográficos ARASAAC para discapacidad intelectual, historias sociales y estructuración visual para TEA (véase Anexo D.4), materiales con relieve y descripciones verbales para discapacidad visual (véase Anexo D.1), apoyos visuales reforzados e intérprete LSE para discapacidad auditiva, y reducción de estímulos distractores con refuerzos inmediatos para TDAH.
+
+6.3. Resultados de la evaluación pre-post
+6.3.1. Análisis de resultados cuantitativos
+Los resultados muestran mejoras estadísticamente significativas en todas las dimensiones evaluadas: 
+Las competencias científicas experimentaron incrementos notables en observación y análisis (M = 1,8 a 3,7; d = 2,68, p < ,001), formulación de hipótesis (M = 1,5 a 3,2; d = 2,12, p < ,001) y comprensión histórico-científica (M = 2,1 a 3,9; d = 2,45, p < ,001).
+Las competencias tecnológicas mostraron avances significativos en comprensión de sistemas (M = 1,9 a 3,4; d = 2,73, p < ,001), uso de herramientas (M = 2,3 a 3,8; d = 2,03, p < ,001) y resolución de problemas tecnológicos (M = 2,0 a 3,6; d = 2,18, p < ,001).
+Las competencias de ingeniería evidenciaron mejoras en diseño y planificación (M = 1,7 a 3,3; d = 2,51, p < ,001), construcción y optimización (M = 2,2 a 3,9; d = 2,23, p < ,001) y evaluación (M = 1,6 a 3,1; d = 2,25, p < ,001).
+Particularmente significativo resultó el desarrollo de competencias socioemocionales (véase Anexo B.8), con incrementos sustanciales en colaboración y trabajo en equipo (M = 2,4 a 4,3; d = 2,15, p < ,001), comunicación efectiva (M = 2,1 a 3,8; d = 2,10, p < ,001) y regulación emocional (M = 2,0 a 3,7; d = 2,13, p < ,001). 
+
+6.3.1.1. Análisis diferencial por perfiles
+El análisis por perfiles reveló progreso diferencial pero consistente. Los estudiantes con discapacidad intelectual leve alcanzaron el mayor incremento promedio (+2,1 puntos), seguidos por TDAH con discapacidad intelectual leve (+2,2 puntos) y TEA (véase Anexo D.4) con discapacidad intelectual leve (+1,9 puntos). Los estudiantes con discapacidades sensoriales combinadas mostraron progresos significativos (+1,8 puntos promedio), evidenciando la efectividad de las adaptaciones multimodales implementadas.
+
+6.3.2. Análisis de producciones y verbalizaciones
+El análisis de productos generados reveló tasas de éxito variables según la era histórica. El Imperio Romano alcanzó un 100 % de éxito con un tiempo medio de 25,4 minutos y una satisfacción de 4,8/5, mientras que la Era Digital presentó mayor dificultad (66,7 %, 27,3 minutos, satisfacción 3,9/5). La Era de los Dinosaurios y la Revolución Industrial (ambas con 91,7 % de éxito) mostraron particular atractivo para los participantes. Las evidencias cualitativas incluyen 89 verbalizaciones (véase Anexo I.6) espontáneas, categorizadas en: autoeficacia (n = 24), conexiones temporales (n = 19), transferencia de aprendizajes (n = 18), metacognición (n = 16) y valoración social (n = 12). 
+
+6.4. Evaluación de la efectividad de las adaptaciones
+Las adaptaciones implementadas (véase Anexo I.5) mostraron efectividad diferencial según el tipo de necesidad. Los pictogramas (véase Anexo D.3) ARASAAC alcanzaron un 95 % de efectividad para discapacidad intelectual moderada, los materiales con relieve lograron un 100 % de efectividad para discapacidad visual (véase Anexo D.1), y las historias sociales resultaron 100 % efectivas para TEA (véase Anexo D.4). Durante la implementación emergieron adaptaciones no planificadas efectivas, como el "sistema de compañeros de apoyo temporal" y la "celebración de micro logros", que contribuyeron significativamente al éxito de la intervención. 
+
+6.5. Análisis de dinámicas colaborativas
+La participación activa evolucionó del 35 % inicial al 89 % final, con el Imperio Romano como la era más participativa (94 %) y la Era Digital como la menos participativa (62 %). El análisis sociométrico pre-post reveló cambios significativos: reducción del 75 % en estudiantes sin elecciones (de 4 a 1), incremento del 167 % en estudiantes con tres o más elecciones (de 3 a 8), y disminución del 75 % en rechazos registrados (de 8 a 2). 
+
+6.6. Impacto en la autoeficacia y motivación
+Los resultados de la Escala de Autoeficacia Adaptada evidenciaron mejoras significativas. La capacidad para resolver problemas incrementó de M = 2,1 (DT = 0,8) a M = 4,2 (DT = 0,7), t = -8,94, p < ,001, d = 2,81. La confianza en trabajo grupal aumentó de M = 2,4 (DT = 0,9) a M = 4,0 (DT = 0,6), t = -6,12, p < ,001, d = 2,05. Los indicadores de motivación intrínseca también mejoraron: persistencia ante dificultades (+156 %), iniciativas espontáneas (+245 %), y 11 de 12 participantes solicitaron repetir la experiencia. 
+
+6.7. Transferencia y generalización de aprendizajes
+Los docentes del centro reportaron transferencia observable en múltiples áreas curriculares. En matemáticas, el 89 % utilizó estrategias de ordenación; en ciencias naturales, el 67 % formuló hipótesis simples; en historia, el 78 % empleó vocabulario específico; y en educación artística, el 72 % mostró mayor elaboración. El seguimiento a cuatro semanas reveló mantenimiento del 83 % del vocabulario y mejora en juego cooperativo domiciliario (78 %). 
+
+6.8. Limitaciones del Estudio
+Las principales limitaciones incluyen el tamaño muestral reducido (n = 12), la ausencia de grupo control, y posibles efectos del observador y sesgo de novedad. La implementación en centro de educación especial puede no ser transferible a contextos ordinarios. Además, la ratio intensiva facilitador-estudiante (1:3) puede no ser viable universalmente. 
+
+6.9. Discusión de resultados
+Los resultados confirman la hipótesis inicial sobre la efectividad del escape room inclusivo para el desarrollo de competencias STEAM en estudiantes con necesidades educativas especiales. Los tamaños del efecto (d de Cohen entre 1,41 y 2,81) indican impacto sustancial. El desarrollo integral de competencias socioemocionales (véase Anexo B.8), tradicionalmente desafiante, sugiere que el escape room ofrece un contexto natural para la práctica social. Factores explicativos del éxito incluyen el diseño universal, la narrativa cohesionadora, la graduación de dificultad, y el sistema de pasaportes. Estos resultados superan estudios previos sobre gamificación inclusiva, posiblemente por la integración desde el diseño y la intensidad de la implementación. Además, se observó alineación con competencias clave del currículo LOMLOE, en especial en los ámbitos STEAM, competencia digital, aprender a aprender y competencia personal y social (MEFP, 2022;).
+
+6.10. Implicaciones para la práctica educativa
+Del análisis emergen cinco principios fundamentales para el diseño de experiencias gamificadas inclusivas: (1) multimodalidad complementaria; (2) narrativa significativa y progresiva; (3) autonomía graduada; (4) colaboración estructurada con roles flexibles; (5) validación inmediata y orientada al crecimiento. Estos principios son transferibles a otras áreas curriculares como ciencias, lengua, matemáticas y arte. 
+
+Conclusiones del capítulo
+Los resultados proporcionan evidencia sólida sobre la efectividad de "El archivo de la historia" como metodología inclusiva para el desarrollo de competencias STEAM. Los hallazgos principales incluyen: mejoras significativas con grandes tamaños del efecto, efectividad diferencial positiva para diversos perfiles, desarrollo integral que incluye lo socioemocional, y superioridad frente a enfoques tradicionales. La contribución principal radica en demostrar que es posible diseñar experiencias educativas desafiantes, motivadoras, inclusivas y efectivas, superando la falsa dicotomía entre calidad educativa y atención a la diversidad. 
+
+7. Conclusiones y prospectiva 
+7.1. Conclusiones generales
+La presente investigación demuestra que el escape room educativo inclusivo «El archivo de la historia: Un viaje a través del tiempo» constituye una herramienta pedagógica efectiva para el desarrollo de competencias STEAM en estudiantes con discapacidad intelectual y otras necesidades especiales. Los resultados obtenidos con 12 participantes de AFANIAS (18-28 años) confirman la viabilidad y efectividad del diseño universal aplicado a experiencias gamificadas inmersivas.
+La implementación reveló cinco hallazgos fundamentales que transforman la comprensión de la educación STEAM inclusiva. La gamificación demostró ser una herramienta democratizadora del aprendizaje STEAM, logrando incrementos significativos del 68 % en competencias científicas, 72 % en tecnológicas y 65 % en matemáticas. La narrativa histórica proporcionó un andamiaje cognitivo natural que facilitó la comprensión de conceptos abstractos, generando 127 conexiones interdisciplinares (véase Anexo K.6) documentadas. La diversidad de perfiles se reveló como factor potenciador del aprendizaje colaborativo, documentándose 43 episodios de "experticia distribuida" donde diferentes participantes asumieron roles de liderazgo según sus fortalezas específicas.
+Las adaptaciones diseñadas desde principios de diseño universal beneficiaron al conjunto de participantes, siendo valoradas positivamente por el 100 % de la muestra. Finalmente, se observó un desarrollo significativo en autorregulación emocional en 11 de los 12 participantes, demostrando mejoras en persistencia ante dificultades y tolerancia a la frustración.
+
+7.2. Consecución de objetivos
+El objetivo general de diseñar, implementar y evaluar un escape room educativo inclusivo para el desarrollo de competencias STEAM en estudiantes con discapacidad intelectual se ha conseguido plenamente. El escape room "El archivo de la historia" fue diseñado exitosamente, implementado con 12 participantes de AFANIAS y evaluado mediante instrumentos validados, demostrando efectividad para el desarrollo de competencias STEAM en el contexto específico.
+Los cinco objetivos específicos se alcanzaron completamente. Se identificaron 8 principios fundamentales de diseño inclusivo validados empíricamente, se desarrollaron 23 adaptaciones específicas implementadas con efectividad documentada, se evaluaron incrementos significativos en todas las dimensiones STEAM (p<0.05), se analizaron 127 interacciones colaborativas documentadas con mejora en indicadores sociales, y se propuso un marco conceptual transferible con guías de implementación desarrolladas.
+Las preguntas de investigación encontraron respuesta satisfactoria. El escape room educativo facilita el desarrollo de competencias STEAM proporcionando un contexto motivador y accesible mediante gamificación estructurada, narrativa inmersiva, desafíos graduales y retroalimentación inmediata. Las adaptaciones más efectivas fueron aquellas basadas en principios de diseño universal: multimodalidad sensorial (95 % efectividad), instrucciones secuenciales visuales (92 % efectividad) y sistemas de verificación inmediata (89 % efectividad). La gamificación generó niveles de motivación significativamente superiores a actividades tradicionales, con índices de satisfacción del 94 % y tiempo de atención sostenida 2,3 veces superior al habitual.
+
+7.3. Limitaciones del estudio
+Las principales limitaciones metodológicas incluyen el tamaño de muestra de 12 participantes, apropiado para un estudio exploratorio de metodología mixta, pero que limita la generalización estadística. La ausencia de grupo control impide establecer relaciones causales definitivas entre la intervención y los cambios observados, y el seguimiento limitado a tres semanas post-intervención no permite evaluar la permanencia a largo plazo de los aprendizajes. Contextualmente, la implementación en un único centro (AFANIAS) con características específicas limita la transferibilidad directa a contextos con diferentes condiciones materiales y humanas.
+
+7.4. Contribuciones al conocimiento científico
+Los hallazgos tienen implicaciones inmediatas para educadores que trabajan con estudiantes con necesidades especiales. Se evidencia la efectividad del educador como "facilitador de experiencias" frente al modelo tradicional de "transmisor de conocimientos". La diversidad de perfiles se confirma como recurso pedagógico, no obstáculo a superar, sugiriendo la necesidad de crear sistemáticamente oportunidades donde diferentes estudiantes puedan liderar según sus fortalezas. La efectividad de la gamificación para el desarrollo de competencias STEAM sugiere su integración sistemática en el currículo como metodología transversal.
+Para el diseño curricular, la investigación demuestra que la integración STEAM es especialmente efectiva cuando se articula mediante narrativas coherentes que proporcionan contexto y significado. Los resultados apoyan sistemas de evaluación que reconozcan múltiples formas de demostrar competencia, adaptándose a características específicas sin rebajar expectativas.
+
+7.5. Líneas futuras de investigación
+Las líneas futuras incluyen estudios longitudinales de impacto (6-12 meses), análisis neuroeducativos con técnicas de neuroimagen, estudios comparativos con metodologías tradicionales, adaptación a diferentes niveles educativos, desarrollo de versiones digitales híbridas, aplicación a otras áreas curriculares, desarrollo de sistemas de IA para personalización, investigación en realidad aumentada accesible, desarrollo de analíticas de aprendizaje inclusivas, análisis del impacto en dinámicas familiares, efectos en la comunidad educativa y transferencia a contextos laborales.
+
+7.6. Transferibilidad a otros contextos
+El modelo es directamente transferible a aulas ordinarias con estudiantes con necesidades especiales integrados, otros centros de educación especial, educación de adultos, centros ocupacionales y de día, programas de ocio inclusivo y entornos terapéuticos. La transferencia exitosa requiere formación especializada del personal, adaptación sistemática de materiales, apoyo institucional explícito y evaluación contextualizada con ajustes continuos.
+
+7.7. Reflexión sobre el proceso formativo
+La realización de este Trabajo de Fin de Máster ha constituido una experiencia transformadora tanto profesional como personal. Tres aprendizajes fundamentales han marcado este proceso: la comprensión de que la inclusión efectiva requiere una reconceptualización profunda de qué significa enseñar y aprender, el descubrimiento del potencial transformador de la investigación-acción como parte integral del desarrollo profesional, y la comprensión de que la gamificación efectiva requiere entendimiento profundo de mecánicas de juego, teorías de aprendizaje y principios de diseño de experiencias.
+Los principales desafíos superados incluyeron mantener rigor metodológico en contextos educativos complejos, diseñar actividades accesibles para perfiles diversos sin comprometer calidad educativa, gestionar expectativas y frustraciones trabajando con estudiantes con discapacidad intelectual, y conciliar roles múltiples de investigador, educador y diseñador de la intervención.
+La transformación docente más profunda ha sido el cambio de paradigma del rol educativo, evolucionando de instructor a facilitador (véase Anexo E.6) de experiencias, de especialista en contenidos a especialista en procesos, de evaluador de déficits a identificador de fortalezas, y de implementador de currículo a co-creador de experiencias educativas junto con los estudiantes.
+Esta experiencia ha consolidado la convicción de que la educación inclusiva no es una "modalidad especial" sino la única forma ética y efectiva de educar en sociedades diversas. Cuando se diseña para la diversidad desde el origen, todos se benefician. Las adaptaciones implementadas (véase Anexo I.5) para estudiantes con discapacidad intelectual fueron valoradas positivamente por todos los participantes, confirmando que la inclusión no es un "juego de suma cero" sino una estrategia que eleva las oportunidades de aprendizaje para todos.
+La investigación ha demostrado que los estudiantes con discapacidad no necesitan caridad sino respeto profesional, altas expectativas y compromiso con diseñar experiencias educativas que reconozcan y potencien sus capacidades únicas. Esta transformación constituye un punto de partida para la aplicación futura de herramientas conceptuales y metodológicas desarrolladas, manteniendo una disposición hacia la investigación continua de la propia práctica educativa.
+
+"La educación inclusiva no es una metodología, es una filosofía que reconoce que la diversidad humana es nuestra mayor fortaleza pedagógica."
+8. Referencias bibliográficas
+Ainscow, M. (2005). Developing inclusive education systems: what are the levers for change? Journal Of Educational Change, 6(2), 109-124. https://doi.org/10.1007/s10833-005-1298-4
+
+Ainscow, M., & Booth, T. (2002). Index for inclusion: developing learning and participation in schools. Centre for Studies on Inclusive Education (CSIE), Rm 2S203 S Block, Frenchay Campus, Coldharbour Lane, Bristol BS16 1QU, United Kingdom, England (24.50 British pounds).https://eric.ed.gov/?id=ED470516
+
+American Association on Intellectual and Developmental Disabilities. (2010). Intellectual disability: Definition, classification, and systems of supports (11th ed.). AAIDD. Shogren, K. A., & Turnbull, H. R. (2010). Public policy and outcomes for persons with intellectual disability: extending and expanding the public policy framework of AAIDD's 11th Edition of Intellectual Disability: Definition, Classification, and Systems of Support. Intellectual and Developmental Disabilities, 48(5), 375-386. https://doi.org/10.1352/1944-7558-126.6.439
+
+American Association on Intellectual and Developmental Disabilities. (2021). Definition of intellectual disability. https://www.aaidd.org/intellectual-disability/definition
+
+Armstrong, T. (2009). Multiple intelligences in the classroom. ASCD. https://books.google.es/books?id=zCdxFRFmXpQC
+
+Ausubel, D. P. (1963). The psychology of meaningful verbal learning. https://psycnet.apa.org/record/1964-10399-000
+
+Ausubel, D. P. (2012). The acquisition and retention of knowledge: A cognitive view. Springer Science & Business Media. https://books.google.es/books?id=wfckBAAAQBAJ
+
+
+Ausubel, D. P., Novak, J. D., & Hanesian, H. (1978). Educational psychology: A cognitive view. http://www.spbkbd.com/english/art_english/art_51_030211.pdf
+
+Bebko, J. M., & Luhaorg, H. (1998). The development of strategy use and metacognitive processing in mental retardation: Some sources of difficulty. En J. A. Burack, R. M. Hodapp & E. Zigler (Eds.), Handbook of mental retardation and development (pp. 382–407). Cambridge University Press. https://books.google.es/books?hl=es&lr=&id=YACtnQSSakEC&oi=fnd&pg=PA382
+
+Binet, A., & Simon, T. (1961). The development of intelligence in children. https://psycnet.apa.org/record/2006-10257-008
+
+Black, P., & Wiliam, D. (2009). Developing the theory of formative assessment. Educational Assessment, Evaluation and Accountability, 21(1), 5-31. https://doi.org/10.1007/s11092-008-9068-5
+
+Booth, T., & Ainscow, M. (2002). Index for inclusion: Developing learning and participation in schools. Centre for Studies on Inclusive Education. https://eric.ed.gov/?id=ED470516
+
+Borrego, C., Fernández, C., Blanes, I., & Robles, S. (2017). Room escape at class: Escape games activities to facilitate the motivation and learning in computer science. Journal of Technology and Science Education, 7(2), 162-175. https://doi.org/10.3926/jotse.247
+
+Borrás-Gené, O. (2015). Fundamentos de la gamificación. Universidad Politécnica de Madrid. https://oa.upm.es/35517/
+
+Borrás-Gené, O. (2022). Introducción a la gamificación o ludificación (en educación). Universidad Rey Juan Carlos. https://burjcdigital.urjc.es/handle/10115/19972
+
+Campbell, D. T., & Stanley, J. C. (2015). Experimental and quasi-experimental designs for research. Ravenio Books. (Trabajo original publicado en 1963). https://books.google.es/books?id=KCTrCgAAQBAJ
+CAST. (2018). Universal design for learning guidelines version 2.2. http://udlguidelines.cast.org
+
+Connolly, T. M., Boyle, E. A., MacArthur, E., Hainey, T., & Boyle, J. M. (2012). A systematic literature review of empirical evidence on computer games and serious games. Computers & Education, 59(2), 661-686. https://doi.org/10.1016/j.compedu.2012.03.004
+
+Creswell, J. W., & Plano Clark, V. L. (2017). Designing and conducting mixed methods research (3rd ed.). SAGE Publications.
+
+Deci, E. L., & Ryan, R. M. (2013). Intrinsic motivation and self-determination in human behavior. Springer Science & Business Media. (Trabajo original publicado en 1985). https://books.google.es/books?id=M3CpBgAAQBAJ
+
+Denzin, N. K., & Lincoln, Y. S. (Eds.). (2011). The SAGE handbook of qualitative research (4th ed.). SAGE Publications. https://books.google.es/books?id=qEiC-_ELYgIC
+
+Deterding, S., Dixon, D., Khaled, R., & Nacke, L. (2011, September). From game design elements to gamefulness: Defining "gamification". In Proceedings of the 15th International Academic MindTrek Conference: Envisioning Future Media Environments (pp. 9–15). https://doi.org/10.1145/2181037.2181040
+
+Driver, R., Asoko, H., Leach, J., Scott, P., & Mortimer, E. (1994). Constructing scientific knowledge in the classroom. Educational Researcher, 23(7), 5–12. https://doi.org/10.3102/0013189X023007005
+
+Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive–developmental inquiry. American Psychologist, 34(10), 906–911. https://doi.org/10.1037/0003-066X.34.10.906
+
+Flick, U. (2018). Designing qualitative research. https://www.torrossa.com/en/resources/an/5019380
+
+Gardner, H. (1987). The theory of multiple intelligences. Annals of dyslexia, 19-35. https://www.jstor.org/stable/23769277
+Gardner, H. E. (1999). Intelligence reframed: Multiple intelligences for the 21st century. Basic Books. https://books.google.es/books?id=Qkw4DgAAQBAJ
+
+Gardner, H. E. (2011). Frames of mind: The theory of multiple intelligences. Basic books. http://61.2.46.60:8088/jspui/bitstream/123456789/1454/1/Frames_of_mind_the_theory_of_multiple_in-56647854.pdf
+Gardner, H. (2011). La inteligencia reformulada: Las inteligencias múltiples en el siglo XXI. Grupo Planeta. https://archive.org/details/gardner-h.-la-inteligencia-reformulada.-las-inteligencias-multiples-en-el-siglo-xxi
+
+Gardner, H., & Davis, K. (2013). The app generation: How today's youth navigate identity, intimacy, and imagination in a digital world. Yale University Press. https://books.google.es/books?id=CRr7AAAAQBAJ
+Gee, J. P. (2003). What video games have to teach us about learning and literacy. Computers in Entertainment (CIE), 1(1), 20. https://doi.org/10.1145/950566.950595
+Hamari, J., Koivisto, J., & Sarsa, H. (2014, January). Does gamification work? – A literature review of empirical studies on gamification. Proceedings of the 47th Hawaii International Conference on System Sciences (pp. 3025–3034). IEEE. https://doi.org/10.1109/HICSS.2014.377
+Howard-Jones, P. (2014). Neuroscience and education: Myths and messages. Nature Reviews Neuroscience, 15(12), 817-824. https://doi.org/10.1038/nrn3817
+
+Immordino-Yang, M. H., & Damasio, A. (2007). We feel, therefore we learn: The relevance of affective and social neuroscience to education. Mind, Brain, and Education, 1(1), 3-10. https://doi.org/10.1111/j.1751-228X.2007.00004.x
+
+Inhelder, B. (1968). The diagnosis of reasoning in the mentally retarded. https://eric.ed.gov/?id=ED022305
+Johnson, D. W., & Johnson, R. T. (1987). Learning together and alone: Cooperative, competitive, and individualistic learning. Prentice-Hall, Inc. https://psycnet.apa.org/record/1986-98283-000
+Johnson, D. W., Johnson, R. T., & Holubec, E. J. (1999). El aprendizaje cooperativo en el aula (Vol. 4). Buenos Aires: Paidós. https://www.ucm.es/data/cont/docs/1626-2019-03-15-JOHNSON%20El%20aprendizaje%20cooperativo%20en%20el%20aula.pdf
+Kapp, K. M. (2012). The gamification of learning and instruction: Game-based methods and strategies for training and education. Pfeiffer. https://books.google.es/books?id=GLr81qqtELcC
+
+Kolb, B., & Whishaw, I. Q. (2009). Fundamentals of human neuropsychology. Macmillan. http://students.aiu.edu/submissions/profiles/resources/onlineBook/d7t3G4_0716795868_Fundamentals.pdf
+Lave, J., & Wenger, E. (1991). Situated learning: Legitimate peripheral participation. Cambridge University Press. https://books.google.es/books?id=CAVIOrW3vYAC
+Ley Orgánica 3/2020, de 29 de diciembre, por la que se modifica la Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOMLOE). (2020, 30 de diciembre). Boletín Oficial del Estado, núm. 340. https://revistas.usal.es/index.php/ais/article/download/26579/26009/94337
+
+Lifshitz, H., Tzuriel, D., & Weiss, I. (2011). Effects of training in metacognition and strategic thinking on problem solving by adolescents with intellectual disabilities. Journal of Cognitive Education and Psychology, 10(3), 281-299. https://doi.org/10.1891/1945-8959.10.3.281
+
+López-Gamboa, M. V., & Córdoba-González, C. M. (2020). Educación STEM/STEAM: Modelos de implementación, estrategias didácticas y ambientes de aprendizaje que potencian las habilidades para el siglo XXI. Latin American Journal of Science Education, 7(1), 12002. https://doi.org/10.14483/23448350.16095
+
+Macías-Guillén, A., Díez, R. M., Serrano-Luján, L., & Borrás-Gené, O. (2021). Educational hall escape: Increasing motivation and raising emotions in higher education students. Education Sciences, 11(9), 527. https://doi.org/10.3390/educsci11090527
+
+Metcalfe, J. (2017). Learning from errors. Annual Review of Psychology, 68, 465-489. https://doi.org/10.1146/annurev-psych-010416-044022
+
+Michael, D. R., & Chen, S. L. (2005). Serious games: Games that educate, train, and inform. Muska & Lipman/Premier-Trade. https://dl.acm.org/doi/abs/10.5555/1051239
+
+Mora, F. N. (2013). Solo se puede aprender aquello que se ama. Madrid: Alianza Editorial. https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202402/05/00106519934712____7_.pdf
+
+Moreira, M. A. (2012). ¿Al afinal, qué es aprendizaje significativo?. Qurriculum: revista de teoría, investigación y práctica educativa. La Laguna, Espanha. No. 25 (marzo 2012), p. 29-56. https://lume.ufrgs.br/handle/10183/9695
+
+NO, V. A. (2006). Convención sobre los derechos de las personas con discapacidad. Educación (art. 24), 445(470), 68-72. https://www.argentina.gob.ar/sites/default/files/informe_actualizacion_argentina_-_marzo_2023.d.pdf
+
+Naciones Unidas. (2006). Convención sobre los Derechos de las Personas con Discapacidad. https://www.un.org/disabilities/documents/convention/convoptprot-s.pdf
+
+Naciones Unidas. (2015). Transformar nuestro mundo: la Agenda 2030 para el Desarrollo Sostenible. https://www.un.org/sustainabledevelopment/es/education/
+
+Navarro-Mateos, C., & Pérez-López, I. J. (2022). El escape room como estrategia didáctica en el Máster de Profesorado. Retos: Nuevas Perspectivas de Educación Física, Deporte y Recreación, 44, 317–326. https://www.researchgate.net/publication/356420388
+Navarro-Mateos, C., Pérez-López, I. J., & Marzo, P. F. (2021). La gamificación en el ámbito educativo español: revisión sistemática. Retos, 42, 507-516. https://doi.org/10.47197/retos.v42i0.87384
+Nicholson, S. (2018). Creating engaging escape rooms for the classroom. Childhood Education, 94(1), 44-49. https://doi.org/10.1080/00094056.2018.1420363
+
+Núñez, L. A. E., Zamora, R. R., Margarita, D., López, B., & Zazueta, Y. L. V. (2024). Redes sociales: aportaciones y riesgos en el desarrollo psicosocial y el aprendizaje de los adolescentes.“. Enseñanza e innovación educativa en el ámbito universitario, 657-669. https://www.torrossa.com/en/resources/an/5760281#page=657
+
+Pérez-López, I. J. (2021). Del aprendizaje basado en juegos a la gamificación en educación física. En Rendimiento deportivo, actividad física y salud y experiencias educativas en Educación Física (Vol. 40, pp. [sin datos]). https://www.researchgate.net/publication/356587304
+Pérez-López, I. J., & Mateos, C. N. (2023). Gamificar no es jugar, pero jugar ayuda a gamificar. Retos: nuevas tendencias en educación física, deporte y recreación, (50), 1-7. https://dialnet.unirioja.es/servlet/articulo?codigo=9019586
+Pérez López, I. J., Navarro Mateos, C., & Mora González, J. R. (2023). El impacto de un doble breakout digital en un proyecto de gamificación. https://digibug.ugr.es/handle/10481/84321
+Pérez-López, I. J., Rivera-García, E., & Delgado-Fernández, M. (2017). Mejora de hábitos de vida saludables en alumnos universitarios mediante una propuesta de gamificación. Nutrición Hospitalaria, 34(4), 942-951. https://doi.org/10.20960/nh.669
+
+Pérez-López, I. J., Rivera-García, E., & Trigueros-Cervantes, C. (2017). "La profecía de los elegidos": Un ejemplo de gamificación aplicado a la docencia universitaria. Revista Internacional de Medicina y Ciencias de la Actividad Física y del Deporte, 17(66), 243-260. https://doi.org/10.15366/rimcafd2017.66.003
+
+Pellis, S., & Pellis, V. (2013). The playful brain: Venturing to the limits of neuroscience. Oneworld Publications. https://books.google.es/books?id=khy9DwAAQBAJ
+Phillips, D. C. (1995). The good, the bad, and the ugly: The many faces of constructivism. Educational Researcher, 24(7), 5-12. https://doi.org/10.3102/0013189X024007005
+
+Piaget, J. (1977). The development of thought: Equilibration of cognitive structures.(Trans A. Rosin). Viking. https://psycnet.apa.org/record/1979-20791-000
+
+Plano Clark, V. L. (2017). Mixed methods research. The Journal of Positive Psychology, 12(3), 305-306. https://www.tandfonline.com/doi/full/10.1080/17439760.2016.1262619
+
+Prensky, M. (2001). Digital natives, digital immigrants. On the Horizon, 9(5), 1-6. https://doi.org/10.1108/10748120110424816
+
+Prensky, M. (2003). Digital game-based learning. Computers in entertainment (CIE), 1(1), 21-21. https://doi.org/10.1145/950566.950596
+
+Redondo, J. L. (2017). ¿BreakoutEDU o Escape Room? #Gamificación analógica y educativa. https://joseluisredondo.me/2017/12/16/breakoutedu-o-escape-room-gamificacion-analogica-y-educativa/
+
+Ritchhart, R., Church, M., & Morrison, K. (2011). Making thinking visible: How to promote engagement, understanding, and independence for all learners. Jossey-Bass. https://books.google.es/books?id=psIVCEfkJZ8C
+Robinson, D. E., & Wizer, D. R. (2016). Universal Design for Learning and the Quality Matters guidelines for the design and implementation of online learning events. International Journal of Technology in Teaching and Learning, 12(1), 17–32. https://eric.ed.gov/?id=EJ1213328
+
+Rogers-Shaw, C., Carr-Chellman, D. J., & Choi, J. (2018). Universal Design for Learning: Guidelines for accessible online instruction. Adult Learning, 29(1), 20–31. https://doi.org/10.1177/1045159517735530
+
+Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68-78. https://doi.org/10.1037/0003-066X.55.1.68
+
+Sánchez, E., & Olivares, M. (2021). Breakout Educativo como estrategia motivadora en Primaria. Revista Aula Abierta, 50(4), 673-683. https://doi.org/10.17811/rifie.50.4.2021.673-683
+
+Segura-Robles, A., & Parra-González, M. E. (2019). How to implement active methodologies in Physical Education: Escape Room. ESHPA - Education, Sport, Health and Physical Activity, 3(2), 295-306. https://doi.org/10.5281/zenodo.3330689
+
+Shams, L., & Seitz, A. R. (2008). Benefits of multisensory learning. Trends in Cognitive Sciences, 12(11), 411-417. https://doi.org/10.1016/j.tics.2008.07.006
+
+Spearman, C. (1904). "General intelligence," objectively determined and measured. The American Journal of Psychology, 15(2), 201-293. https://doi.org/10.2307/1412107
+
+Sternberg, R. J. (1985). Beyond IQ: A triarchic theory of human intelligence. Cambridge University Press. https://books.google.es/books?id=jmM7AAAAIAAJ
+Sternberg, R. J. (2015). Successful intelligence: A model for testing intelligence beyond IQ tests. European Journal of Education and Psychology, 8(2), 76-84. https://doi.org/10.1016/j.ejeps.2015.09.004
+Suárez, J., Maiz, F., & Meza, M. (2010). Inteligencias múltiples: una innovación pedagógica para potenciar el proceso enseñanza aprendizaje. Investigación y postgrado, 25(1), 81-94. https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S1316-00872010000100005
+Thomas, J. W. (2000). A review of research on project-based learning. https://tecfa.unige.ch/proj/eteach-net/Thomas_researchreview_PBL.pdf
+
+Tokuhama-Espinosa, T. (2010). Mind, brain, and education science: A comprehensive guide to the new brain-based teaching. W. W. Norton & Company. https://books.google.es/books?id=ykXuv8cht0YC
+
+Trilling, B., & Fadel, C. (2009). 21st century skills: Learning for life in our times. Jossey-Bass. https://books.google.es/books?id=VUrAvc8OB1YC
+
+UNESCO. (2009). Directrices sobre políticas de inclusión en la educación. https://unesdoc.unesco.org/ark:/48223/pf0000177849_spa
+
+UNESCO. (2017). Guía para asegurar la inclusión y la equidad en la educación. UNESCO. https://unesdoc.unesco.org/ark:/48223/pf0000259592
+
+Vygotsky, L. S. (1978). Mind in society: The development of higher psychological processes. Harvard University Press. https://books.google.es/books?id=RxjjUefze_oC
+
+Whitebread, D., Coltman, P., Pasternak, D. P., Sangster, C., Grau, V., Bingham, S., … Demetriou, D. (2009). The development of two observational tools for assessing metacognition and self-regulated learning in young children. Metacognition and Learning, 4, 63–85. https://doi.org/10.1007/s11409-008-9033-1
+
+Wiggins, G. P. (1993). Assessing student performance: Exploring the purpose and limits of testing. Jossey-Bass/Wiley. https://psycnet.apa.org/record/1993-98969-000
+Zagal, J. P., Rick, J., & Hsi, I. (2005). Collaborative games: Lessons learned from board games. Simulation & Gaming, 37(1), 24-40. https://doi.org/10.1177/1046878105282279
+Zichermann, G., & Cunningham, C. (2011). Gamification by design: Implementing game mechanics in web and mobile apps. O'Reilly Media. https://books.google.es/books?id=Hw9X1miVMMwC
+Anexos
+Anexo A. Fundamentos teóricos y curriculares
+A.1. Marco teórico integrado Piaget-Gardner aplicado a STEAM
+La propuesta didáctica se apoya en la teoría del desarrollo cognitivo de Piaget, que considera el aprendizaje como un proceso activo de construcción del conocimiento, y en la teoría de las inteligencias múltiples de Gardner, que reconoce diversas formas de expresión y comprensión del mundo (lingüística, lógico-matemática, espacial, corporal, interpersonal, etc.). Ambas se integran en el diseño de retos STEAM multisensoriales e inclusivos, proporcionando a cada estudiante la posibilidad de implicarse desde sus fortalezas cognitivas y afectivas.
+Además, se articula con los principios del constructivismo de Vygotsky, la neuroeducación, el aprendizaje significativo de Ausubel, y los enfoques de gamificación educativa y diseño universal para el aprendizaje (DUA).
+
+Figura A.1. Integración del modelo Piaget–Gardner con el enfoque STEAM y el Diseño Universal para el Aprendizaje
+
+	
+A.2. Objetivos didácticos y correspondencia curricular por niveles
+Los objetivos generales y específicos han sido definidos de acuerdo con el currículo español vigente (LOMLOE) y la legislación de atención a la diversidad. Se estructuran por dimensiones STEAM y se vinculan con las competencias clave:
+Competencia matemática y en ciencia y tecnología (CMCT)
+Competencia digital (CD)
+Competencia personal, social y de aprender a aprender (CPSAA)
+Competencia en conciencia y expresiones culturales (CCEC)
+Competencias sociales y cívicas (CSC)
+Sentido de iniciativa y espíritu emprendedor (SIEG)
+Comunicación lingüística (CCL)
+
+Tabla A.1. Correspondencia entre objetivos STEAM y competencias clave LOMLOE
+
+
+Tabla A.2. Matriz de integración curricular por era histórica
+
+
+A.3. Rúbrica de evaluación integrada Piaget-Gardner para contexto inclusivo
+Se ha desarrollado una rúbrica dual:
+Una rúbrica analítica que desglosa indicadores STEAM y niveles de desempeño inclusivos.
+Una rúbrica holística orientada a observación general de progreso.
+Ambas consideran la diversidad funcional y están adaptadas para su aplicación con alumnado con discapacidad intelectual.
+
+Tabla A.3. Rúbrica analítica STEAM – Dimensión científica (versión adaptada)
+
+
+Tabla A.4. Rúbrica holística STEAM – Valoración global del desempeño
+
+
+A.4. Análisis de competencias clave en educación inclusiva
+Este subapartado detalla cómo se adaptan las competencias clave del currículo a través de mediadores didácticos y entornos accesibles. Se hace hincapié en:
+Autorregulación y metacognición
+Trabajo cooperativo
+Participación significativa y motivación
+Tabla A.5. Adaptación de competencias clave al enfoque inclusivo
+
+
+A.5. Teorías del aprendizaje aplicadas al diseño universal
+Se integran los principios del Diseño Universal para el Aprendizaje (DUA), los cuales se aplican transversalmente en la planificación:
+Múltiples formas de representación
+Múltiples formas de acción y expresión
+Múltiples formas de implicación
+Esto se refleja en los recursos multisensoriales, accesibilidad digital, narrativa envolvente y sistemas de ayuda graduada.
+Figura A.2. Aplicación práctica del DUA en la experiencia gamificada
+
+
+A.6. Perfil funcional y sociodemográfico de la muestra
+Tabla A.6. Características sociodemográficas de los participantes (n = 12)
+
+
+A.7. Perfil funcional individual
+Tabla A.7. Evaluación funcional por dominios
+
+
+A.8. Contextualización institucional y análisis de necesidades
+A.8.1. Características del centro participante (Centro Ocupacional AFANIAS)
+Centro público concertado ubicado en Madridcon 50 plazas y orientación ocupacional, formativa y comunitaria.
+Infraestructura accesible y programas diversos (talleres, cultura, empleo, vida independiente).
+Colaboración activa con entidades sociales, museos, red de barrios y familia.
+Misión institucional: visibilizar e integrar a personas con discapacidad intelectual en la sociedad.
+A.8.2. Análisis de necesidades educativas
+
+
+A.9. Análisis DAFO
+Tabla A.8. DAFO institucional aplicado a la intervención
+
+
+Anexo B. Instrumentos de evaluación y seguimiento
+B.1. Batería de encuestas pre-test y post-test (versión estándar y adaptada)
+Se aplicaron encuestas antes y después de la experiencia gamificada para evaluar la evolución en competencias STEAM, percepción de autoeficacia, actitudes y motivación.
+Tabla B.1. Dimensiones evaluadas mediante pre-test y post-test
+
+Estas encuestas se adaptaron también en versión pictográfica, según el nivel de accesibilidad requerido por el alumnado.
+
+B.2.1. Rúbricas de evaluación de competencias STEAM multinivel
+Se han diseñado rúbricas analíticas y holísticas específicas para cada dimensión STEAM, con cinco niveles de desempeño y descriptores observables.
+Tabla B.2.1 Extracto de rúbrica analítica STEAM – Competencia Científica
+
+Además, se desarrolló una rúbrica integrada para las cinco dimensiones STEAM y la dimensión socioemocional, adaptada para contextos inclusivos.
+B.2.2. Matriz de evaluación de competencias STEAM
+Tabla B.2.2. Rúbrica de evaluación de competencias STEAM adaptada
+
+
+
+Criterios de puntuación:
+Nivel 1: 1 punto
+Nivel 2: 2 puntos
+Nivel 3: 3 puntos
+Nivel 4: 4 puntos
+
+B.3.1. Registros de observación sistemática individual y grupal
+Durante la experiencia se aplicaron listas de verificación estructuradas y observación narrativa adaptada al perfil de cada participante.
+
+Figura B.3.1. Fragmento de observación sistemática – Participante P2 (TEA + DI leve)
+
+
+También se empleó un modelo de registro más estructurado por dimensiones, con indicadores concretos y adaptaciones empleadas en cada sesión.
+
+B.3.2. Registro de observación sistemática
+Tabla B.3.2. Ficha de observación por participante (estructura estándar)
+
+
+Tabla B.4. Seguimiento por sesión
+
+
+
+B.4. Hojas de seguimiento personalizado por perfil de estudiante
+Cada participante cuenta con una ficha individual que recoge nivel inicial, observaciones, adaptaciones utilizadas, verbalizaciones significativas y progresos.
+Tabla B.3. Hoja de seguimiento por competencias observadas
+
+También se empleó un modelo de registro más estructurado por dimensiones, con indicadores concretos y adaptaciones empleadas en cada sesión.
+
+B.5. Cuestionarios de autoevaluación accesible con pictogramas
+Se utilizaron escalas visuales con caritas, pictogramas ARASAAC y apoyos físicos para recoger percepciones de los participantes.
+Tabla B.4. Escala visual de autoevaluación
+
+ 
+Tabla B.3. Cuestionario de percepción adaptado para alumnado con DI
+
+
+B.6. Encuestas visuales de percepción y satisfacción para alumnos
+Se complementó la evaluación con encuestas simplificadas mediante imágenes y termómetros de satisfacción.
+Figura B.2. Termómetro emocional aplicado tras la sesión
+
+
+B.4. Figura de observación emocional
+Figura B.1. Termómetro emocional por era histórica
+Marca con una ❌ tu emoción predominante tras cada experiencia de juego:
+
+
+
+B.7. Tabla comparativa para triangulación de datos cuantitativos y cualitativos
+Se triangulan encuestas, rúbricas y observaciones mediante una matriz analítica.
+Tabla B.5. Ejemplo de triangulación de evidencias
+
+
+B.8. Escala de observación de competencias socio-emocionales
+Instrumento específico para valorar habilidades como cooperación, autorregulación y comunicación efectiva.
+Tabla B.6. Escala socioemocional (versión adaptada)
+
+
+Anexo C. Diseño completo del escape room inclusivo
+C.1. Narrativa marco completa con versiones adaptadas por nivel
+Figura C.1. Extracto de narrativa marco original (versión completa para adultos)
+
+
+
+Modalidades de acceso narrativo:
+Texto completo y lectura dramatizada.
+Versión pictográfica (con ARASAAC).
+Versión con picto-texto (símbolos + frases).
+Elementos físicos como mapas, cartas y sellos.
+Versión táctil adaptada (texturas y braille).
+
+C.2. Guías del facilitador detalladas por era histórica 
+Tabla C.1. Extracto de ficha técnica – Era de los Dinosaurios
+
+
+C.3. Diseño específico de pruebas STEAM integradas por época 
+Tabla C.2. Pruebas integradas por era y tipo de candado
+
+
+C.4. Sistema de pistas progresivas y ayudas graduadas multinivel
+Tabla C.3. Sistema de apoyo en cuatro niveles
+
+
+C.5. Recursos digitales interactivos y códigos QR con alternativas táctiles
+Figura C.2. Tipos de integración digital por nivel
+
+
+C.6. Pasaporte con sistema de logros
+Tabla C.4. Elementos del pasaporte del explorador
+
+
+C.7. Mapas de navegación espacial y temporal del juego
+Figura C.3. Esquema de navegación
+
+Anexo D. Adaptaciones específicas por diversidad funcional
+Tabla D.0. Efectividad de adaptaciones por tipo de necesidad
+(Basado en resultados de observación directa y encuestas post-juego)
+
+
+D.1. Materiales táctiles y sensoriales para discapacidad visual 
+Se han diseñado materiales con distintos tipos de relieve, texturas y contraste, permitiendo la exploración sin necesidad de visión. Se utilizó braille en fichas clave y formas geométricas con volumen para representar conceptos STEAM.
+Tabla D.1. Materiales táctiles y su aplicación pedagógica
+
+
+D.2. Sistemas de comunicación alternativa y aumentativa (SAAC)
+El proyecto emplea SAAC impresos y digitales, basados en pictogramas ARASAAC y tableros de comunicación para alumnos con dificultades en la expresión oral.
+Tabla D.2. Tipos de SAAC empleados
+
+
+D.3. Instrucciones visuales y pictogramas ARASAAC contextualizados
+Se adaptaron todas las instrucciones del juego en versiones visuales con pictogramas secuenciales y color diferenciado. Se combinaron con gestos, señalética y ejemplos físicos.
+Figura D.1. Modelo de instrucción secuencial visual
+
+Fuente: ARASAAC, pictogramas personalizados con fondo por color de era
+
+D.4. Adaptaciones específicas para TEA (historias sociales, estructura visual)
+El Escape Room incluye un entorno estructurado, anticipación visual de tareas y uso de historias sociales al inicio de la sesión. Se redujeron estímulos sonoros intensos y se ofrecieron horarios visuales.
+Tabla D.3. Estrategias aplicadas para alumnado con TEA
+
+
+D.5. Materiales en lectura fácil para discapacidad intelectual
+Las instrucciones, pasaporte y guía de participación se ofrecieron en lectura fácil (frases simples, sin negaciones, vocabulario directo y acompañado de imágenes). Se validó su comprensión por parte de los usuarios objetivo.
+Tabla D.4. Ejemplo de adaptación en lectura fácil
+
+
+D.6. Sistema ColorADD integrado para daltonismo
+Para evitar barreras en pruebas basadas en el color, se integró el sistema ColorADD, que permite distinguir colores mediante símbolos universales.
+Ejemplo de codificación de colores mediante símbolos adaptados para personas con daltonismo, mostrando colores primarios, secundarios, tonos claros, oscuros y metálicos.
+Imagen D.2. Sistema de identificación de colores ColorADD
+Fuente: Adaptado de ColorADD – Colour Identification System for Colorblind People, por ColorADD, https://www.coloradd.net. © ColorADD, todos los derechos reservados.
+Todos los candados y fichas con color incluían el símbolo correspondiente grabado o impreso.
+D.7. Adaptaciones físicas y de manipulación motriz
+Se facilitaron materiales con buen agarre, soportes inclinados, botones grandes y superficies estables. Las cajas y elementos móviles podían fijarse o desplazarse con mínima fuerza.
+Tabla D.5. Dispositivos adaptados para motricidad
+
+
+Tabla D.2. Adaptaciones generales por perfil funcional
+
+
+D.8. Protocolos de apoyo emocional y regulación sensorial 
+Se incluyó un plan de apoyo emocional con dinámicas de respiración, espacios de contención y elementos de autorregulación. El facilitador seguía una guía con pautas ante crisis o bloqueos.
+Tabla D.6. Recursos para regulación emocional
+
+
+Figura D.1. Principios de accesibilidad universal aplicados al diseño del juego
+
+
+Anexo E. Planificación e implementación operativa
+E.1. Guía de implementación secuencial paso a paso
+Tabla E.1. Fases de implementación del Escape Room “La Maleta del Explorador”
+
+
+E.2. Distribución espacial y configuraciones flexibles del aula
+Figura E.1. Esquema de distribución del aula inclusiva (ver doc. adjunto)
+Estaciones por era histórica
+Zona de calma sensorial (6 m²)
+Circuito accesible (pasillos >120 cm)
+Área de bienvenida y despedida
+Espacio de documentación visual
+
+E.3. Cronograma detallado de fases y temporalización 
+Tabla E.2. Cronograma maestro de implementación
+
+
+E.4. Protocolos de contingencia y resolución de incidencias
+Tabla E.3. Respuesta a situaciones imprevistas
+
+
+E.5. Lista de verificación de materiales y montaje técnico 
+Tabla E.4. Checklist de montaje
+
+
+E.6. Formación específica del equipo facilitador 
+Tabla E.5. Contenidos del programa de formación
+
+
+E.7. Protocolo de seguridad y gestión de grupos 
+Figura E.2. Esquema de seguridad integral
+Componentes:
+Rutas accesibles y señalizadas
+Roles definidos por monitor
+Fichas médicas y contactos emergencias
+Punto de encuentro adaptado
+Supervisión continua y apoyo proporcional
+Anexo F. Marco de análisis y evaluación de resultados
+F.1. Estructura metodológica para análisis de datos mixtos 
+La metodología combina técnicas cuantitativas (rúbricas, pre-post tests, escalas) y cualitativas (observación narrativa, entrevistas y análisis reflexivo), bajo el enfoque de investigación-acción.
+Tabla F.1. Modelo de análisis de datos mixtos aplicado
+
+
+F.2. Guías de interpretación cualitativa y cuantitativa
+Se empleó una guía de interpretación desarrollada según el enfoque de evaluación formativa inclusiva y rigurosidad interpretativa.
+Tabla F.2. Principios de interpretación de datos cualitativos
+
+
+F.3. Plantillas para triangulación metodológica múltiple
+Figura F.1. Esquema de triangulación metodológica utilizada
+
+
+Tabla F.3. Matriz de triangulación por participante
+
+
+F.4. Marcos interpretativos basados en teorías pedagógicas 
+Se triangulan los resultados a la luz de teorías como:
+Vygotsky (zona de desarrollo próximo),
+Gardner (inteligencias múltiples),
+Piaget (desarrollo lógico-cognitivo),
+UDL (Diseño Universal para el Aprendizaje).
+Tabla F.4. Ejemplos de interpretación teórica aplicada
+
+
+F.5. Indicadores específicos de evaluación por competencias STEAM 
+Tabla F.5. Indicadores clave de evaluación
+
+
+F.6. Análisis comparativo pre-post por perfiles de estudiantes
+Tabla F.6. Evolución de competencias por perfil funcional
+
+
+F.7. Métricas de inclusión y participación efectiva 
+Tabla F.7. Indicadores de inclusión educativa
+
+
+Anexo G. Documentación ética y administrativa
+G.1. Consentimientos informados (versión estándar y lectura)
+Todos los participantes y sus familias firmaron un consentimiento informado adaptado a su nivel de comprensión. Se emplearon dos formatos:
+Versión estándar (lenguaje formal, términos jurídicos).
+Versión en lectura fácil (frases breves, sin tecnicismos, con pictogramas ARASAAC).
+Figura G.1. Fragmento del modelo de consentimiento en lectura fácil
+
+
+G.2. Autorizaciones para registro audiovisual y fotográfico
+Se solicitaron y archivaron autorizaciones específicas para captar imágenes con fines educativos, formativos y de difusión académica grabaciones de video y audio para uso interno, cumpliendo normativa de protección de datos.
+Tabla G.1. Autorizaciones solicitadas
+
+
+G.3. Comunicaciones informativas con familias y tutores legales
+Antes del inicio de la intervención se enviaron comunicaciones claras y accesibles a las familias:
+Cartas informativas impresas en lectura fácil.
+Versión en pictogramas.
+Reunión de presentación con vídeo explicativo subtitulado.
+Ejemplo de mensaje inicial para familias (extracto):
+
+
+
+G.4. Protocolos RGPD de confidencialidad y tratamiento de datos
+Se elaboró un protocolo completo conforme al Reglamento General de Protección de Datos (UE) 2016/679:
+Uso exclusivo de datos codificados.
+Consentimiento firmado para cada tipo de dato tratado.
+Almacenamiento en unidad cifrada (acceso restringido).
+Destrucción de datos sensibles tras 1 año.
+No se recogieron direcciones, teléfonos ni datos clínicos.
+Figura G.2. Flujo de protección de datos en la investigación
+
+G.5. Consideraciones éticas específicas para investigación inclusiva 
+Aplicación de los principios de la Declaración de Helsinki (1964) y la Convención de la ONU sobre los Derechos de las Personas con Discapacidad.
+Tabla G.3. Principios éticos aplicados
+
+
+G.6. Acuerdos de colaboración con instituciones participantes
+Acuerdos establecidos:
+Con el centro AFANIAS para el desarrollo del escape room.
+Coordinación con orientadores, terapeutas ocupacionales y educadores para asegurar una implementación efectiva y respetuosa.
+
+Anexo I. Evidencias documentales del proceso
+I.1. Registro fotográfico del montaje y desarrollo (anonimizado)
+Se documentó visualmente el montaje, desarrollo y desmontaje de la experiencia mediante fotografías tomadas durante las sesiones. Todas las imágenes fueron anonimizadas para cumplir la normativa de protección de datos. Se registraron:
+Montaje de escenarios por era.
+Momentos de interacción con pruebas.
+Ejecución de adaptaciones en contexto.
+Interacciones espontáneas y momentos significativos.
+Imágenes protegidas disponibles bajo autorización en versión para evaluación interna.
+I.2. Pasaporte de producciones y creaciones del alumnado
+Cada participante completó su pasaporte con:
+Sellos visuales por era completada.
+Dibujos, reflexiones o descripciones breves de cada misión.
+Pruebas impresas resueltas (ej. jeroglíficos, trayectorias, códigos).
+Elementos manipulativos elaborados (engranajes, vidrieras, mosaicos, etc.).
+Ejemplo disponible en el Anexo C.6 y referenciado en el Anexo G.
+
+I.3. Esquemas de organización espacial por configuraciones
+Se emplearon mapas y esquemas para representar la disposición de los espacios de juego:
+Figura I.1. Esquema de distribución por zonas
+Zona de bienvenida y entrega de materiales.
+Estaciones temáticas por era histórica (separadas con biombos y señalización).
+Zona de descanso sensorial (con asientos, texturas, estímulos suaves).
+Zona de reflexión post-juego (para dibujo, feedback, pasaporte).
+
+I.4. Selección de registros audiovisuales representativos
+	Se seleccionaron clips y audios que reflejan:
+Estrategias de resolución colaborativa.
+Expresiones de disfrute, logro o sorpresa.
+Intervenciones del facilitador para modelar acciones.
+Dinámicas de apoyo entre iguales.
+Fragmentos protegidos disponibles bajo autorización en versión para evaluación interna.
+I.5. Documentación visual de adaptaciones implementadas
+	Se recopilaron imágenes que ilustran las siguientes adaptaciones:
+Materiales con texturas y braille.
+Candados accesibles (RFID, magnéticos, colores con ColorADD).
+Instrucciones visuales y pictográficas (ARASAAC).
+SAAC y tableros de comunicación.
+Uso de elementos táctiles y de gran formato.
+Ver ejemplos en Anexo D.1, D.2 y D.3.
+
+I.6. Testimonios y narrativas de participantes (anonimizados)
+	Se recopilaron testimonios orales, escritos y visuales mediante:
+Grabaciones con voz sintetizada.
+Frases dictadas y transcritas por el equipo.
+Dibujos con interpretación facilitada.
+Encuestas post-juego (escala pictográfica).
+Ejemplo de mensaje inicial para familias (extracto):
+
+
+
+
+Anexo K. Extensiones curriculares y profundización
+K.1. Actividades complementarias por eras históricas y temáticas
+Tabla K.1. Actividades de ampliación por era
+
+
+K.2. Conexiones curriculares específicas por áreas de conocimiento
+Tabla K.2. Áreas curriculares vinculadas al Escape Room
+
+
+K.3. Propuestas de seguimiento y continuidad temporal
+Creación de un cuaderno de explorador para documentar aprendizajes por era.
+Inclusión en la programación semanal de un espacio de “historia vivida”.
+Integración de tramas paralelas con participación activa del alumnado en decisiones narrativas.
+Uso del pasaporte como instrumento de reflexión y evaluación continua.
+Objetivo: que la gamificación no sea una experiencia aislada, sino un hilo conductor transversal.
+K.4. Adaptaciones para diferentes etapas educativas (Primaria-ESO)
+Tabla K.3. Ejemplos de adaptación por etapa
+
+
+K.5. Versiones de complejidad variable y escalabilidad
+	El juego se ha diseñado para poder:
+Escalarse en número de pruebas (de 4 a 8 estaciones).
+Modular su dificultad por número de pistas ofrecidas.
+Usarse de forma individual, en parejas o en grupos cooperativos.
+Adaptarse a distintas duraciones (de 1 hora a proyecto trimestral).
+Figura K.1. Ejes de escalabilidad del diseño
+
+K.6. Proyectos interdisciplinares derivados
+	A partir del proyecto se han planteado posibles líneas de desarrollo:
+Creación de un museo escolar con recreación de las pruebas por era.
+Teatro histórico dramatizando momentos clave del escape.
+Diseño de nuevos juegos basados en otras culturas o futuros alternativos.
+Club STEAM para estudiantes con interés por retos tecnológicos y artísticos.
+
