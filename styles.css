@@ -3214,7 +3214,7 @@ body::before {
     .theory-quadrants {
         width: 98vw;
         height: auto;
-        gap: 1.2rem;
+    gap: 1.2rem;
         padding: 1rem 0;
     }
     .central-concept {
@@ -3760,10 +3760,12 @@ body::before {
 }
 
 .barreras-list li i {
-    color: #ff77c6;
+    color: #ff77c6 !important;
     font-size: 1.2rem;
     min-width: 1.5em;
     text-align: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .statistics-grid-redesign {
@@ -3857,5 +3859,48 @@ body::before {
     }
     .barrier-item-redesign {
         font-size: 0.98rem;
+    }
+}
+
+/* Slide 3: Contexto y Oportunidad - Grid dos columnas */
+.contexto-oportunidad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 3.5rem;
+    align-items: start;
+    margin-top: 2.5rem;
+}
+.oportunidad-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.grafico-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.stat-highlight-12m {
+    margin-top: 2.2rem;
+    align-self: flex-start;
+}
+@media (max-width: 900px) {
+    .contexto-oportunidad-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .grafico-col {
+        align-items: stretch;
+    }
+    .stat-highlight-12m {
+        margin-top: 1.2rem;
+        align-self: stretch;
+    }
+    .grafico-col {
+        justify-content: flex-start;
+        height: auto;
     }
 }
